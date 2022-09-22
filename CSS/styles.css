@@ -27,7 +27,7 @@
     align-items: center;
     width: auto;
     height: 150px;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 .wrapper__lorem {
@@ -75,5 +75,12 @@
 
 .wrapper__group1 .wrapper__group1_text2 {
     margin-bottom: 0px;
+}
+
+.line {
+    width: 100px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: black;
 }
 
