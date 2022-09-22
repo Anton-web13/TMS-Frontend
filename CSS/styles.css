@@ -78,9 +78,9 @@
 }
 
 .line {
-    width: 100px;
-    height: 10px;
+    width: 250px;
+    height: 1px;
+    border-bottom: 1px solid red;
     margin: 0 auto;
-    background-color: black;
 }
 
