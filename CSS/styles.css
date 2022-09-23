@@ -137,8 +137,37 @@
     align-items: center;
 }
 
+.shadow_block {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 
+/* -------------------------------------------------------------------------------------------------------- */
+
+.container__options__block__one__lorem {
+    color: #86878B;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    width: 370px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #E2E2E2;
+}
+
+.container__options__block__one__lorem__triangle {
+    width: 30px;
+    height: 20px;
+    margin-left: 72px;
+}
+
+.container__options__block__one__lorem__guy {
+    width: 30px;
+    height: 20px;
+    margin-top: 40px;
+}
 
 
 
