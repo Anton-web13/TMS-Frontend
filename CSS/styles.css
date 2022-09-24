@@ -15,12 +15,13 @@
 }
 
 .wrapper__header {
-    font-size: 36px;
     text-align: center;
+    font-size: 36px;
     line-height: 150px;
     align-items: center;
     width: auto;
     height: 150px;
+    background-color: beige;
 }
 
 .wrapper__lorem {
@@ -29,8 +30,6 @@
     margin-top: 40px;
     width: 1169px;
     height: 21px;
-    margin-left: 0.5px;
-    margin-right: 0.5px;
 }
 
 #wrapper__group3_right, .wrapper__group3 {
@@ -59,11 +58,12 @@
 .wrapper__group1__Lorem {
     font-family: 'Raleway', serif;
     text-align: center;
-    line-height: 20px;
+    line-height: 21.13px;
     width: 370px;
     height: 105px;
     margin-top: 65px;
     font-size: 18px;
+    /* background-color: #EC7979; */
 }
 
 .wrapper__group1 .wrapper__group1__Lorem {
@@ -89,5 +89,9 @@
     margin: 39px auto;
     justify-content: space-between;
     display: flex;
+}
+
+.wrapper__group1__Lorem span{
+    display: block;
 }
 
