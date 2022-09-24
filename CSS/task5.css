@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    width: 600px;
+    height: 600px;
+    /* padding: 400px; */
+    background-color: rgb(92, 165, 92);
+    outline: 2px solid #fff;
+    outline-offset: -20px;
+}
+
+.section {
+    text-align: center;
+    /* align-items: center; */
+}
