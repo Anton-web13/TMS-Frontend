@@ -3,21 +3,21 @@
 }
 
 .table{
+    font-size: 18px;
     width: 80%;
-    /* text-align: center; */
-    margin: auto;
+    margin: 200px auto;
     align-items: center;
-}
-
-.title__of__table {
-    background-color: white;
-    border: 0px solid white;
 }
 
 .table td {
     border: 1px solid black;
-    height: 25px;
-    align-items: center;
+    height: 30px;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.table th {
+    font-weight: 700;
 }
 
 .table td:nth-child(3) {
