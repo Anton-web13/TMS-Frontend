@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.table{
+    width: 80%;
+    /* text-align: center; */
+    margin: auto;
+    align-items: center;
+}
+
+.title__of__table {
+    background-color: white;
+    border: 0px solid white;
+}
+
+.table td {
+    border: 1px solid black;
+    height: 25px;
+    align-items: center;
+}
+
+.table td:nth-child(3) {
+    text-align: center;
+}
