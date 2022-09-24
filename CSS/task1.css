@@ -32,7 +32,7 @@
     font-family: 'Raleway', serif;
     font-weight: 400;
     color: #000000;
-    width: 1170px;
+    max-width: 1170px;
     height: 150px;
     margin: 0 auto;
     margin-top: 50px;
@@ -91,6 +91,7 @@
 
 .container__options__block__one__basic {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     font-size: 24px;
     color: #FFFFFF;
     text-align: center;
@@ -98,7 +99,6 @@
     height: 60px;
     border-bottom: 1px solid #F5F5F5;
     background-color: #333333;
-    z-index: 1;
 }
 
 .container__options__block__one__10 {
@@ -175,10 +175,9 @@
     display: flex;
     width: 370px;
     height: 136px;
-    /* background-color: #EC7979; */
 }
 
-.text__center {
+.text__name__of__people {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     width: 269px;
@@ -188,12 +187,11 @@
     margin-top: 46px;
     font-size: 24px;
     font-weight: 700;
-    /* background-color: antiquewhite; */
     display: flex;
     align-items: center;
 }
 
-.text__center2 {
+.text__manager {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     width: 270px;
@@ -203,5 +201,4 @@
     margin-top: 115px;
     font-size: 18px;
     font-weight: 400;
-    /* background-color: #86878B; */
 }
