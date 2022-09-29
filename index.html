@@ -10,47 +10,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css" class="href">
     <!-- <link rel="stylesheet" href="CSS/normalize.css" class="href"> -->
+    <style>
+
+        .container {
+            height: 100vh;
+            display: flex;
+            /* height: 200px; */
+            /* flex-direction: row; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: wrap; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: flex-start; */
+            gap: 30px;
+            /* row-gap: 30px; */
+            /* column-gap: 30px; */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+            /* 1+2+1 */
+            flex-direction: row-reverse;
+        }
+        
+        .item {
+            /* flex: 1 1 auto; */
+            width: 100px;
+            /* width: 33.3%; */
+            /* width: 250px; */
+            /* min-width: 250px; */
+            /* flex-basis: 250px; */
+            /* margin: 0 15px; */
+            /* order: 3; */
+            /* flex-grow: 1; */
+            /* 1+1+1 */
+            /* flex-shrink: 1; */
+
+        }
+
+        .item1 {
+            /* padding: 20px 30px; */
+            background-color: rgb(247, 75, 75);
+            font-size: 24px;
+            font-weight: bold;
+            /* height: 100px; */
+            /* flex-shrink: 2; */
+            align-self: center;
+        }
+
+        .item2 {
+            /* padding: 30px 40px; */
+            background-color: rgb(233, 241, 100);
+            font-size: 40px;
+            height: 200px;
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 3; */
+            align-self: stretch;
+        }
+
+        .item3 {
+            /* padding: 10px 25px; */
+            background-color: rgb(118, 231, 123);
+            font-size: 21px;
+            font-weight: bold;
+            height: 300px;
+            /* order: 1; */
+        }
+        .item4 {
+            /* padding: 10px 25px; */
+            background-color: rgb(41, 61, 42);
+            font-size: 21px;
+            font-weight: bold;
+            /* height: 50px; */
+            /* order: 1; */
+        }
+
+    </style>
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Collections</a></li>
-                    <li><a href="#">Try a Free Giude</a></li>
-                    <li><a href="#">Storiesc</a></li>
-                </ul>
-            </nav>
-            <div class="heade__logo">
-                <img src="img/logo.svg" alt="thalby">
-            </div>
-            <div class="header_icons">
-                <a href="#">
-                    <img src="img/i1.svg" alt="thalby">
-                </a>
-                <a href="#">
-                    <img src="img/i2.svg" alt="thalby">
-                </a>
-                <a href="#">
-                    <img src="img/i3.svg" alt="thalby">
-                </a>
-            </div>
-        </div>
-    </header>
-    <section class="main">
-        <div class="container">
-            <div class="main__offer">
-                <h1 class="main___title">sdrgtdtghdfthdfhdfghdfghd<span>setrsetyse</span> <span>sertsety</span></h1>
-                <p class="main__text">setys</p>
-                <a href="#" class="main__btn">Shop now</a>
-            </div>
-            <div class="main__img">
-                <img src="" alt="">
-            </div>
-        </div>
-    </section>
+   <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <!-- <div class="item item4">4</div> -->
+    <!-- <div class="item item1">1</div> -->
+    <!-- <div class="item item2">2</div> -->
+    <!-- <div class="item item3">3</div> -->
+   </div>
 
 </body>
 </html>
