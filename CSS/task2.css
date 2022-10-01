@@ -20,8 +20,7 @@
 
 .container__main:nth-child(2) {
     padding-bottom: 50px;
-    /* background-color: #F5F5F5; */
-    background-color: blue;
+    background-color: #F5F5F5;
 }
 
 .container__main:nth-child(3) {
@@ -162,7 +161,6 @@
 .container__options__block__one__1gb {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    /* padding: 16px 0px 15px 0px; */
     height: 50px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #F5F5F5;
