@@ -4,26 +4,29 @@
 
 .container {
     width: 1510px;
-    height: 5548px;
+    height: auto;
     margin: 0px auto;
-}
-
-.container__main:nth-child(1) {
-    padding-bottom: 58px;
-}
-
-.container__main:nth-child(2) {
-    padding-bottom: 50px;
-    background-color: #F5F5F5;
-}
-
-.container__main:nth-child(3) {
-    padding-bottom: 64px;
 }
 
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
 .container__main {
     width: 1510px;
+}
+
+.container__main:nth-child(1) {
+    padding-bottom: 58px;
+    background-color: #FFFFFF;
+}
+
+.container__main:nth-child(2) {
+    padding-bottom: 50px;
+    /* background-color: #F5F5F5; */
+    background-color: blue;
+}
+
+.container__main:nth-child(3) {
+    padding-bottom: 64px;
+    background-color: #FFFFFF;
 }
 
 .section {
@@ -72,7 +75,7 @@
     padding: 39px 0 0 0;
 }
 
-.image {
+.icon__image {
     margin: 0 auto;
     display: flex;
 }
@@ -85,20 +88,9 @@
     margin-top: 80px;
 }
 
-.wrapper__group1__Lorem {
-    width: 370px;
-    height: 105px;
-    background-color: #c09292;
-    font-family: 'Raleway', serif;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 43px;
-}
-
 .section__main__block h5 {
     font-family: 'Raleway', serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     text-align: center;
     align-items: center;
@@ -112,10 +104,6 @@
 
 /* --------------PRICING OPTIONS--------------------------------------------------- */
 
-/* .red {
-    background-color: red;
-} */
-
 .container__options__block {
     background-color: #FFFFFF;
     margin-top: 79px;
@@ -124,7 +112,11 @@
 
 .height___options {
     margin-top: 59px;
-    height: 510px;
+    margin-bottom: 20px;
+}
+
+.shadow__block {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .container__options__block__one__basic {
@@ -170,6 +162,7 @@
 .container__options__block__one__1gb {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    /* padding: 16px 0px 15px 0px; */
     height: 50px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #F5F5F5;
@@ -177,11 +170,6 @@
     justify-content: center;
     align-items: center;
 }
-
-.shadow_block {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
 
 /* --------------WHAT OUR CUSTOMERS ARE SAYING--------------------------------------------------- */
 
@@ -193,7 +181,7 @@
     font-size: 18px;
     line-height: 21.13px;
     width: 370px;
-    height: 180px;
+    padding: 38px 0px 37px 0px;
     border-radius: 10px;
     background-color: #E2E2E2;
     display: flex;
@@ -205,19 +193,19 @@
     margin-top: 83px;
 }
 
-.container__options__block__one__lorem__triangle {
+.container__options__block__triangle {
     width: 30px;
     height: 20px;
     margin-left: 72px;
 }
 
-.container__options__block__one__lorem__guy {
+.container__options__block__guy {
     margin-top: 46px;
     width: 30px;
     height: 20px;
 }
 
-.guy {
+.image__guy {
     display: flex;
     width: 370px;
     height: 136px;
@@ -235,7 +223,6 @@
     display: flex;
     align-items: center;
 }
-
 
 .text__manager {
     font-family: 'Raleway', sans-serif;
