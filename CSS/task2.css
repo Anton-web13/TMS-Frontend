@@ -8,7 +8,7 @@
     margin: 0px auto;
     background-color: #EC7979;
 }
-/* ----------------------------------------------------------------- */
+/* -------------------WHY THIS IS AWESOME---------------------------------------------- */
 .container__main {
     width: 1510px;
     background-color: bisque;
@@ -22,6 +22,7 @@
 }
 
 .section__why {
+    padding-top: 50px;
     width: 1170px;
     max-width: 1170px;
     background-color: #515a80;
@@ -55,7 +56,6 @@
 .section__main__row {
     display: flex;
     justify-content: space-between;
-
 }
 
 .section__main__block {
@@ -105,7 +105,100 @@
     display: block;
 }
 
+/* --------------PRICING OPTIONS--------------------------------------------------- */
+
+.red {
+    background-color: red;
+}
+
+.padding__bottom {
+    padding-bottom: 50px;
+}
+
+.container__options__block {
+    float: left;
+    width: 370px;
+    height: 510px;
+    background-color: #FFFFFF;
+    margin-top: 79px;
+}
+
+.container__options__block:nth-child(2) {
+    margin-top: 59px;
+}
+
+.container__options__block__one__basic {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 370px;
+    height: 60px;
+    border-bottom: 1px solid #F5F5F5;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__options__block__one__10 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 370px;
+    height: 100px;
+    background-color: #333333;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__options__block__one__free {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 370px;
+    height: 50px;
+    background-color: #333333;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__options__block__one__1gb {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 370px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow_block {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* --------------WHAT OUR CUSTOMERS ARE SAYING--------------------------------------------------- */
 
 
 
-/* ----------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
