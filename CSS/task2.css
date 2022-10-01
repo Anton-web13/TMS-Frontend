@@ -6,26 +6,35 @@
     width: 1510px;
     height: 5548px;
     margin: 0px auto;
-    background-color: #EC7979;
 }
+
+.container__main:nth-child(1) {
+    padding-bottom: 58px;
+}
+
+.container__main:nth-child(2) {
+    padding-bottom: 50px;
+    background-color: #F5F5F5;
+}
+
+.container__main:nth-child(3) {
+    padding-bottom: 64px;
+}
+
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
 .container__main {
     width: 1510px;
-    background-color: bisque;
 }
 
 .section {
     max-width: 1170px;
     margin: 0px auto;
-    background-color: #86878B;
-    padding-bottom: 58px;
 }
 
 .section__why {
     padding-top: 50px;
     width: 1170px;
     max-width: 1170px;
-    background-color: #515a80;
 }
 
 .section__why h2 {
@@ -34,7 +43,6 @@
     font-size: 36px;
     text-align: center;
     padding: 75px;
-    background-color: #c09292;
 }
 
 .line {
@@ -56,12 +64,10 @@
 .section__main__row {
     display: flex;
     justify-content: space-between;
+    gap: 0px 30px;
 }
 
 .section__main__block {
-    width: 370px;
-    height: 383px;
-    background-color: blue;
     margin-top: 71px;
     padding: 39px 0 0 0;
 }
@@ -91,7 +97,6 @@
 }
 
 .section__main__block h5 {
-    background-color: #c09292;
     font-family: 'Raleway', serif;
     font-weight: 700;
     font-size: 18px;
@@ -107,24 +112,19 @@
 
 /* --------------PRICING OPTIONS--------------------------------------------------- */
 
-.red {
+/* .red {
     background-color: red;
-}
-
-.padding__bottom {
-    padding-bottom: 50px;
-}
+} */
 
 .container__options__block {
-    float: left;
-    width: 370px;
-    height: 510px;
     background-color: #FFFFFF;
     margin-top: 79px;
+    width: 370px;
 }
 
-.container__options__block:nth-child(2) {
+.height___options {
     margin-top: 59px;
+    height: 510px;
 }
 
 .container__options__block__one__basic {
@@ -132,7 +132,6 @@
     font-weight: 700;
     font-size: 24px;
     color: #FFFFFF;
-    width: 370px;
     height: 60px;
     border-bottom: 1px solid #F5F5F5;
     background-color: #333333;
@@ -146,7 +145,6 @@
     font-size: 36px;
     color: #FFFFFF;
     text-align: center;
-    width: 370px;
     height: 100px;
     background-color: #333333;
     border-bottom: 1px solid #F5F5F5;
@@ -161,7 +159,6 @@
     font-size: 18px;
     color: #FFFFFF;
     text-align: center;
-    width: 370px;
     height: 50px;
     background-color: #333333;
     border-bottom: 1px solid #F5F5F5;
@@ -173,7 +170,6 @@
 .container__options__block__one__1gb {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    width: 370px;
     height: 50px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #F5F5F5;
@@ -189,9 +185,67 @@
 
 /* --------------WHAT OUR CUSTOMERS ARE SAYING--------------------------------------------------- */
 
+.container__options__block__saying {
+    color: #86878B;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+    width: 370px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #E2E2E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.height {
+    margin-top: 83px;
+}
+
+.container__options__block__one__lorem__triangle {
+    width: 30px;
+    height: 20px;
+    margin-left: 72px;
+}
+
+.container__options__block__one__lorem__guy {
+    margin-top: 46px;
+    width: 30px;
+    height: 20px;
+}
+
+.guy {
+    display: flex;
+    width: 370px;
+    height: 136px;
+}
+
+.text__name__of__people {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    justify-content: space-between;
+    width: 269px;
+    height: 54px;
+    margin-left: 70px;
+    margin-top: 46px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
 
 
-
+.text__manager {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 270px;
+    height: 21px;
+    margin-left: -270px;
+    margin-top: 115px;
+    font-size: 18px;
+}
 
 
 
