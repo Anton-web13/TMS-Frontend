@@ -4,19 +4,22 @@
 
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
 
-.main__block:nth-child(1) {
+.section:nth-child(1) {
     padding-bottom: 58px;
     background-color: #FFFFFF;
+    background-color: red;
 }
 
-.main__block:nth-child(2) {
+.section:nth-child(2) {
     padding-bottom: 50px;
     background-color: #F5F5F5;
+    background-color: blue;
 }
 
-.main__block:nth-child(3) {
+.section:nth-child(3) {
     padding-bottom: 64px;
     background-color: #FFFFFF;
+    background-color: red;
 }
 
 .container {
@@ -26,7 +29,6 @@
 
 .title__block {
     padding-top: 50px;
-    width: 1170px;
     max-width: 1170px;
 }
 
@@ -38,7 +40,7 @@
     padding: 75px;
 }
 
-.line {
+.title__block__line {
     width: 170px;
     height: 1px;
     border-bottom: 1px solid #EC7979;
@@ -54,23 +56,23 @@
     margin-top: 40px;
 }
 
-.section__main__row {
+.action__block {
     display: flex;
     justify-content: space-between;
     gap: 0px 30px;
 }
 
-.section__main__block {
+.action__block__section__one {
     margin-top: 71px;
     padding: 39px 0 0 0;
 }
 
-.icon__image {
+.action__block__section__one img {
     margin: 0 auto;
     display: flex;
 }
 
-.section__main__title {
+.action__block__section__one h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -78,7 +80,7 @@
     margin-top: 80px;
 }
 
-.section__main__block h5 {
+.action__block__section__one p {
     font-family: 'Raleway', serif;
     font-weight: 400;
     font-size: 18px;
@@ -88,13 +90,13 @@
     line-height: 21.13px;
 }
 
-.section__main__block span{
+.action__block__section__one span{
     display: block;
 }
 
 /* --------------PRICING OPTIONS--------------------------------------------------- */
 
-.container__options__block {
+.action__block__section__two {
     background-color: #FFFFFF;
     margin-top: 79px;
     width: 370px;
@@ -109,7 +111,7 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.container__options__block__one__basic {
+.action__block__section__two__basic {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -122,7 +124,7 @@
     align-items: center;
 }
 
-.container__options__block__one__10 {
+.action__block__section__two__10 {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     color: #FFFFFF;
@@ -135,7 +137,7 @@
     align-items: center;
 }
 
-.container__options__block__one__free {
+.action__block__section__two__free {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -149,7 +151,7 @@
     align-items: center;
 }
 
-.container__options__block__one__1gb {
+.action__block__section__two__1gb {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     height: 50px;
@@ -162,14 +164,14 @@
 
 /* --------------WHAT OUR CUSTOMERS ARE SAYING--------------------------------------------------- */
 
-.container__options__block__saying {
+.action__block__section__three__title {
     color: #86878B;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21.13px;
-    width: 370px;
+    max-width: 370px;
     padding: 38px 0px 37px 0px;
     border-radius: 10px;
     background-color: #E2E2E2;
@@ -178,29 +180,29 @@
     align-items: center;
 }
 
-.height {
+.action__block__section__three {
     margin-top: 83px;
 }
 
-.container__options__block__triangle {
+.action__block__section__three__triangle {
     width: 30px;
     height: 20px;
     margin-left: 72px;
 }
 
-.container__options__block__guy {
-    margin-top: 46px;
-    width: 30px;
-    height: 20px;
-}
-
-.image__guy {
+.action__block__section__three__image {
     display: flex;
-    width: 370px;
+    max-width: 370px;
     height: 136px;
 }
 
-.text__name__of__people {
+.action__block__section__three__image div {
+    margin-top: 46px;
+    max-width: 30px;
+    height: 20px;
+}
+
+.action__block__section__three__image h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     justify-content: space-between;
@@ -213,7 +215,7 @@
     align-items: center;
 }
 
-.text__manager {
+.action__block__section__three__image h5 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     width: 270px;
@@ -222,7 +224,6 @@
     margin-top: 115px;
     font-size: 18px;
 }
-
 
 
 
