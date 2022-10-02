@@ -2,44 +2,35 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 1510px;
-    height: auto;
-    margin: 0px auto;
-}
-
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
-.container__main {
-    width: 1510px;
-}
 
-.container__main:nth-child(1) {
+.main__block:nth-child(1) {
     padding-bottom: 58px;
     background-color: #FFFFFF;
 }
 
-.container__main:nth-child(2) {
+.main__block:nth-child(2) {
     padding-bottom: 50px;
     background-color: #F5F5F5;
 }
 
-.container__main:nth-child(3) {
+.main__block:nth-child(3) {
     padding-bottom: 64px;
     background-color: #FFFFFF;
 }
 
-.section {
+.container {
     max-width: 1170px;
     margin: 0px auto;
 }
 
-.section__why {
+.title__block {
     padding-top: 50px;
     width: 1170px;
     max-width: 1170px;
 }
 
-.section__why h2 {
+.title__block h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -54,7 +45,7 @@
     margin: 0px auto;
 }
 
-.section__why p {
+.title__block p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
