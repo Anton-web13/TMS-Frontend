@@ -7,19 +7,16 @@
 .section:nth-child(1) {
     padding-bottom: 58px;
     background-color: #FFFFFF;
-    background-color: red;
 }
 
 .section:nth-child(2) {
     padding-bottom: 50px;
     background-color: #F5F5F5;
-    background-color: blue;
 }
 
 .section:nth-child(3) {
     padding-bottom: 64px;
     background-color: #FFFFFF;
-    background-color: red;
 }
 
 .container {
@@ -179,9 +176,6 @@
     padding: 38px 0px 37px 0px;
     border-radius: 10px;
     background-color: #E2E2E2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .action__block__section__three__triangle {
