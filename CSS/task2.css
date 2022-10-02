@@ -164,6 +164,10 @@
 
 /* --------------WHAT OUR CUSTOMERS ARE SAYING--------------------------------------------------- */
 
+.action__block__section__three {
+    margin-top: 83px;
+}
+
 .action__block__section__three__title {
     color: #86878B;
     text-align: center;
@@ -178,10 +182,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.action__block__section__three {
-    margin-top: 83px;
 }
 
 .action__block__section__three__triangle {
