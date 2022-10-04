@@ -1,37 +1,43 @@
-.container {
-    width: 1170px;
-    display: flex;
-    margin: 0 auto;
-    gap: 30px;
+body {
+    background-color: aquamarine;
+    padding: 100px;
 }
 
-.favorites__item {
-    width: 100%;
-}
-
-.favorites__item__img {
-    height: 396px;
+.card {
+    width: 290px;
     background-color: red;
-    position: relative;
+    padding: 70px 21px 26px 21px;
+    z-index: 1;
 }
 
-.favorites__item__img a {
-    letter-spacing: 2px;
-    color: black;
-    width: 276px;
-    height: 48px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card__bg {
     position: absolute;
-    left: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 
-.favorites__item__img a:first-of-type {
-    top: 144px;
+.card__title::after{
+    content: url(img/);
+    margin-left: 10px;
 }
 
-.favorites__item__img a:last-of-type {
-    top: 204px;
+.card__photo {
+    width: 100px;
+    height: 100px;
+    border: 6px solig #ffffff;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: cover;
+    object-fit: contain;
+}
+
+.card__text {
+    text-align: center;
 }
