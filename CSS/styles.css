@@ -1,85 +1,335 @@
-.body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+/* .my-link {
+    color: #0000;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
 }
 
-.banner {
-    padding: 10px 0;
-    font-size: 14px;
-    color: blanchedalmond;
+:root {
+    color: red;
+}
+
+html {
+    color: green;
+}
+
+.my-link:link {
+    color: red;
+}
+
+.my-link:visited {
+    color: green;
+}
+
+.my-link:focus {
+    color: blue;
+}
+
+.my-link:hover {
+    color: brown;
+    border: 1px solid gray;
+}
+
+
+
+
+ */
+
+/* .menu li:nth-child(2) {
+    color: red;
+} */
+
+/* .menu li:nth-last-child(2) {
+    color: red;
+} */
+
+/* .menu li:first-child {
+    color: red;
+}
+ */
+
+/* .block p:only-child {
+    color: red;
+} */
+
+/* .block .text:nth-child(3) {
+    color: red;
+} */
+
+/* ol li:nth-child(2n+4) {
+    color: red;
+} */
+
+/* ol li:nth-child(2), ol li:nth-child(5) {
+    color: red;
+} */
+
+/* .block {
+    margin-top: 2000px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.block:target {
+    background-color: blue;
+} */
+
+/* .container {
+    color: red;
+} */
+
+/* .container p:not(.text){
+    color: red;
+} */
+
+/* .container p:nth-child(n+5){
+    color: red;
+} */
+
+/* .text::before { */
+    /* content: 'Der Anfang '; */
+    /* color: red; */
+    /* display: block; */
+    /* content: attr(href); */
+    /* content: attr(href); */
+    /* content: open-quote; */
+    /* content: url(); */
+/* } */
+
+/* .text::after { */
+    /* content: close-quote; */
+    /* content: ' das Ende!'; */
+    /* color: red; */
+/* } */
+
+/* .container {
+    width: 1170px;
+    margin: 0 auto;
+    background-color: red;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 100px;
+    position: relative;
 }
 
-h1 {}
-
-.banner__one {
-    background: blue;
-    column-gap: 10px;
+.item {
+    width: 100px;
+    margin: 10px;
+    height: 100px;
 }
 
-.banner__two {
-    background: forestgreen;
-    column-gap: 26px;
+.item1 {
+    background-color: yellow;
 }
 
-.banner__two button {
-    display: flex;
+.item2 {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: fixed;
+    bottom: -30px;
+    bottom: 0px;
+    top: 0;
+    left: 0;
+}
+
+.item3 {
     background-color: black;
-    align-items: center;
+} */
+
+
+
+
+
+
+/* body {
+    counter-increment: ;
+} */
+
+/* .container p::before {
+    content: "Der Anfang ";
+    color: red;
+}
+
+
+
+
+.container p::after {
+    content: " das Ende";
+    color: red;
+} */
+
+
+
+
+
+
+/* .link {
+    text-decoration: none;
+}
+
+.link span:first-child {
+    text-decoration: underline;
+}
+
+.link span:first-child:active {
+    text-decoration: none;
+    color: green;
+}
+
+.link span:last-child:active {
+    color: black;
+} */
+
+
+
+
+
+
+
+
+/* .container {
+    height: 350px;
+    display: flex;
+
+}
+
+.item {
+    width: 100px;
+    max-height: 100px;
+}
+
+.item1 {
+    border: 1px solid red;
+}
+
+.item2 {
+    border: 1px solid blue;
+    margin-top: 120px;
+}
+
+.item3 {
+    border: 1px solid green;
+    margin-top: 240px;
+} */
+
+
+
+
+
+
+/* .container {
+    height: 350px;
+    display: flex;
+    position: relative;
+    margin-left: 300px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.item1 {
+    border: 1px solid red;
+    background-color: red;
+    z-index: 3;
+}
+
+.item2 {
+    border: 1px solid blue;
+    top: 75px;
+    left: 50px;
+    background-color: blue;
+    z-index: 2;
+}
+
+.item3 {
+    border: 1px solid green;
+    top: 120px;
+    left: 120px;
+    background-color: green;
+} */
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    height: 350px;
+    position: relative;
+    margin-left: 30px;
+    background-color: green;
+    padding: 150px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #fff;
+    margin: 15px;
+}
+
+.item1 {
+   top: 0;
+   left: 0;
+}
+
+.item2 {
+    bottom: 0;
+    right: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    height: 200vh;
 }
 
 .header {
-    padding: 34px 0 22px 0;
-    background-color: aquamarine;
+    width: 600px;
+    height: 200px;
+    background-color: red;
+    position: fixed;
+    top: 100px;
+    left: 100px;
 }
 
-.header__container {
-    /* padding: 34px 0 20px; */
-    background-color: rgb(114, 223, 187);
-    display: flex;
-    align-items: center;
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(46, 196, 32);
 }
 
-.header__menu {
-    width: 100%;
-    display: flex;
-    margin-left: 40px;
-    /* column-gap: 25px; */
-    justify-content: space-between;
-}
 
-.header__menu__part {
-    display: flex;
-}
 
-.header__menu__part:first-child {
-    column-gap: 25px;
-}
 
-.header__menu__part:last-child {
-    column-gap: 30px;
-}
 
-.header__menu a {
-    /* display: block; */
-    color: black;
-    font-size: 14px;
-}
 
-.main {
-    background: url(.../);
-}
 
-.main__content {
-    margin: 20px 0 126px 240px;
-    width: 400px;
-}
 
-.main__content h1 {
-    margin-bottom: 16px;
-}
+
+
+
+
+
+
 
 
 
