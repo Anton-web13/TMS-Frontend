@@ -97,6 +97,7 @@
     background-color: #FFFFFF;
     margin-top: 79px;
     width: 370px;
+    counter-reset: number 0;
 }
 
 .height___options {
@@ -157,6 +158,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    counter-increment: number;
+}
+
+.action__block__section__two p::after {
+    content: ". " counter(number);
 }
 
 /* --------------WHAT OUR CUSTOMERS ARE SAYING--------------------------------------------------- */
@@ -181,6 +187,7 @@
 
 .action__block__section__three__image::before {
     position: absolute;
+    /* content: url('../img/Polygon 1.png'); */
     content: url('../img/Polygon 1.png');
     width: 30px;
     height: 20px;
