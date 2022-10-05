@@ -162,6 +162,7 @@
 /* --------------WHAT OUR CUSTOMERS ARE SAYING--------------------------------------------------- */
 
 .action__block__section__three {
+    position: relative;
     margin-top: 83px;
 }
 
@@ -178,7 +179,9 @@
     background-color: #E2E2E2;
 }
 
-.action__block__section__three__triangle {
+.action__block__section__three__image::before {
+    position: absolute;
+    content: url('../img/Polygon 1.png');
     width: 30px;
     height: 20px;
     margin-left: 72px;
