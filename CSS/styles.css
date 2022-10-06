@@ -1,46 +1,51 @@
-/* h1 {
-    display: none;
-    text-shadow: 5px 5px 10px red;
-    opacity: 0.5;
-} */
-
-/* .photo {
-    width: 500px;
-    height: 400px;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    border: 5px solid red;
-    object-fit: contain;
-    object-fit: cover;
-} */
-
 .container {
-    width: 500px;
-    height: 500px;
-    border: 1px solid blue;
+    width: 1680px;
+    margin: 0 auto;
 }
 
-.block {
-    width: 400px;
-    height: 400px;
-    background-color: red;
-    /* margin-top: 50%;
-    margin-left: 50%; */
-    transform: translate(-50%, -50%);
-    transform: rotate(45deg);
-    transform: scale(-1, 1);
-    transform: scale(-1);
-    transform: skew(45deg);
+.main_btn {
+    background-color: black;
+    color: #FFFFFF;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.0375em;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 50px;
+    line-height: inherit;
+    line-height: 150%;
 }
 
+.main_btn:hover {
+    background-color: bisque;
+}
 
+.main {
+    background: url(/img/leopard.jpg) no-repeat center center / cover;
+    padding: 90px 0 320px 0;
+}
 
+.main__offer {
+    margin-left: 155px;
+    line-height: 150%;
+}
 
+.main__offer h1 {
+    font-weight: 600;
+    font-size: 99px;
+    /* line-height: 150%; */
+}
 
+.main__offer p {
+    font-size: 24px;
+    line-height: 150%;
+}
 
+.main__offer .main__btn {
+    margin-top: 45px;
+    /* line-height: 150%; */
+}
 
 
 
