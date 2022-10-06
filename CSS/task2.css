@@ -187,11 +187,16 @@
 
 .action__block__section__three__image::before {
     position: absolute;
-    /* content: url('../img/Polygon 1.png'); */
-    content: url('../img/Polygon 1.png');
+    content: "";
+    /* content: url('../img/Polygon 1.png');
     width: 30px;
     height: 20px;
-    margin-left: 72px;
+    margin-left: 72px; */
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 30px solid red;
 }
 
 .action__block__section__three__image {
