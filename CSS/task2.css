@@ -2,19 +2,45 @@
     box-sizing: border-box;
 }
 
+/* --------------WHAT OUR CUSTOMERS ARE SAYING------------------------------------------*/
+
+.axit__container {
+    background-color: black;
+    display: flex;
+}
+
+.menu__axit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    gap: 30px;
+    padding-right: 0px;
+}
+
+.title__axit {
+    padding-top: 22.46px;
+    padding-bottom: 21.85px;
+    padding-left: 115.28px;
+}
+
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
 
 .section:nth-child(1) {
+    /* background-color: #000000; */
+}
+
+.section:nth-child(2) {
     padding-bottom: 58px;
     background-color: #FFFFFF;
 }
 
-.section:nth-child(2) {
+.section:nth-child(3) {
     padding-bottom: 50px;
     background-color: #F5F5F5;
 }
 
-.section:nth-child(3) {
+.section:nth-child(4) {
     padding-bottom: 64px;
     background-color: #FFFFFF;
 }
@@ -22,6 +48,7 @@
 .container {
     max-width: 1170px;
     margin: 0px auto;
+    background-color: red;
 }
 
 .title__block {
@@ -54,6 +81,7 @@
 }
 
 .action__block {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap: 0px 30px;
@@ -165,7 +193,7 @@
     content: ". " counter(number);
 }
 
-/* --------------WHAT OUR CUSTOMERS ARE SAYING--------------------------------------------------- */
+/* --------------WHAT OUR CUSTOMERS ARE SAYING----------------------------------------------- */
 
 .action__block__section__three {
     position: relative;
@@ -196,19 +224,13 @@
 	border-top: 28px solid #E2E2E2;
 }
 
-.action__block__section__three__image::before {
-    /* position: absolute;
+/* .action__block__section__three__image::before {
+    position: absolute;
     content: url('../img/Polygon 1.png');
     width: 30px;
     height: 20px;
-    margin-left: 72px; */
-    /* content: ""; */
-    /* width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 30px solid red; */
-}
+    margin-left: 72px;
+} */
 
 .action__block__section__three__image {
     display: flex;
