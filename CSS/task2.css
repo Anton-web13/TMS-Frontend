@@ -4,24 +4,85 @@
 
 /* --------------WHAT OUR CUSTOMERS ARE SAYING------------------------------------------*/
 
-.axit__container {
+.container__axit {
     background-color: black;
     display: flex;
 }
 
-.menu__axit {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color: #FFFFFF;
-    gap: 30px;
-    padding-right: 0px;
-}
-
-.title__axit {
+.container__axit:nth-child(1) {
     padding-top: 22.46px;
     padding-bottom: 21.85px;
     padding-left: 115.28px;
+}
+
+.menu__axit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 80px;
+    margin-right: 180px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu__axit a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.front__image {
+    background: url('/img/image.png') no-repeat center center / cover;
+}
+
+.front__image .logo {
+    padding-top: 231px;
+    padding-left: 170px;
+    padding-bottom: 72.88px;
+}
+
+.front__image h1 {
+    color: #FFFFFF;
+    padding-left: 170px;
+    padding-bottom: 55.12px;
+    line-height: 56.35px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.front__image .title__block__line {
+    margin-left: 170px;
+    width: 170px;
+    height: 1px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.front__image h5 {
+    color: #FFFFFF;
+    padding-left: 170px;
+    padding-top: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+}
+
+.button {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 170px;
+    margin-top: 42px;
+    margin-bottom: 185px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid #FFFFFF;
+    /* background-color: none; */
+    opacity: 0.5;
 }
 
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
