@@ -436,8 +436,8 @@
     background: url('/img/Mask\ \(1\).png') no-repeat center center / cover;
     display: flex;
     flex-direction: column;
-    position: relative;
     color: #FFFFFF;
+    position: relative;
 }
 
 .container__10000 p:nth-child(2) {
@@ -463,6 +463,122 @@
     color: #FFFFFF;
     text-align: center;
     line-height: 40px;
+}
+
+.container__10000 img:nth-child(6) {
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 500px;
+    margin-left: 161.17px;
+}
+
+.oval {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: 500px;
+}
+
+.oval img:nth-child(1) {
+    position: absolute;
+    width: 137.87px;
+    height: 137.87px;
+    margin-top: 100px;
+    display: flex;
+    margin-left: 304px;
+}
+
+/* .oval img:hover:nth-child(1) + .comment {
+    display: block;
+}
+
+.oval img:hover:nth-child(2) + .comment {
+    display: block;
+} */
+
+.oval img:nth-child(2) {
+    position: absolute;
+    width: 68.52px;
+    height: 68.52px;
+    margin-top: 120px;
+    margin-left: 490.23px;
+}
+
+.oval img:nth-child(3) {
+    position: absolute;
+    width: 68.52px;
+    height: 68.52px;
+    margin-top: 125px;
+    margin-left: 689.09px;
+}
+
+.oval img:nth-child(4) {
+    position: absolute;
+    width: 68.52px;
+    height: 68.52px;
+    margin-top: 240px;
+    margin-left: 216.09px;
+}
+
+.oval img:nth-child(5) {
+    position: absolute;
+    width: 45.12px;
+    height: 45.12px;
+    margin-top: 250px;
+    margin-left: 456.81px;
+}
+
+.oval img:nth-child(6) {
+    position: absolute;
+    width: 58.49px;
+    height: 58.49px;
+    margin-top: 210px;
+    margin-left: 563.76px;
+}
+
+/* .oval img:nth-child(7) {
+    position: absolute;
+    width: 84.39px;
+    height: 84.39px;
+    margin-top: 240px;
+    margin-left: 658.18px;
+} */
+
+.oval img:nth-child(8) {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 1283.17px;
+}
+
+.container__10000 img:nth-child(9) {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 161.17px;
+}
+
+.comment {
+    position: absolute;
+    /* display: none; */
+    width: 410px;
+    height: 117px;
+    margin-top: 220px;
+    margin-left: 800px;
+    background-color: #C4C4C4;
+    border-radius: 15px;
+}
+
+.wrapper__oval__one img:nth-child(1) {
+    position: absolute;
+    width: 84.39px;
+    height: 84.39px;
+    margin-top: 240px;
+    margin-left: 658.18px;
+}
+
+.wrapper__oval__one:hover:nth-child(7) .comment {
+    display: block;
 }
 
 
