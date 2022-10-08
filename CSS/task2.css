@@ -41,7 +41,6 @@
 .front__image__left__50 {
     width: 50%;
     justify-content: flex-start;
-    /* background-color: #86878B; */
 }
 
 .front__image__right__50 {
@@ -50,7 +49,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
 }
 
 .front__image .logo {
@@ -161,7 +159,6 @@
 .container {
     max-width: 1170px;
     margin: 0px auto;
-    background-color: red;
 }
 
 .title__block {
@@ -185,7 +182,7 @@
 }
 
 .title__block p {
-    font-pxfamily: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-align: center;
