@@ -30,18 +30,18 @@
     color: #FFFFFF;
 }
 
-.front__image {
+.image__block {
     display: flex;
     background: url('/img/image.png') no-repeat center center / cover;
     box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
 }
 
-.front__image__left__50 {
+.window__left__50 {
     width: 50%;
     justify-content: flex-start;
 }
 
-.front__image__right__50 {
+.window__right__50 {
     width: 50%;
     justify-content: flex-end;
     display: flex;
@@ -49,11 +49,11 @@
     align-items: center;
 }
 
-.front__image .logo {
+.image__block .logo {
     padding: 231px 0 72.88px 170px;
 }
 
-.front__image h1 {
+.image__block h1 {
     color: #FFFFFF;
     padding: 0 0 55.12px 170px;
     line-height: 56.35px;
@@ -62,14 +62,14 @@
     font-size: 48px;
 }
 
-.front__image .title__block__line {
+.image__block .title__block__line {
     margin-left: 170px;
     width: 170px;
     height: 1px;
     border-bottom: 1px solid #FFFFFF;
 }
 
-.front__image h5 {
+.image__block h5 {
     color: #FFFFFF;
     padding: 42px 0 0 170px;
     font-family: 'Raleway', sans-serif;
@@ -121,7 +121,7 @@
     line-height: 21.13px;
 }
 
-.footer__axit .front__image__right__50 {
+.footer__axit .window__right__50 {
     gap: 60px;
 }
 
@@ -454,14 +454,14 @@
     margin: 500px 0 0 161.17px;
 }
 
-.oval {
+.container__10000__oval {
     display: flex;
     position: relative;
     width: auto;
     height: 500px;
 }
 
-.oval img:nth-child(1) {
+.container__10000__oval img:nth-child(1) {
     position: absolute;
     width: 137.87px;
     height: 137.87px;
@@ -469,68 +469,68 @@
     margin: 100px 0 0 304px;
 }
 
-.oval img:nth-child(2) {
+.container__10000__oval img:nth-child(2) {
     position: absolute;
     width: 68.52px;
     height: 68.52px;
     margin: 120px 0 0 490.23px;
 }
 
-.oval img:nth-child(3) {
+.container__10000__oval img:nth-child(3) {
     position: absolute;
     width: 68.52px;
     height: 68.52px;
     margin: 125px 0 0 689.09px;
 }
 
-.oval img:nth-child(4) {
+.container__10000__oval img:nth-child(4) {
     position: absolute;
     width: 68.52px;
     height: 68.52px;
     margin: 240px 0 0 216.09px;
 }
 
-.oval img:nth-child(5) {
+.container__10000__oval img:nth-child(5) {
     position: absolute;
     width: 45.12px;
     height: 45.12px;
     margin: 250px 0 0 456.81px;
 }
 
-.oval img:nth-child(6) {
+.container__10000__oval img:nth-child(6) {
     position: absolute;
     width: 58.49px;
     height: 58.49px;
     margin: 210px 0 0 563.76px;
 }
 
-.oval img:nth-child(7) {
+.container__10000__oval img:nth-child(7) {
     position: absolute;
     margin: 350px 0 0 1283.17px;
 }
 
-.oval img:nth-child(8) {
+.container__10000__oval img:nth-child(8) {
     position: absolute;
     width: 58.49px;
     height: 58.49px;
     margin: 210px 0 0 563.76px;
 }
 
-.oval img:nth-child(9) {
+.container__10000__oval img:nth-child(9) {
     position: absolute;
     width: 58.49px;
     height: 58.49px;
     margin: 210px 0 0 963.76px;
 }
 
-.oval img:nth-child(10) {
+.container__10000__oval img:nth-child(10) {
     position: absolute;
     width: 78.49px;
     height: 78.49px;
     margin: 250px 0 0 1113.76px;
 }
 
-.comment {
+.wrapper__oval__comment {
     position: relative;
     display: none;
     width: 410px;
@@ -541,7 +541,7 @@
     z-index: 1;
 }
 
-.comment::before {
+.wrapper__oval__comment::before {
     position: absolute;
     content: url('../img/Polygon 1.png');
     transform: rotate(180deg);
@@ -549,7 +549,7 @@
     margin: 45px 0 0 -25px;
 }
 
-.comment h2 {
+.wrapper__oval__comment h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -557,7 +557,7 @@
     color: #333333;
 }
 
-.comment p:nth-child(3) {
+.wrapper__oval__comment p:nth-child(3) {
     display: flex;
     justify-content: flex-start;
     font-family: 'Poppins', sans-serif;
@@ -567,7 +567,7 @@
     color: #333333;
 }
 
-.comment p:nth-child(4) {
+.wrapper__oval__comment p:nth-child(4) {
     display: flex;
     justify-content: flex-start;
     font-family: 'Poppins', sans-serif;
@@ -581,20 +581,20 @@
     width: 410px;
     height: 20px;
 }
-.wrapper__oval__one .coment__stars img:nth-child(1) {
+.wrapper__oval .coment__stars img:nth-child(1) {
     width: auto;
     height: auto;
     margin: 5.81px 0 0 26.3px;
 }
 
-.wrapper__oval__one img:nth-child(1) {
+.wrapper__oval img:nth-child(1) {
     position: absolute;
     width: 84.39px;
     height: 84.39px;
     margin: 240px 0 0 658.18px;
 }
 
-.wrapper__oval__one:hover:nth-child(6) .comment {
+.wrapper__oval:hover:nth-child(6) .wrapper__oval__comment {
     display: block;
 }
 
