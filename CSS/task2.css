@@ -430,4 +430,42 @@
 }
 
 
+/* -----------------------------10,000 ------------------------------------------*/
+
+.container__10000 {
+    background: url('/img/Mask\ \(1\).png') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.container__10000 p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 212px;
+    margin-bottom: 73px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 42px;
+}
+
+.container__10000 p:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+
 
