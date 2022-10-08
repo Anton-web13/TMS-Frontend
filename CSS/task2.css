@@ -10,9 +10,7 @@
 }
 
 .container__axit:nth-child(1) {
-    padding-top: 22.46px;
-    padding-bottom: 21.85px;
-    padding-left: 115.28px;
+    padding: 22.46px 0 21.85px 115.28px;
 }
 
 .menu__axit {
@@ -52,15 +50,12 @@
 }
 
 .front__image .logo {
-    padding-top: 231px;
-    padding-left: 170px;
-    padding-bottom: 72.88px;
+    padding: 231px 0 72.88px 170px;
 }
 
 .front__image h1 {
     color: #FFFFFF;
-    padding-left: 170px;
-    padding-bottom: 55.12px;
+    padding: 0 0 55.12px 170px;
     line-height: 56.35px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -76,8 +71,7 @@
 
 .front__image h5 {
     color: #FFFFFF;
-    padding-left: 170px;
-    padding-top: 42px;
+    padding: 42px 0 0 170px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -86,13 +80,8 @@
 
 .button {
     color: #FFFFFF;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-left: 170px;
-    margin-top: 42px;
-    margin-bottom: 185px;
+    padding: 25px 100px 25px 100px;
+    margin: 42px 0 185px 170px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -120,9 +109,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    padding-left: 170px;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding: 20px 0 25px 170px;
 }
 
 .footer__axit p {
@@ -130,8 +117,7 @@
     font-weight: 400;
     font-size: 18px;
     color: #86878B;
-    padding-left: 170px;
-    padding-bottom: 18px;
+    padding: 0 0 18px 170px;
     line-height: 21.13px;
 }
 
@@ -369,8 +355,7 @@
     font-size: 18px;
 }
 
-/* -----------------------------Axit------------------------------------------*/
-
+/* -----------------------------STYLISH AXURE DESIGN-------------------------------------*/
 
 .container__stulish {
     background: url('/img/image\ \(1\).png') no-repeat center center / cover ;
@@ -385,8 +370,7 @@
     display: flex;
     justify-content: center;
     color: #FFFFFF;
-    padding-top: 120px;
-    padding-bottom: 110px;
+    padding: 120px 0 110px 0;
 }
 
 .container__stulish p {
@@ -413,8 +397,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 41.65px;
-    padding-bottom: 33.44px;
+    padding: 41.65px 0 33.44px 0;
     gap: 60px;
 }
 
@@ -446,8 +429,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 28px;
-    margin-top: 212px;
-    margin-bottom: 73px;
+    margin: 212px 0 73px 0;
     color: #FFFFFF;
     text-align: center;
     line-height: 42px;
@@ -459,7 +441,6 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    /* margin-bottom: 50px; */
     color: #FFFFFF;
     text-align: center;
     line-height: 40px;
@@ -470,8 +451,7 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    margin-top: 500px;
-    margin-left: 161.17px;
+    margin: 500px 0 0 161.17px;
 }
 
 .oval {
@@ -485,88 +465,76 @@
     position: absolute;
     width: 137.87px;
     height: 137.87px;
-    margin-top: 100px;
     display: flex;
-    margin-left: 304px;
+    margin: 100px 0 0 304px;
 }
 
 .oval img:nth-child(2) {
     position: absolute;
     width: 68.52px;
     height: 68.52px;
-    margin-top: 120px;
-    margin-left: 490.23px;
+    margin: 120px 0 0 490.23px;
 }
 
 .oval img:nth-child(3) {
     position: absolute;
     width: 68.52px;
     height: 68.52px;
-    margin-top: 125px;
-    margin-left: 689.09px;
+    margin: 125px 0 0 689.09px;
 }
 
 .oval img:nth-child(4) {
     position: absolute;
     width: 68.52px;
     height: 68.52px;
-    margin-top: 240px;
-    margin-left: 216.09px;
+    margin: 240px 0 0 216.09px;
 }
 
 .oval img:nth-child(5) {
     position: absolute;
     width: 45.12px;
     height: 45.12px;
-    margin-top: 250px;
-    margin-left: 456.81px;
+    margin: 250px 0 0 456.81px;
 }
 
 .oval img:nth-child(6) {
     position: absolute;
     width: 58.49px;
     height: 58.49px;
-    margin-top: 210px;
-    margin-left: 563.76px;
+    margin: 210px 0 0 563.76px;
 }
 
 .oval img:nth-child(7) {
     position: absolute;
-    margin-top: 350px;
-    margin-left: 1283.17px;
+    margin: 350px 0 0 1283.17px;
 }
 
 .oval img:nth-child(8) {
     position: absolute;
     width: 58.49px;
     height: 58.49px;
-    margin-top: 210px;
-    margin-left: 563.76px;
+    margin: 210px 0 0 563.76px;
 }
 
 .oval img:nth-child(9) {
     position: absolute;
     width: 58.49px;
     height: 58.49px;
-    margin-top: 210px;
-    margin-left: 963.76px;
+    margin: 210px 0 0 963.76px;
 }
 
 .oval img:nth-child(10) {
     position: absolute;
     width: 78.49px;
     height: 78.49px;
-    margin-top: 250px;
-    margin-left: 1113.76px;
+    margin: 250px 0 0 1113.76px;
 }
 
 .comment {
     position: relative;
-    display: block;
     display: none;
     width: 410px;
-    margin-top: 225px;
-    margin-left: 770px;
+    margin: 225px 0 0 770px;
     background-color: #C4C4C4;
     opacity: 0.9;
     border-radius: 15px;
@@ -577,17 +545,15 @@
     position: absolute;
     content: url('../img/Polygon 1.png');
     transform: rotate(180deg);
-    margin-top: 45px;
-    margin-left: -25px;
     transform: rotate(90deg);
+    margin: 45px 0 0 -25px;
 }
 
 .comment h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    padding-top: 17.7px;
-    padding-left: 26.3px;
+    padding: 17.7px 0 0 26.3px;
     color: #333333;
 }
 
@@ -607,11 +573,9 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 12px;
-    padding-left: 26.3px;
-    padding-bottom: 17.74px;
+    padding: 0 0 17.74px 26.3px;
     color: #333333;
 }
-
 
 .coment__stars {
     width: 410px;
@@ -620,18 +584,15 @@
 .wrapper__oval__one .coment__stars img:nth-child(1) {
     width: auto;
     height: auto;
-    margin-top: 5.81px;
-    margin-left: 26.3px;
+    margin: 5.81px 0 0 26.3px;
 }
 
 .wrapper__oval__one img:nth-child(1) {
     position: absolute;
     width: 84.39px;
     height: 84.39px;
-    margin-top: 240px;
-    margin-left: 658.18px;
+    margin: 240px 0 0 658.18px;
 }
-
 
 .wrapper__oval__one:hover:nth-child(6) .comment {
     display: block;
