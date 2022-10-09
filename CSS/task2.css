@@ -4,11 +4,6 @@
 
 /* -----------------------------Axit------------------------------------------*/
 
-.container__axit {
-    background-color: black;
-    display: flex;
-}
-
 .container__axit:nth-child(1) {
     padding: 22.46px 0 21.85px 115.28px;
 }
@@ -30,12 +25,6 @@
     color: #FFFFFF;
 }
 
-.image__block {
-    display: flex;
-    background: url('/img/image.png') no-repeat center center / cover;
-    box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
-}
-
 .container__left__60 {
     width: 60%;
     justify-content: flex-start;
@@ -46,10 +35,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.image__block .logo {
-    padding: 231px 0 72.88px 170px;
 }
 
 .image__block h1 {
