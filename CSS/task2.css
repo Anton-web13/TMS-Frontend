@@ -61,22 +61,6 @@
     font-size: 48px;
 }
 
-/* .image__block .title__block__line {
-    margin-left: 170px;
-    width: 170px;
-    height: 1px;
-    border-bottom: 1px solid #FFFFFF;
-} */
-
-/* .image__block h5 {
-    color: #FFFFFF;
-    padding: 42px 0 0 170px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21.13px;
-} */
-
 .button {
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
@@ -97,35 +81,8 @@
     border-radius: 10px;
 }
 
-/* .footer__axit {
-    display: flex;
-    background-color: #F8EFEF;
-} */
-
-/* .footer__axit h4 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    padding: 20px 0 25px 170px;
-}
-
-.footer__axit p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #86878B;
-    padding: 0 0 18px 170px;
-    line-height: 21.13px;
-} */
-
-/* .footer__axit .container__right__40 {
-    gap: 60px;
-} */
-
 .container__media {
     display: flex;
-    /* background-color: #F8EFEF; */
-    /* justify-content: space-around; */
 }
 
 .container__left__40 {
@@ -290,13 +247,11 @@
 .container {
     max-width: 1170px;
     margin: 0px auto;
-    /* background-color: blue; */
 }
 
 .title__block {
     padding-top: 50px;
     max-width: 1170px;
-    /* background-color: red; */
 }
 
 .title__block h2 {
@@ -503,38 +458,6 @@
 }
 
 /* -----------------------------STYLISH AXURE DESIGN-------------------------------------*/
-
-/* .container__stulish {
-    background: url('/img/image\ \(1\).png') no-repeat center center / cover ;
-    box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
-    height: 500px;
-} */
-
-/* .container__stulish h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
-    padding: 120px 0 110px 0;
-} */
-
-/* .container__stulish p {
-    display: flex;
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #FFFFFF;
-} */
-
-/* .container__stulish .button {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 73px;
-} */
 
 .footer {
     background-color: #000000;
