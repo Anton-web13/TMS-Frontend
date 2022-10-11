@@ -1,54 +1,208 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #424242;
+}
+
+a {
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
 .container {
-    width: 1680px;
+    width: 1620px;
     margin: 0 auto;
 }
 
-.main_btn {
-    background-color: black;
-    color: #FFFFFF;
-    display: inline-block;
-    justify-content: center;
+.select {
+    color: aliceblue;
+    position: relative;
+}
+.select::after {
+    content: url();
+    position: absolute;
+    right: 22px;
+}
+
+.breadcrumbs {
+    display: flex;
     align-items: center;
-    letter-spacing: 0.0375em;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 15px 50px;
-    line-height: inherit;
-    line-height: 150%;
 }
 
-.main_btn:hover {
-    background-color: bisque;
+.breadcrumbs a:last-child {
+    cursor: default;
+    pointer-events: none;
 }
 
-.main {
-    background: url(/img/leopard.jpg) no-repeat center center / cover;
-    padding: 90px 0 320px 0;
+.breadcrumbs a:not(:last-child)::after {
+    content: url(.../img);
+    margin: 0 8px;
 }
 
-.main__offer {
-    margin-left: 155px;
-    line-height: 150%;
+.breadcrumbs a:not(:last-child):hover {
+    color: red;
 }
 
-.main__offer h1 {
+.order {
+    margin-top: 50px;
+}
+
+.order__form {
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: 64px;
+}
+.order__form .left {
+    max-width: 692px;
+    /* background-color: red; */
+}
+
+.order__form .right {
+    max-width: 800px;
+    /* background-color: blue; */
+}
+
+.order__form legend {
+    font-size: 28px;
     font-weight: 600;
-    font-size: 99px;
-    /* line-height: 150%; */
 }
 
-.main__offer p {
-    font-size: 24px;
-    line-height: 150%;
+.order__form input[type="text"], 
+.order__form input[type="tel"],
+.order__form input[type="E-mail"],
+.order__form .textarea,
+.order__form select {
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0 24px;
 }
 
-.main__offer .main__btn {
-    margin-top: 45px;
-    /* line-height: 150%; */
+.order__form input::placeholder {
+    color: gold;
 }
 
+.order__form .textarea {
+    padding: 17px 24px;
+    overflow: hidden;
+}
 
+.order__form input::placeholder,
+.order__form .textarea::placeholder {
+    color: #e77a7a;
+}
 
+.order__form input.order__form__city, .order__form select {
+    width: 520px;
+}
+
+.order__form__address input:first-child {
+    width: 254px;
+}
+
+.order__form textarea {
+    overflow: hidden;
+    width: 100%;
+}
+
+.order__form fieldset:nth-of-type(1) {
+    margin-bottom: 64px;
+}
+
+.order__form__client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order__form__client input {
+    width: 220px;
+}
+
+.order__form__client p,
+.order__form label[for="email"] {
+    font-size: 12px;
+    margin-top: -16px;
+    line-height: 125%;
+}
+
+.order__form input[type="email"] {
+    margin-top: 27px;
+    width: 456px;
+}
+
+.order__form fieldset:nth-of-type(1) {
+    margin-bottom: 65px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 7px;
+    margin-right: 15px;
+}
+
+.checkbox label img {
+    opacity: 0;
+}
+
+.checkbox #check_news:checked ~ label img {
+    opacity: 1;
+}
+
+.checkbox #check_news {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.radio_btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 47px;
+}
+
+.radio_btn input[type=radio] {
+    width: 0;
+    height: 0;
+}
+
+.radio_btn input[type=radio]::after {
+    content: url();
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    position: absolute;
+    top: 0;
+    left: -31px;
+    padding-top: 1px;
+}
+
+.radio_btn input[type=radio]:checked::after {
+    background-color: brown;
+    background-position: center;
+    background-size: 19px 19px;
+}
+
+.order__form .radio_btn:first-child {
+    margin-bottom: 8px;
+}
 
 
 
