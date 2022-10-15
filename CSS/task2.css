@@ -164,21 +164,21 @@
     position: relative;
 }
 
-.tabs__one input {
+.tabs__all input {
     width: 0;
     height: 0;
 }
 
 /* -------------------tabs__one---------------------------------------------- */
 
-.tabs__one {
+.tabs__all {
     width: 100%;
     margin-top: 99px;
     position: absolute;
     display: flex;
 }
 
-.tabs__one label {
+.tabs__all label {
     border-radius: 7px 7px 0 0;
     border-top: 1px solid #C6CBCD;
     border-left: 1px solid #C6CBCD;
@@ -186,7 +186,7 @@
     padding: 13px 80px 13px 80px;
 }
 
-.tabs__one label:active {
+.tabs__all label:active {
     background-color: #fff;
 }
 
@@ -205,14 +205,14 @@
     opacity: 0;
 }
 
-.tabs__one .tabs__block__items{
+.tabs__all .tabs__block__items{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     width: 60%;
 }
 
-.tabs__one .img__checkbox{
+.tabs__all .img__checkbox{
     flex-grow: 1;
     width: 470px;
     height: 500px;
@@ -229,14 +229,14 @@
     background: url(/img/schluss.jpg) no-repeat center center / cover;
 }
 
-.tabs__one .tabs__block__items h3 {
+.tabs__all .tabs__block__items h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
     margin: 47.5px 30px 0 100px;
 }
 
-.tabs__one .tabs__block__items p {
+.tabs__all .tabs__block__items p {
     margin: 70px 30px 0 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -244,7 +244,7 @@
     line-height: 21.13px;
 }
 
-.tabs__one .tabs__block__items button {
+.tabs__all .tabs__block__items button {
     margin: 47px 330px 54px 100px;
     padding: 20px 75px 20px 75px;
     color: #FFFFFF;
@@ -252,16 +252,16 @@
     border: 0;
 }
 
-.tabs__one #checkbox__one:checked ~ label + div {
+.tabs__all #checkbox__one:checked ~ label + div {
     opacity: 1;
 }
 
-.tabs__one #checkbox__two:checked ~ label + div + div {
+.tabs__all #checkbox__two:checked ~ label + div + div {
     opacity: 1;
     background-color: #fff;
 }
 
-.tabs__one #checkbox__three:checked ~ label + div + div + div {
+.tabs__all #checkbox__three:checked ~ label + div + div + div {
     opacity: 1;
     background-color: #fff;
 }
