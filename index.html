@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="CSS/styles.css" class="href">
     <!-- <link rel="stylesheet" href="CSS/normalize.css" class="href"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@700&family=Poppins:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="CSS/reset.css" class="href"> -->
+    <link rel="stylesheet" href="CSS/reset.css" class="href">
 
     <style>
 
@@ -18,173 +18,27 @@
 </head>
 <body>
 
-    <form>
-        <fieldset>
-            <legend>Titel 1</legend>
-            <input type="text" name="login" placeholder="sdrgser">
-            <input type="password" name="password">
-        </fieldset>
-        <fieldset>
-            <legend>Titel 2</legend>
-            <textarea cols="30" rows="10">sertgsergsdergserg</textarea>
-        </fieldset>
-        <fieldset>
-            <legend>Titel 3</legend>
-            <label for="name">Der Name ist da</label>
-            <input type="text" id="name">
-        </fieldset>
-        <fieldset>
-            <legend>Titel 4</legend>
-            <label>
-                Der Name ist da
-                <input type="text" id="email" required>
+    <!-- <form class="order__form"> -->
+        <label class="checkbox">
+            <input type="checkbox" id="checkbox__new">
+            <label for="checkbox__new">
+                <img src="img/Vector.png" alt="">
             </label>
-        </fieldset>
-
-
-
-        <fieldset>
-            <legend>Famielenstand</legend>
-            <label>
-                <input type="checkbox">
-                Wählen alle Checkboxs
-            </label>
-            <label>
-                <input type="checkbox">
-                Ledig
-            </label>
-            <label>
-                <input type="checkbox">
-                Verheiratet
-            </label>
-            <label>
-                <input type="checkbox">
-                Geschieden
-            </label>
-            <label>
-                <input type="checkbox">
-                Widwer
-            </label>
-        </fieldset>
-
-        <!-- <fieldset>
-            <legend>Famielenstand</legend>
-            <label>
-                <input type="radio" name="status">
-                Ledig
-            </label>
-            <label>
-                <input type="radio" name="status">
-                Verheiratet
-            </label>
-            <label>
-                <input type="radio" name="status">
-                Geschieden
-            </label>
-            <label>
-                <input type="radio" name="status">
-                Widwer
-            </label>
-        </fieldset> -->
-
-        <fieldset>
-            <legend>Titel 6</legend>
-            <select>
-                <option value="" disabled>Wählen Sie das Land</option>
-                <optgroup label="Länder">
-                    <option value="">Belarus</option>
-                    <option value="">Russland</option>
-                    <option value="">Deutschland</option>
-                    <option value="">Türkei</option>
-                    <option value="">Belgien</option>
-                </optgroup>
-                <optgroup label="Städte">
-                    <option value="">Minsk</option>
-                    <option value="">Moskau</option>
-                    <option value="" selected>Berlin</option>
-                    <option value="">Stambul</option>
-                    <option value="">Brüssel</option>
-                </optgroup>
-            </select>
-        </fieldset>
-
-        <fieldset>
-            <legend>Titel 7</legend>
-
-        </fieldset>
-        <fieldset>
-            <legend>Titel 8</legend>
-
-        </fieldset>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-    </form>
-
-
-    <!-- <section class="order">
-        <div class="container">
-            <div class="breadcrumbs">
-                <a href="#">Главная</a>
-                <a href="#">Корзина</a>
-                <a href="#">Оформление заказа</a>
+            <div>
+                <p class="checkbox__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At doloremque ipsa saepe ipsam odit veniam non impedit delectus ex explicabo recusandae, itaque provident sint temporibus, magnam quisquam! Beatae, dolores esse!</p>
+                <!-- <img src="img/landscape.jpg" alt=""> -->
             </div>
-            <form class="order__form">
-                <div class="left">
-                    <fieldset>
-                        <legend>Способ получения</legend>
-                        <input type="text" placeholder="Город" class="order__form__city">
-                        <select>
-                            <option value="1">Почта России</option>
-                            <option value="2">СДЭК</option>
-                            <div class="order__form__address">
-                                <input type="text" placeholder="Улица">
-                                <input type="text" placeholder="Дом">
-                                <input type="text" placeholder="Квартира">
-                                <input type="text" placeholder="Индекс">
-                            </div>
-                            <textarea placeholder="Добавить комментарий"></textarea>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Данные получателя</legend>
-                        <input type="text" placeholder="Город">
-                        <select>
-                            <option value="1">Почта России</option>
-                            <option value="2">СДЭК</option>
-                            <div class="order__form__client">
-                                <input type="text" placeholder="Фамилия">
-                                <input type="text" placeholder="Имя">
-                                <input type="text" placeholder="Отчество">
-                                <input type="text" placeholder="Номер телефона">
-                                <p>По этому номеру звоните и все.</p>
-                            </div>
-                            <input type="text" placeholder="E-mail">
-                            <p>На эту почту Вам придет все вот это.</p>
-                            <label class="checkbox">
-                                <input type="checkbox" id="check_news">
-                                <label for="check_news">
-                                    <img src="" alt="">
-                                </label>
-                                Подписаться на все это дома и все.
-                            </label>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Способ оплаты</legend>
-                        <label class="radio_btn">
-                            <input type="radio" name="pay">
-                            Подписаться на рассылку
-                        </label>
-                    </fieldset>
-                </div>
-                <div class="right">
-                    <fieldset>
-                        <legend>Промокод</legend>
-                    </fieldset>
-                </div>
-            </form>
-        </div>
-    </section> -->
+        </label>
 
+
+        <!-- <label class="checkbox__two">
+            <input type="checkbox" id="checkbox__new__two">
+            <label for="checkbox__new__two">
+                <img src="img/Vector.png" alt="">
+            </label>
+            <p class="checkbox__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At doloremque ipsa saepe ipsam odit veniam non impedit delectus ex explicabo recusandae, itaque provident sint temporibus, magnam quisquam! Beatae, dolores esse!</p>
+        </label> -->
+    <!-- </form> -->
+   
 </body>
 </html>
