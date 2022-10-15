@@ -157,18 +157,21 @@
 /* -------------------tabs---------------------------------------------- */
 
 .tabs {
-    height: 600px;
+    height: 581px;
     background-color: rgb(168, 162, 162);
 }
 
 .tabs .container {
-    height: 639px;
+    position: relative;
+    height: 581px;
     background-color: blue;
 }
 
 .tabs__one {
-    position: relative;
+    margin: 0;
     display: flex;
+    position: absolute;
+    margin-top: 99px;
 }
 
 input {
@@ -179,7 +182,6 @@ input {
 /* -------------------tab__one---------------------------------------------- */
 
 .checkbox__one {
-    padding-top: 99px;
     display: flex;
     align-items: center;
 }
@@ -194,18 +196,45 @@ input {
     background-color: #fff;
 }
 
-.checkbox__one div{
+.checkbox__one .tabs__one__checkbox{
+    width: 100%;
+    display: flex;
     position: absolute;
     justify-content: space-between;
     display: none;
 }
 
-.checkbox__one div h3{
+.tabs__one__wrapper {
+    margin-top: 22px;
+    position: absolute;
+    width: 670px;
+    background-color: #fff;
+}
+
+.tabs__one__wrapper h3{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
-    margin-top: 138px;
-    margin-left: 100px;
+    margin: 47.5px 0 0 100px;
+}
+
+.tabs__one__wrapper p {
+    margin: 70px 0 0 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+}
+
+.tabs__one__wrapper button {
+    margin: 27px 0 54px 100px;
+    padding: 20px 75px 20px 75px;
+}
+
+.tabs__one__img {
+    width: 470px;
+    height: 500px;
+    background-color: gold;
 }
 
 .checkbox__one #checkbox__new__one:checked ~ label + div {
@@ -215,7 +244,6 @@ input {
 /* -------------------tab__two---------------------------------------------- */
 
 .checkbox__two {
-    padding-top: 99px;
     display: flex;
     align-items: center;
 }
@@ -230,7 +258,7 @@ input {
     background-color: #fff;
 }
 
-.checkbox__two div{
+.checkbox__two .tabs__one__checkbox{
     position: absolute;
     justify-content: space-between;
     display: none;
@@ -251,7 +279,6 @@ input {
 /* -------------------tab__three---------------------------------------------- */
 
 .checkbox__three {
-    padding-top: 99px;
     display: flex;
     align-items: center;
 }
@@ -266,7 +293,7 @@ input {
     background-color: #fff;
 }
 
-.checkbox__three div{
+.checkbox__three .tabs__one__checkbox{
     position: absolute;
     justify-content: space-between;
     display: none;
