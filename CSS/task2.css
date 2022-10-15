@@ -95,7 +95,7 @@
     border-bottom: 1px solid #BDBDBD;
 }
 
-.form .input::placeholder {
+.input::placeholder {
     font-size: 14px;
     color: #BDBDBD;
 }
