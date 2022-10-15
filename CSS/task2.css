@@ -164,7 +164,7 @@
     position: relative;
 }
 
-input {
+.tabs__one input {
     width: 0;
     height: 0;
 }
