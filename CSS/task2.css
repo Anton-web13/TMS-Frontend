@@ -157,13 +157,12 @@
 /* -------------------tabs---------------------------------------------- */
 
 .tabs {
-    height: 581px;
+    height: 645px;
     background-color: rgb(168, 162, 162);
 }
 
 .tabs .container {
-    height: 581px;
-    background-color: blue;
+    position: relative;
 }
 
 input {
@@ -171,94 +170,99 @@ input {
     height: 0;
 }
 
-/* -------------------tab__one---------------------------------------------- */
+/* -------------------tabs__one---------------------------------------------- */
 
-.tab__one {
-    padding-top: 99px;
-    position: relative;
+.tabs__one {
+    width: 100%;
+    margin-top: 99px;
+    position: absolute;
     display: flex;
-    background-color: rgb(153, 108, 108);
+    /* background-color: rgb(153, 108, 108); */
 }
 
-.tab__one label {
+.tabs__one label {
     border: 1px solid black;
     padding: 13px 80px 13px 80px;
-    background-color: red;
+    /* background-color: red; */
 }
 
-.tab__one label:active {
+.tabs__one label:active {
     background-color: #fff;
 }
 
-.block__block {
+.tabs__block {
     display: flex;
     width: 100%;
     margin-top: 44px;
     position: absolute;
+    border-top: 0;
+    border-left: 1px solid #C6CBCD;
+    border-right: 1px solid #C6CBCD;
+    border-bottom: 1px solid #C6CBCD;
 }
 
 .block__none {
     opacity: 0;
 }
 
-.tab__one .items__checkbox{
+.tabs__one .tabs__block__items{
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     width: 60%;
-    background-color: gold;
+    /* background-color: gold; */
 }
 
-.tab__one .img__checkbox{
+.tabs__one .img__checkbox{
     flex-grow: 1;
-    width: 40%;
-    background-color: gold;
+    width: 470px;
+    height: 500px;
+    /* background-color: gold; */
+    display: flex;
+    background: url(/img/paris.jpg) no-repeat center center / cover;
 }
 
-/* .tabs__one__wrapper {
-    margin-top: 22px;
-    position: absolute;
-    width: 670px;
-    background-color: #fff;
-} */
+.img__checkbox__three {
+    flex-grow: 1;
+    width: 470px;
+    height: 500px;
+    background-color: gold;
+    display: flex;
+    background: url(/img/schluss.jpg) no-repeat center center / cover;
+}
 
-/* .tabs__one__wrapper h3{
+.tabs__one .tabs__block__items h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
-    margin: 47.5px 0 0 100px;
-} */
+    margin: 47.5px 30px 0 100px;
+}
 
-/* .tabs__one__wrapper p {
-    margin: 70px 0 0 100px;
+.tabs__one .tabs__block__items p {
+    margin: 70px 30px 0 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21.13px;
-} */
+}
 
-/* .tabs__one__wrapper button {
-    margin: 27px 0 54px 100px;
+.tabs__one .tabs__block__items button {
+    margin: 47px 330px 54px 100px;
     padding: 20px 75px 20px 75px;
-} */
+    color: #FFFFFF;
+    background-color: #EC7979;
+    border: 0;
+}
 
-/* .tabs__one__img {
-    width: 470px;
-    height: 500px;
-    background-color: gold;
-} */
-
-/* .tab__one #wtwe4t1234:checked ~ label + div {
-    opacity: 0;
-} */
-
-.tab__one #checkbox__one:checked ~ label + div{
+.tabs__one #checkbox__one:checked ~ label + div{
     opacity: 1;
 }
 
-.tab__one #checkbox__two:checked ~ label + div + div{
+.tabs__one #checkbox__two:checked ~ label + div + div{
     opacity: 1;
 }
 
-.tab__one #checkbox__three:checked ~ label + div + div + div{
+.tabs__one #checkbox__three:checked ~ label + div + div + div{
     opacity: 1;
 }
 
