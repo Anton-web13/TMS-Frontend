@@ -154,6 +154,135 @@
     gap: 45px;
 }
 
+/* -------------------tabs---------------------------------------------- */
+
+.tabs {
+    height: 600px;
+    background-color: rgb(168, 162, 162);
+}
+
+.tabs .container {
+    height: 639px;
+    background-color: blue;
+}
+
+.tabs__one {
+    position: relative;
+    display: flex;
+}
+
+input {
+    width: 0;
+    height: 0;
+}
+
+/* -------------------tab__one---------------------------------------------- */
+
+.checkbox__one {
+    padding-top: 99px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__one label {
+    border: 1px solid black;
+    padding: 13px 80px 13px 80px;
+    background-color: red;
+}
+
+.checkbox__one label:active {
+    background-color: #fff;
+}
+
+.checkbox__one div{
+    position: absolute;
+    justify-content: space-between;
+    display: none;
+}
+
+.checkbox__one div h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 138px;
+    margin-left: 100px;
+}
+
+.checkbox__one #checkbox__new__one:checked ~ label + div {
+    display: block;
+}
+
+/* -------------------tab__two---------------------------------------------- */
+
+.checkbox__two {
+    padding-top: 99px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__two label {
+    border: 1px solid black;
+    padding: 13px 80px 13px 80px;
+    background-color: red;
+}
+
+.checkbox__two label:active {
+    background-color: #fff;
+}
+
+.checkbox__two div{
+    position: absolute;
+    justify-content: space-between;
+    display: none;
+}
+
+.checkbox__two div h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 138px;
+    margin-left: -104.9px;
+}
+
+.checkbox__two #checkbox__new__two:checked ~ label + div {
+    display: block;
+}
+
+/* -------------------tab__three---------------------------------------------- */
+
+.checkbox__three {
+    padding-top: 99px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__three label {
+    border: 1px solid black;
+    padding: 13px 80px 13px 80px;
+    background-color: red;
+}
+
+.checkbox__three label:active {
+    background-color: #fff;
+}
+
+.checkbox__three div{
+    position: absolute;
+    justify-content: space-between;
+    display: none;
+}
+
+.checkbox__three div h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 138px;
+    margin-left: -310px;
+}
+
+.checkbox__three #checkbox__new__three:checked ~ label + div {
+    display: block;
+}
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
 
 .header .container {
