@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="CSS/styles.css" class="href">
     <!-- <link rel="stylesheet" href="CSS/normalize.css" class="href"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@700&family=Poppins:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/reset.css" class="href">
+    <!-- <link rel="stylesheet" href="CSS/reset.css" class="href"> -->
 
     <style>
 
@@ -18,7 +18,110 @@
 </head>
 <body>
 
-    <section class="order">
+    <form>
+        <fieldset>
+            <legend>Titel 1</legend>
+            <input type="text" name="login" placeholder="sdrgser">
+            <input type="password" name="password">
+        </fieldset>
+        <fieldset>
+            <legend>Titel 2</legend>
+            <textarea cols="30" rows="10">sertgsergsdergserg</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Titel 3</legend>
+            <label for="name">Der Name ist da</label>
+            <input type="text" id="name">
+        </fieldset>
+        <fieldset>
+            <legend>Titel 4</legend>
+            <label>
+                Der Name ist da
+                <input type="text" id="email" required>
+            </label>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Famielenstand</legend>
+            <label>
+                <input type="checkbox">
+                Wählen alle Checkboxs
+            </label>
+            <label>
+                <input type="checkbox">
+                Ledig
+            </label>
+            <label>
+                <input type="checkbox">
+                Verheiratet
+            </label>
+            <label>
+                <input type="checkbox">
+                Geschieden
+            </label>
+            <label>
+                <input type="checkbox">
+                Widwer
+            </label>
+        </fieldset>
+
+        <!-- <fieldset>
+            <legend>Famielenstand</legend>
+            <label>
+                <input type="radio" name="status">
+                Ledig
+            </label>
+            <label>
+                <input type="radio" name="status">
+                Verheiratet
+            </label>
+            <label>
+                <input type="radio" name="status">
+                Geschieden
+            </label>
+            <label>
+                <input type="radio" name="status">
+                Widwer
+            </label>
+        </fieldset> -->
+
+        <fieldset>
+            <legend>Titel 6</legend>
+            <select>
+                <option value="" disabled>Wählen Sie das Land</option>
+                <optgroup label="Länder">
+                    <option value="">Belarus</option>
+                    <option value="">Russland</option>
+                    <option value="">Deutschland</option>
+                    <option value="">Türkei</option>
+                    <option value="">Belgien</option>
+                </optgroup>
+                <optgroup label="Städte">
+                    <option value="">Minsk</option>
+                    <option value="">Moskau</option>
+                    <option value="" selected>Berlin</option>
+                    <option value="">Stambul</option>
+                    <option value="">Brüssel</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Titel 7</legend>
+
+        </fieldset>
+        <fieldset>
+            <legend>Titel 8</legend>
+
+        </fieldset>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+
+
+    <!-- <section class="order">
         <div class="container">
             <div class="breadcrumbs">
                 <a href="#">Главная</a>
@@ -81,7 +184,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    </section> -->
 
 </body>
 </html>
