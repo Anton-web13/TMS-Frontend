@@ -183,7 +183,7 @@
     border-top: 1px solid #C6CBCD;
     border-left: 1px solid #C6CBCD;
     border-right: 1px solid #C6CBCD;
-    padding: 13px 80px 13px 80px;
+    padding: 13px 94.5px 13px 94.2px;
 }
 
 .tabs__all label:active {
@@ -241,23 +241,18 @@
 }
 
 .tabs__all .tabs__block__items button {
-    margin: 47px 330px 54px 100px;
+    margin: 27px 330px 54px 100px;
     padding: 20px 75px 20px 75px;
     color: #FFFFFF;
     background-color: #EC7979;
     border: 0;
 }
 
-.tabs__all input:checked+label {
-    border-top: 1px solid #C6CBCD;
-    border-left: 1px solid #C6CBCD;
-    border-right: 1px solid #C6CBCD;
-}
-
 .tabs__all input:not(:checked)+label {
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    border-bottom: 1px solid #C6CBCD;
 }
 
 .tabs__all input:not(:checked)~label + div,
