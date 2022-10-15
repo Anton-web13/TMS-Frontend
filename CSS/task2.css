@@ -213,7 +213,7 @@
     width: 470px;
     height: 500px;
     display: flex;
-    background: url(/img/paris.jpg) no-repeat center center / cover;
+    background: url(../img/paris.jpg) no-repeat center center / cover;
 }
 
 .img__checkbox__three {
@@ -222,7 +222,7 @@
     height: 500px;
     background-color: gold;
     display: flex;
-    background: url(/img/schluss.jpg) no-repeat center center / cover;
+    background: url(../img/schluss.jpg) no-repeat center center / cover;
 }
 
 .tabs__all .tabs__block__items h3 {
@@ -287,7 +287,7 @@
 
 .section:nth-child(2) {
     display: flex;
-    background: url('/img/image.png') no-repeat center center / cover;
+    background: url(../img/image.png) no-repeat center center / cover;
     box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
 }
 
@@ -354,7 +354,7 @@
 }
 
 .section:nth-child(8) {
-    background: url('/img/image\ \(1\).png') no-repeat center center / cover ;
+    background: url(../img/image\ \(1\).png) no-repeat center center / cover ;
     box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
     justify-content: center;
     align-items: center;
@@ -711,7 +711,7 @@
 /* -----------------------------10,000 ------------------------------------------*/
 
 .container__10000 {
-    background: url('/img/Mask\ \(1\).png') no-repeat center center / cover;
+    background: url(../img/Mask\ \(1\).png) no-repeat center center / cover;
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
