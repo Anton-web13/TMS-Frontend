@@ -201,10 +201,6 @@
     border-bottom: 1px solid #C6CBCD;
 }
 
-.block__none {
-    opacity: 0;
-}
-
 .tabs__all .tabs__block__items{
     display: flex;
     flex-direction: column;
@@ -252,20 +248,6 @@
     border: 0;
 }
 
-.tabs__all #checkbox__one:checked ~ label + div {
-    opacity: 1;
-}
-
-.tabs__all #checkbox__two:checked ~ label + div + div {
-    opacity: 1;
-    background-color: #fff;
-}
-
-.tabs__all #checkbox__three:checked ~ label + div + div + div {
-    opacity: 1;
-    background-color: #fff;
-}
-
 .tabs__all input:checked+label {
     border-top: 1px solid #C6CBCD;
     border-left: 1px solid #C6CBCD;
@@ -276,6 +258,27 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
+}
+
+.tabs__all input:not(:checked)~label + div,
+.tabs__all input:not(:checked)~label + div + div,
+.tabs__all input:not(:checked)~label + div + div + div {
+    opacity: 0;
+}
+
+.tabs__all #checkbox__one:checked ~ label + div {
+    opacity: 1;
+    background-color: #fff;
+}
+
+.tabs__all #checkbox__two:checked ~ label + div + div {
+    opacity: 1;
+    background-color: #fff;
+}
+
+.tabs__all #checkbox__three:checked ~ label + div + div + div {
+    opacity: 1;
+    background-color: #fff;
 }
 
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
