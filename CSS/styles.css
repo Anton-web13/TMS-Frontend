@@ -1,91 +1,209 @@
-label {
+/* .container {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 0 15px;
+}
+
+.container {
     display: flex;
-    align-items: center;
-}
-
-input {
-    width: 0;
-    height: 0;
-}
-
-.checkbox label{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: white;
-    margin-right: 10px;
-}
-
-.order__form {
-    position: relative;
-    display: flex;
-}
-
-.checkbox {
-    position: absolute;
-    margin: 0;
-}
-
-
-/* .checkbox, .checkbox__two {
-    position: relative;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 } */
 
-.checkbox__text {
-    position: absolute;
-    margin-top: 200px;
+/* .item { */
+    /* width: 270px; */
+    /* width: 23%; */
+    /* text-align: center; */
+    /* flex-grow: 1; */
+/* } */
+
+/* .item p:first-child {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    background-color: blueviolet;
+} */
+
+
+
+/* @media screen and (max-width: 1200px) { */
+    /* .container { */
+        /* width: 720px; */
+        /* justify-content: center; */
+    /* } */
+
+    /* .item { */
+        /* width: 48%; */
+        /* min-width: 300px; */
+        /* max-width: 500px; */
+    /* } */
+    
+/* } */
+
+/* @media screen and (orientation: landscape) {
+    .container {
+        width: 23%;
+    }
+} */
+
+/* @media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+} */
+
+/* @media screen and (max-width: 798px) {
+    .container {
+        width: 540px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+} */
+
+/* @media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+} */
+
+
+/* 
+.container {
+    width: 100%;
 }
 
-.checkbox label img {
-    opacity: 0;
+.block__line {
+    height: 200px;
+    background-color: rgb(204, 91, 16);
 }
 
-.checkbox div, .checkbox__two p {
-    display: none;
-}
-
-.checkbox #checkbox__new:checked ~ label img {
-    opacity: 1;
-}
-
-.checkbox #checkbox__new:checked ~ label + div {
-    color: black;
-    display: block;
-}
-
-
-
-
-
-
-
-.checkbox__two label{
+.block__row {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: white;
-    margin-right: 10px;
+    height: 500px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-.checkbox__two label img {
-    opacity: 0;
+.item {
+    flex-grow: 1;
+    background-color: orange;
+} */
+
+
+/* @media screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .block__row {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 48%;
+    }
+} */
+
+
+/* @media screen and (max-width: 700px) {
+    .container {
+        width: 600px;
+    }
+
+    .block__row {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 100%;
+    }
+} */
+
+
+
+
+
+
+
+/* header {
+    height: 400px;
+    background-color: red;
 }
 
-.checkbox__two #checkbox__new__two:checked ~ label img {
-    opacity: 1;
+main {
+    height: 300px;
+    background-color: blue;
+    margin-bottom: 15px;
 }
 
-.checkbox__two #checkbox__new__two:checked ~ label + p {
-    color: black;
-    display: block;
-    /* margin-left: -100px; */
+section div {
+    height: 150px;
+    background-color: gray;
+    margin-bottom: 15px;
 }
 
+@media screen and (min-width: 480px) {
+    header, section div {
+        width: 50%;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header, section div {
+        width: 32%;
+    }
+} */
+
+
+.logo {
+    height: 100px;
+    background-color: rgb(160, 145, 145);
+    margin-bottom: 15px;
+}
+
+.nav {
+    height: 200px;
+    background-color: brown;
+    margin-bottom: 15px;
+}
+
+main {
+    height: 500px;
+    margin: 15px;
+    background-color: red;
+    margin-bottom: 15px;
+}
+
+section div {
+    width: 100%;
+    height: 200px;
+    background-color: brown;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        width: 100%;
+        height: 200px;
+        background-color: brown;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section div {
+        width: 50%;
+    }
+}
