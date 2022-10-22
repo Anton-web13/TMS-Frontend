@@ -4,8 +4,17 @@
         background-color: #fff;
     }
 
+    .logo .hamburger {
+        display: none;
+    }
+
     .logo .container h2 {
         margin-left: 10px;
+    }
+
+    .logo .container .logo__nav {
+        height: 60px;
+        padding: 0;
     }
 
     main .container p {
@@ -62,7 +71,14 @@
         width: 100%;
     }
 
-    .burger .burger__hamburger {
+    .logo .hamburger {
         display: block;
     }
+
+    .logo .container h2 {
+        height: 80px;
+        font-size: 80px;
+
+    }
+
 }
