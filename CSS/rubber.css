@@ -21,6 +21,22 @@
     .burger .burger__hamburger {
         display: none;
     }
+
+    .columns .container div {
+        width: 48%;
+        margin-right: 5px;
+    }
+
+    .columns .container div:nth-child(1n) {
+        margin-right: 5px;
+    }
+    .columns .container div:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .columns .container div:last-child {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -31,15 +47,19 @@
 
     aside .container p {
         width: 100%;
-        margin: 0 15px 15px 15px;
+        margin: 15px 15px 15px 15px;
     }
 
-    .columns .container div {
-        width: 100%;
+    .columns {
+        margin-top: 0px;
+    }
+
+    .columns .container div:nth-child(1n) {
         margin-right: 0;
+        width: 100%;
     }
 
-    .burger .burger__hamburger {
+    /* .burger .burger__hamburger {
         display: block;
-    }
+    } */
 }
