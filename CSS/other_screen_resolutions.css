@@ -1,7 +1,6 @@
 @media screen and (max-width: 1200px) {
     .container {
         width: 992px;
-        background-color: #fff;
     }
 
     .logo .hamburger {
@@ -50,7 +49,6 @@
 @media screen and (max-width: 992px) {
     .container {
         width: 720px;
-        background-color: rgb(146, 121, 121);
     }
 
     .logo .container .logo__nav {
@@ -78,7 +76,6 @@
     .logo .container h2 {
         height: 80px;
         font-size: 80px;
-
     }
 
 }

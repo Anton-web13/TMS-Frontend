@@ -1,11 +1,6 @@
-body {
-    background-color: rgb(128, 99, 99);
-}
-
 .container {
     display: flex;
     width: 1170px;
-    background-color: blue;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -66,11 +61,11 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-#logo__toggle {
+#logo__hamburger__toggle {
     display: none;
 }
 
-.logo__nav__menu {
+.logo__hamburger__nav {
     position: fixed;
     width: 500px;
     height: 100%;
@@ -79,13 +74,6 @@ header {
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
-}
-
-.logo__nav__wrapper {
-    position: relative;
-    overflow: hidden;
-    overflow-y: auto;
-    height: 100%;
 }
 
 nav {
@@ -122,22 +110,22 @@ nav a:hover:before {
     height: 100%;
 }
 
-#logo__toggle:checked + .hamburger .logo__top {
+#logo__hamburger__toggle:checked + .hamburger div:nth-child(1) {
     transform: rotate(-45deg);
     margin-top: 25px;
 }
 
-#logo__toggle:checked + .hamburger .logo__bottom {
-    opacity: 0;
-    transform: rotate(45deg);
-}
-
-#logo__toggle:checked + .hamburger .logo__meat {
+#logo__hamburger__toggle:checked + .hamburger div:nth-child(2) {
     transform: rotate(45deg);
     margin-top: -7px;
 }
 
-#logo__toggle:checked + .hamburger + .logo__nav__menu {
+#logo__hamburger__toggle:checked + .hamburger div:nth-child(3) {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+#logo__hamburger__toggle:checked + .hamburger + .logo__hamburger__nav {
     top: 0;
     transform: scale(1);
 }
