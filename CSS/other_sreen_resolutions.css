@@ -1,0 +1,228 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+        background-color: blue;
+    }
+
+    .header .container  {
+        background-color: red;
+    }
+
+    .header__menu {
+        margin-right: 50px;
+    }
+
+    .axit__left img {
+        content: url(../img/others/Group\ 16.png);
+    }
+
+    .axit:nth-child(2) .axit__left img {
+        padding: 231px 0 54.08px 99px;
+    }
+
+    .axit:nth-child(2) .axit__left h1 {
+        font-size: 36px;
+        line-height: 42.26px;
+        padding: 0 0 41.49px 99px;
+    }
+
+    .axit:nth-child(2) .axit__left div {
+        width: 115px;
+        margin-left: 99px;
+    }
+
+    .axit:nth-child(2) .axit__left p {
+        padding: 31px 0 0 99px;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+
+    .axit:nth-child(2) .axit__left button {
+        color: #FFFFFF;
+        padding: 16px 50px 16px 50px;
+        margin: 31.32px 0 185px 99px;
+    }
+
+    .axit__right form h4 {
+        font-size: 18px;
+        padding: 36px 52px 81px 52px;
+    }
+
+    .icons__media__left h4 {
+        font-size: 18px;
+        padding: 15px 0 15px 0;
+    }
+
+    .icons__media__left p {
+        font-size: 14px;
+        padding: 0 0 13px 0px;
+        line-height: 16.44px;
+    }
+
+    .icons__media__left {
+        width: 417px;
+    }
+
+    .icons__media__right {
+        width: 575px;
+        margin-right: 0px;
+        gap: 35px;
+    }
+
+    .tabs {
+        height: 475px;
+    }
+
+    .tabs__all {
+        margin-top: 50px;
+    }
+
+    .tabs__all .tabs__block__items h3 {
+        font-size: 24px;
+        margin: 32.5px 30px 0 84.68px;
+    }
+
+    .tabs__all .tabs__block__items p {
+        margin: 70.5px 30px 0 84.68px;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+
+    .tabs__all .tabs__block__items{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 593.79px;
+    }
+
+    .tabs__block .img__checkbox{
+        width: 398.21px;
+        height: 415px;
+        display: flex;
+        background: url(../img/Rectangle\ 111.png) no-repeat center center / cover;
+    }
+
+    .tabs__block .img__checkbox__two {
+        width: 398.21px;
+        height: 415px;
+        display: flex;
+        background: url(../img/paris.jpg) no-repeat center center / cover;
+    }
+
+    .img__checkbox__three {
+        width: 398.21px;
+        height: 415px;
+        display: flex;
+        background: url(../img/schluss.jpg) no-repeat center center / cover;
+    }
+
+    .tabs__all .tabs__block__items button {
+        margin: 38px 220px 50px 84.68px;
+    }
+
+    .description__block {
+        padding-top: 50px;
+    }
+
+    .description__block h2 {
+        font-size: 24px;
+        padding: 48px;
+    }
+
+    .description__block__line {
+        width: 142px;
+    }
+
+    .description__block p {
+        font-size: 14px;
+        margin-top: 32px;
+    }
+
+    .items__blocks .one img:nth-child(1) {
+        content: url(../img/others/Ellipse\ 6.png);
+    }
+
+    .items__blocks .two img:nth-child(1) {
+        content: url(../img/others/Group\ 18.png);
+    }
+
+    .items__blocks .three img:nth-child(1) {
+        content: url(../img/others/Group\ 19.png);
+    }
+
+    .awesome__block {
+        margin-top: 32px;
+        padding: 33.72px 0 0 0;
+    }
+
+    .awesome__block h4 {
+        font-size: 18px;
+        margin-top: 60px;
+    }
+
+    .awesome__block p {
+        font-size: 14px;
+        margin-top: 49px;
+        line-height: 16.44px;
+    }
+
+    .items__blocks {
+        gap: 0px 20px;
+    }
+    
+    .awesome:nth-child(5) {
+        padding-bottom: 60px;
+        background-color: #FFFFFF;
+    }
+    
+    .items__blocks {
+        gap: 0px 20px;
+    }
+
+    .pricing__block {
+        margin-top: 49.74px;
+    }
+
+    .height___options {
+        margin-top: 32px;
+    }
+
+    .comments__block {
+        margin-top: 32px;
+    }
+
+    .comments__block__title {
+        position: relative;
+        color: #86878B;
+        /* text-align: center; */
+        font-size: 14px;
+        /* line-height: 16.44px; */
+        /* width: 370px; */
+        padding: 38px 35px 27px 35px;
+        border-radius: 10px;
+        background-color: #E2E2E2;
+    }
+
+    .comments .items__blocks {
+        max-width: 992px;
+        position: relative;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        gap: 0px 0px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
