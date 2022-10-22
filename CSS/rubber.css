@@ -1,0 +1,37 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 992px;
+        background-color: #fff;
+    }
+
+    .logo .container h2 {
+        margin-left: 10px;
+    }
+
+    main .container p {
+        width: 100%;
+    }
+
+    aside .container p {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+        background-color: rgb(146, 121, 121);
+    }
+
+    aside .container p {
+        width: 100%;
+        margin: 0 15px 15px 15px;
+    }
+
+    .columns .container div {
+        width: 100%;
+        margin-right: 0;
+    }
+}
