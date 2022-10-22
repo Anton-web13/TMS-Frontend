@@ -79,7 +79,17 @@ aside .container p {
     margin-right: 0;
 }
 
-.burger__hamburger {
+
+
+.burger .burger__hamburger {
+    display: block;
+}
+
+
+
+
+
+/* .burger__hamburger {
     position: absolute;
     top: 5em;
     right: 5%;
@@ -98,4 +108,4 @@ aside .container p {
     background-color: #f8982b;
     margin-top: 8px;
     transition: all 0.3s ease-in-out;
-}
+} */

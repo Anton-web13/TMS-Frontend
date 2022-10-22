@@ -17,6 +17,10 @@
         margin-left: 0;
         margin-top: 0;
     }
+
+    .burger .burger__hamburger {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -33,5 +37,9 @@
     .columns .container div {
         width: 100%;
         margin-right: 0;
+    }
+
+    .burger .burger__hamburger {
+        display: block;
     }
 }
