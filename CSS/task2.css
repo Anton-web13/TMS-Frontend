@@ -14,16 +14,22 @@ header {
     margin-bottom: 15px;
 }
 
+.logo {
+    position: relative;
+    margin-top: 12px;
+}
+
 .logo .container h2 {
     color: brown;
     font-size: 34px;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     flex-grow: 1;
 }
 
-.logo .container div {
+.logo .container .logo__nav {
     display: flex;
+    padding: 10px 0 10px 0;
     justify-content: center;
     align-items: center;
     font-size: 34px;
@@ -31,6 +37,44 @@ header {
     flex-grow: 8;
     color: #fff;
     background-color: brown;
+}
+
+.logo__hamburger {
+    position: relative;
+}
+
+.logo .hamburger {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+}
+  
+.logo .hamburger div {
+    position: relative;
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #f8982b;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+#toggle:checked + .hamburger .logo__top {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+}
+
+#toggle:checked + .hamburger .logo__bottom {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .logo__meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
 }
 
 main .container p {
@@ -90,9 +134,9 @@ aside .container p {
 }
   
 
-.hamburger {
+/* .hamburger {
     position: absolute;
-    top: 5em;
+    top: 50px;
     right: 5%;
     margin-left: -2em;
     margin-top: -45px;
@@ -109,7 +153,7 @@ aside .container p {
     background-color: #f8982b;
     margin-top: 8px;
     transition: all 0.3s ease-in-out;
-}
+} */
 
 .nav {
     position: fixed;
@@ -163,21 +207,21 @@ nav a:hover:before {
     height: 100%;
 }
 
-#toggle:checked + .hamburger .top-bun {
+/* #toggle:checked + .hamburger .logo__top {
     transform: rotate(-45deg);
     margin-top: 25px;
 }
 
-#toggle:checked + .hamburger .bottom-bun {
+#toggle:checked + .hamburger .logo__bottom {
     opacity: 0;
     transform: rotate(45deg);
 }
 
-#toggle:checked + .hamburger .meat {
+#toggle:checked + .hamburger .logo__meat {
     transform: rotate(45deg);
     margin-top: -7px;
 }
-  
+   */
 
 #toggle:checked + .hamburger + .nav {
     top: 0;

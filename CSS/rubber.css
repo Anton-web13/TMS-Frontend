@@ -44,6 +44,10 @@
         background-color: rgb(146, 121, 121);
     }
 
+    .logo .container .logo__nav {
+        display: none;
+    }
+
     aside .container p {
         width: 100%;
         margin: 15px 15px 15px 15px;
