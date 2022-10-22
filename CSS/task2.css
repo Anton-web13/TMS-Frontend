@@ -5,7 +5,7 @@ body {
 .container {
     display: flex;
     width: 1170px;
-    background-color: blue;
+    /* background-color: blue; */
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -37,9 +37,9 @@ main .container p {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 775px;
     height: 300px;
     font-size: 34px;
-    width: 778px;
     color: #fff;
     background-color: brown;
 }
@@ -48,18 +48,14 @@ aside .container p {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 387px;
     height: 300px;
     font-size: 34px;
-    margin-left: calc(778px + 5px);
+    margin-left: calc(775px + 15px);
     margin-top: -300px;
     display: flex;
-    width: 387px;
     color: #fff;
     background-color: brown;
-}
-
-.columns {
-    margin-top: 10px;
 }
 
 .columns .container div {
@@ -71,7 +67,7 @@ aside .container p {
     flex-wrap: wrap;
     height: 100px;
     background-color: #fff;
-    margin: 5px 5px 0px 0;
+    margin: 15px 15px 0px 0;
     color: #fff;
     background-color: brown;
     flex-grow: 1;
@@ -84,6 +80,7 @@ aside .container p {
 .columns .container div:last-child {
     margin-right: 0;
 }
+
 
 /* ---------------------------------- */
 
