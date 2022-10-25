@@ -67,7 +67,7 @@ header {
 
 .logo__hamburger__nav {
     position: fixed;
-    width: 500px;
+    width: 250px;
     height: 100%;
     background-color: #090E6B;
     top: -100%; left: 0; right: 0; bottom: 0;

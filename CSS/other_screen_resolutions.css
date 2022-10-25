@@ -1,8 +1,7 @@
 @media screen and (max-width: 1200px) {
     .container {
         width: 992px;
-        /* margin-left: 15px;
-        margin-right: 15px; */
+        margin: 0 auto;
     }
 
     .logo .hamburger {
@@ -10,22 +9,24 @@
     }
 
     .logo .container h2 {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .logo .container .logo__nav {
         height: 60px;
         padding: 0;
+        margin-right: 15px;
     }
 
     main .container p {
         width: 100%;
+        margin: 0px 15px 0 15px;
     }
 
     aside .container p {
         width: 100%;
         margin-left: 0;
-        margin-top: 15px;
+        margin: 15px 15px 0 15px;
     }
 
     .burger .burger__hamburger {
@@ -33,30 +34,28 @@
     }
 
     .columns .container div {
-        width: 48%;
+        width: 46%;
+        margin: 15px 0px 0 15px;
     }
 
     .columns .container div:nth-child(1n) {
         margin-right: 15px;
     }
+
     .columns .container div:nth-child(2n) {
-        margin-right: 0;
+        margin-right: 15px;
+        margin-left: 0px;
     }
 
     .columns .container div:last-child {
-        margin-right: 0;
+        margin-right: 15px;
     }
 }
 
 @media screen and (max-width: 992px) {
 
-    body {
-        margin: 0;
-    }
-
     .container {
-        width: 720px;
-        padding: 0px;
+        width: 100%;
     }
 
     .logo {
@@ -68,9 +67,8 @@
     }
 
     .logo .container .logo__nav {
-        margin-top: 5px;
+        margin: 5px 0 0 0;
         padding: 110px;
-        /* width: 100%; */
     }
 
     .logo .container {
@@ -80,7 +78,6 @@
 
     .logo__hamburger {
         position: absolute;
-        margin: -365px 0px 0px 755px;
     }
 
     main .container p {
@@ -91,24 +88,24 @@
     aside .container p {
         width: 100%;
         margin-bottom: 10px;
-    }
-
-    .columns {
-        margin-top: -10px;
+        margin: 15px 0 0 0;
     }
 
     .columns .container div:nth-child(1n) {
         margin-right: 0;
+        margin: 15px 0 0 0 ;
         width: 100%;
     }
 
     .logo .hamburger {
         display: block;
+        position: fixed;
+        right: 5px;
+        top: 5px;
     }
 
     .logo .container h2 {
         height: 80px;
         font-size: 80px;
     }
-
 }
