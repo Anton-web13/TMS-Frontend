@@ -1,6 +1,8 @@
 @media screen and (max-width: 1200px) {
     .container {
         width: 992px;
+        /* margin-left: 15px;
+        margin-right: 15px; */
     }
 
     .logo .hamburger {
@@ -47,17 +49,48 @@
 }
 
 @media screen and (max-width: 992px) {
+
+    body {
+        margin: 0;
+    }
+
     .container {
         width: 720px;
+        padding: 0px;
+    }
+
+    .logo {
+        margin: 0px;
+    }
+
+    .logo .container h2 {
+        margin-top: 5px;
     }
 
     .logo .container .logo__nav {
-        display: none;
+        margin-top: 5px;
+        padding: 110px;
+        /* width: 100%; */
+    }
+
+    .logo .container {
+        position: relative;
+        display: block;
+    }
+
+    .logo__hamburger {
+        position: absolute;
+        margin: -365px 0px 0px 755px;
+    }
+
+    main .container p {
+        width: 100%;
+        margin: 15px 15px 0px 15px;
     }
 
     aside .container p {
         width: 100%;
-        margin: 15px 15px 15px 15px;
+        margin-bottom: 10px;
     }
 
     .columns {
