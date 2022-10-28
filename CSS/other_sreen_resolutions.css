@@ -21,7 +21,7 @@
     /* ----------------header----------------- */
 
     .header .container  {
-        background-color: red;
+        /* background-color: red; */
     }
 
     .header__menu {
@@ -259,7 +259,7 @@
         /* -----------------header---------------- */
 
         .header .container  {
-            background-color: blue;
+            /* background-color: blue; */
         }
     
         .header__menu {
