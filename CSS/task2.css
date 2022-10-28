@@ -150,127 +150,6 @@
     gap: 45px;
 }
 
-/* -------------------tabs---------------------------------------------- */
-
-/* .tabs {
-    height: 645px;
-} */
-
-/* .tabs .container {
-    position: relative;
-} */
-
-/* .tabs__all input {
-    width: 0;
-    height: 0;
-} */
-
-/* -------------------tabs__one---------------------------------------------- */
-
-/* .tabs__all {
-    width: 100%;
-    margin-top: 99px;
-    position: absolute;
-    display: flex;
-} */
-
-/* .tabs__all label {
-    border-radius: 7px 7px 0 0;
-    border-top: 1px solid #C6CBCD;
-    border-left: 1px solid #C6CBCD;
-    border-right: 1px solid #C6CBCD;
-    padding: 13px 94.5px 13px 94.2px;
-} */
-
-/* .tabs__all label:active {
-    background-color: #fff;
-} */
-
-/* .tabs__block {
-    display: flex;
-    width: 100%;
-    margin-top: 43px;
-    position: absolute;
-    border-top: 1px solid #C6CBCD;
-    border-left: 1px solid #C6CBCD;
-    border-right: 1px solid #C6CBCD;
-    border-bottom: 1px solid #C6CBCD;
-} */
-
-/* .tabs__all .tabs__block__items{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 60%;
-} */
-
-/* .tabs__block .img__checkbox__two{
-    flex-grow: 1;
-    width: 470px;
-    height: 500px;
-    display: flex;
-    background: url(../img/paris.jpg) no-repeat center center / cover;
-} */
-
-/* .img__checkbox__three {
-    flex-grow: 1;
-    width: 470px;
-    height: 500px;
-    background-color: gold;
-    display: flex;
-    background: url(../img/schluss.jpg) no-repeat center center / cover;
-} */
-
-/* .tabs__all .tabs__block__items h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    margin: 47.5px 30px 0 100px;
-} */
-
-/* .tabs__all .tabs__block__items p {
-    margin: 70px 30px 0 100px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21.13px;
-} */
-
-/* .tabs__all .tabs__block__items button {
-    margin: 27px 330px 54px 100px;
-    padding: 20px 75px 20px 75px;
-    color: #FFFFFF;
-    background-color: #EC7979;
-    border: 0;
-} */
-
-/* .tabs__all input:not(:checked)+label {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid #C6CBCD;
-} */
-
-/* .tabs__all input:not(:checked)~label ~ div,
-.tabs__all input:not(:checked)~label ~ div ~ div,
-.tabs__all input:not(:checked)~label ~ div ~ div ~ div {
-    opacity: 0;
-} */
-
-/* .tabs__all #checkbox__one:checked ~ label ~ div {
-    opacity: 1;
-    background-color: #fff;
-} */
-
-/* .tabs__all #checkbox__two:checked ~ label ~ div ~ div {
-    opacity: 1;
-    background-color: #fff;
-} */
-
-/* .tabs__all #checkbox__three:checked ~ label ~ div ~ div ~ div {
-    opacity: 1;
-    background-color: #fff;
-} */
 
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
 
@@ -351,19 +230,8 @@
     background-color: #FFFFFF;
 }
 
-/* .axure:nth-child(8) {
-    background: url(../img/axure/image.png) no-repeat center center / cover;
-    box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
-} */
-
-/* .axure .description__block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-} */
 /* ---------------------------------------------------- */
+
 .section__axure {
     background: url(../img/axure/image.png) no-repeat center center / cover;
     box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
