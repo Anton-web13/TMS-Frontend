@@ -287,6 +287,12 @@
     box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
 }
 
+.axit:nth-child(2) {
+    display: flex;
+    background: url(../img/image.png) no-repeat center center / cover;
+    box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
+}
+
 .axit:nth-child(2) .container {
     display: flex;
     width: 100%;
@@ -345,23 +351,27 @@
     background-color: #FFFFFF;
 }
 
-.axure:nth-child(8) {
-    background: url(../img/image\ \(1\).png) no-repeat center center / cover ;
+/* .axure:nth-child(8) {
+    background: url(../img/axure/image.png) no-repeat center center / cover;
     box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
-    justify-content: center;
-    align-items: center;
+} */
+
+/* .axure .description__block {
     display: flex;
-    margin: 0 auto;
-}
-
-.axure:nth-child(8) .container {
-    min-width: 1170px;
-    display: block;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} */
+/* ---------------------------------------------------- */
+.section__axure {
+    background: url(../img/axure/image.png) no-repeat center center / cover;
+    box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
+    color: #fff;
+    padding-bottom: 50px;
 }
 
-.axure:nth-child(8) .container h2 {
+.section__axure h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -371,30 +381,67 @@
     padding: 120px 0 75px 0;
 }
 
-.axure:nth-child(8) .container div {
-    width: 170px;
-    height: 1px;
-    border-bottom: 1px solid #FFFFFF;
-    margin: 0 auto;
-    margin-bottom: 45px;
-}
-
-.axure:nth-child(8) .container p {
+.section__axure p {
     display: flex;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
+    margin-top: 40px;
 }
 
-.axure:nth-child(8) .container button {
+.section__axure button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 73px;
+    padding: 25px 150px 25px 150px;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* .axure:nth-child(8) .container {
+    min-width: 1170px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .axure:nth-child(8) .container h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 120px 0 75px 0;
+} */
+
+/* .axure:nth-child(8) .container div {
+    width: 170px;
+    height: 1px;
+    border-bottom: 1px solid #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 45px;
+} */
+
+/* .axure:nth-child(8) .container p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+} */
+
+/* .axure:nth-child(8) .container button {
     display: flex;
     margin: 0 auto;
     margin-top: 73px;
     margin-bottom: 50px;
     padding: 25px 150px 25px 150px;
-}
+} */
 
 .container {
     max-width: 1170px;
@@ -402,7 +449,6 @@
 }
 
 .description__block {
-    /* padding-top: 50px; */
     max-width: 1170px;
 }
 
@@ -602,7 +648,7 @@
 }
 
 
-/* -----------------------------STYLISH AXURE DESIGN-------------------------------------*/
+/* -----------------------------FOOTER-----------------------------------------*/
 
 .footer {
     background-color: #000000;
@@ -632,6 +678,8 @@
     transition: all .3s ease;
 }
 
+/* -------------------reviews---------------------------------------------- */
+
 .reviews {
     padding: 50px 0 64px 0;
 }
@@ -648,6 +696,10 @@
 }
 
 .reviews__item > p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
     background-color: #E2E2E2;
     border-radius: 10px;
     padding: 37px 20px;
@@ -686,7 +738,7 @@
     font-size: 24px;
 }
 
-/* ------------------------------------------------------- */
+/* ---------------------tabs---------------------------------- */
 
 .tabs {
     padding: 99px 0 50px 0;

@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) {
     .container {
         max-width: 992px;
-        background-color: blue;
+        /* background-color: blue; */
     }
 
     .header .container  {
@@ -169,30 +169,27 @@
         margin-top: 32px;
     }
 
-    .comments__block {
-        margin-top: 32px;
+    /* ---------------------------------------- */
+
+    .reviews:nth-child(7) {
+        padding-bottom: 59px;
+        background-color: #FFFFFF;
     }
 
-    .comments__block__title {
-        position: relative;
-        color: #86878B;
-        /* text-align: center; */
+    .reviews__wrapper {
+        column-gap: 20px;
+    }
+
+    .reviews__item > p {
         font-size: 14px;
-        /* line-height: 16.44px; */
-        /* width: 370px; */
-        padding: 38px 35px 27px 35px;
-        border-radius: 10px;
-        background-color: #E2E2E2;
+        line-height: 16.44px;
+        padding: 50px 0px 50px 0px;
+        margin-bottom: 66px;
     }
 
-    .comments .items__blocks {
-        max-width: 992px;
-        position: relative;
-        display: flex;
-        flex-grow: 1;
-        justify-content: space-between;
-        gap: 0px 0px;
-    }
+
+
+
 
 
 
