@@ -378,7 +378,7 @@
     display: flex;
     justify-content: center;
     color: #FFFFFF;
-    padding: 120px 0 75px 0;
+    padding: 120px 0 50px 0;
 }
 
 .section__axure p {
@@ -394,6 +394,9 @@
 .section__axure button {
     display: flex;
     margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     margin-top: 73px;
     padding: 25px 150px 25px 150px;
 }
@@ -401,47 +404,6 @@
 
 /* ---------------------------------------------------- */
 
-/* .axure:nth-child(8) .container {
-    min-width: 1170px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .axure:nth-child(8) .container h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
-    padding: 120px 0 75px 0;
-} */
-
-/* .axure:nth-child(8) .container div {
-    width: 170px;
-    height: 1px;
-    border-bottom: 1px solid #FFFFFF;
-    margin: 0 auto;
-    margin-bottom: 45px;
-} */
-
-/* .axure:nth-child(8) .container p {
-    display: flex;
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #FFFFFF;
-} */
-
-/* .axure:nth-child(8) .container button {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 73px;
-    margin-bottom: 50px;
-    padding: 25px 150px 25px 150px;
-} */
 
 .container {
     max-width: 1170px;
@@ -736,6 +698,12 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
+}
+
+.reviews__item__author p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 /* ---------------------tabs---------------------------------- */

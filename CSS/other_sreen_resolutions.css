@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px) {
     .container {
-        max-width: 992px;
+        max-width: 990px;
         /* background-color: blue; */
     }
 
@@ -69,7 +69,7 @@
         gap: 35px;
     }
 
-    /* ----------------------------------------------------- */
+    /* ---------------------tabs-------------------------------- */
 
     .tabs {
         padding: 50px 0 50px 0;
@@ -169,7 +169,17 @@
         margin-top: 32px;
     }
 
-    /* ---------------------------------------- */
+    /* ---------pricing--------------------------------------- */
+
+    .reviews__item__author h4 {
+        font-size: 18px;
+    }
+
+    .reviews__item__author p {
+        font-size: 14px;
+    }
+
+    /* -------------reviews--------------------------- */
 
     .reviews:nth-child(7) {
         padding-bottom: 59px;
@@ -185,6 +195,35 @@
         line-height: 16.44px;
         padding: 50px 0px 50px 0px;
         margin-bottom: 66px;
+    }
+
+    /* ----------------section__axure-------------------- */
+
+    .section__axure h2 {
+        font-size: 24px;
+        padding: 100px 0 50px 0;
+    }
+
+    .section__axure p {
+        font-size: 14px;
+        line-height: 16.44px;
+        color: #FFFFFF;
+        margin: 32px 0 0 0;
+    }
+
+    .section__axure button {
+        margin-top: 32px;
+        padding: 25px 150px 25px 150px;
+    }
+
+    /* ------------------footer--------------------------- */
+
+    .footer .footer__icons a {
+        transform: scale(0.8);
+    }
+
+    .footer p {
+        font-size: 14px;
     }
 
 
