@@ -1,100 +1,142 @@
-.item {
-    padding: 30px;
-    /* background-color: rgb(105, 98, 98); */
-    background-color: #fff;
-    /* color: blanchedalmond; */
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    border: 2px solid black;
+.btn {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: aqua;
+    border: none;
+    font-size: 18px;
+    margin: 100px;
+    box-shadow: 0 3px 3px black;
+    position: relative;
+    top: 0;
 }
 
-/* .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-    grid-auto-rows: 400px;
-    grid-auto-columns: 400px;
-    justify-items: center;
-    align-items: start;
-    row-gap: 30px;
-    column-gap: ;
-} */
-
-/* .item3 { */
-    /* background-color: red; */
-    /* grid-row-start: 1; */
-    /* grid-column-start: 3; */
-    /* grid-row-end: 3; */
-
-    /* grid-row: 1 / 3; */
-    /* grid-column: 3 / 4; */
-    /* grid-column: 3; */
-
-    /* align-items: ; */
-    /* align-self: ; */
-/* } */
-
-/* body {
-    display: grid;
-    grid-template-rows: 150px 1fr;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "header header" "content sidebar";
-    grid-template: 
-        [start] "header header" 100px [row2]
-        [row2] "content side" 1fr [row-end] / 2fr 1fr
-} */
-
-/* .header {
-    grid-area: header;
+.btn:hover {
+    background-color: green;
+    top: 3px;
+    box-shadow: 0 0 3px black;
+    /* transition-property: background-color;
+    transition-duration: 1s; */
+    transition: all 1s ease;
 }
 
-.content {
-    grid-area: content;
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+    /* margin: 100px; */
+    position: relative;
+
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
 }
 
-.sidebar {
-    grid-area: sidebar;
-} */
+/* @keyframes shadow-none {
+    0% {
+        color: red;
+    }
 
-/* @media screen and (max-width: 1200px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-areas: "header" "content" "side";
+    100% {
+
     }
 } */
 
-.container {
-    display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-    gap: 10px;
-    background-color: blue;
+/* @keyframes circle {
+    0% {
+        background-color: green;
+        left: 0;
+    }
+
+    100% {
+        background-color: red;
+        left: 500px;
+    }
+} */
+
+@keyframes circle-green {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0,7);
+    }
 }
 
-.item1 {
-    grid-row: 1/3;
-    grid-column: 1;
+@keyframes circle-green-hover {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0,7);
+        transform: rotate();
+        transform: translate(0, 20px);
+        transform: scale(1.2);
+        animation: circle 1s infinite;
+    }
 }
 
-.item3 {
-    grid-row: 1;
-    grid-column: 3/5;
+.preloader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item5 {
-    grid-row: 2/4;
-    grid-column: 3;
+.preloader__dot {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
 }
 
-.item8 {
-    grid-row: 3/5;
-    grid-column: 2;
+.preloader__dot:first-child {
+    transform-origin: 100% -100%;
+        /* transform: rotate(45deg); */
+        /* animation-name: first__dot; */
+        animation: first__dot 0.5s ease infinite alternate;
 }
 
-.item11 {
-    grid-row: 4;
-    grid-column: 3/5;
+.preloader__dot:last-child {
+    transform-origin: 0 -100%;
+    /* animation-name: last__dot; */
+    animation: last__dot 0.5s ease infinite alternate;
 }
+
+@keyframes first__dot {
+    0%, 50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(50deg) translateX(-25px);
+    }
+}
+
+@keyframes last__dot {
+    0% {
+        transform: rotate(-50deg) translateX(25px);
+    }
+
+
+    50%, 100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
 
 
