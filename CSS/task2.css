@@ -152,41 +152,41 @@
 
 /* -------------------tabs---------------------------------------------- */
 
-.tabs {
+/* .tabs {
     height: 645px;
-}
+} */
 
-.tabs .container {
+/* .tabs .container {
     position: relative;
-}
+} */
 
-.tabs__all input {
+/* .tabs__all input {
     width: 0;
     height: 0;
-}
+} */
 
 /* -------------------tabs__one---------------------------------------------- */
 
-.tabs__all {
+/* .tabs__all {
     width: 100%;
     margin-top: 99px;
     position: absolute;
     display: flex;
-}
+} */
 
-.tabs__all label {
+/* .tabs__all label {
     border-radius: 7px 7px 0 0;
     border-top: 1px solid #C6CBCD;
     border-left: 1px solid #C6CBCD;
     border-right: 1px solid #C6CBCD;
     padding: 13px 94.5px 13px 94.2px;
-}
+} */
 
-.tabs__all label:active {
+/* .tabs__all label:active {
     background-color: #fff;
-}
+} */
 
-.tabs__block {
+/* .tabs__block {
     display: flex;
     width: 100%;
     margin-top: 43px;
@@ -195,82 +195,82 @@
     border-left: 1px solid #C6CBCD;
     border-right: 1px solid #C6CBCD;
     border-bottom: 1px solid #C6CBCD;
-}
+} */
 
-.tabs__all .tabs__block__items{
+/* .tabs__all .tabs__block__items{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     width: 60%;
-}
+} */
 
-.tabs__block .img__checkbox__two{
+/* .tabs__block .img__checkbox__two{
     flex-grow: 1;
     width: 470px;
     height: 500px;
     display: flex;
     background: url(../img/paris.jpg) no-repeat center center / cover;
-}
+} */
 
-.img__checkbox__three {
+/* .img__checkbox__three {
     flex-grow: 1;
     width: 470px;
     height: 500px;
     background-color: gold;
     display: flex;
     background: url(../img/schluss.jpg) no-repeat center center / cover;
-}
+} */
 
-.tabs__all .tabs__block__items h3 {
+/* .tabs__all .tabs__block__items h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
     margin: 47.5px 30px 0 100px;
-}
+} */
 
-.tabs__all .tabs__block__items p {
+/* .tabs__all .tabs__block__items p {
     margin: 70px 30px 0 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21.13px;
-}
+} */
 
-.tabs__all .tabs__block__items button {
+/* .tabs__all .tabs__block__items button {
     margin: 27px 330px 54px 100px;
     padding: 20px 75px 20px 75px;
     color: #FFFFFF;
     background-color: #EC7979;
     border: 0;
-}
+} */
 
-.tabs__all input:not(:checked)+label {
+/* .tabs__all input:not(:checked)+label {
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 1px solid #C6CBCD;
-}
+} */
 
-.tabs__all input:not(:checked)~label + div,
-.tabs__all input:not(:checked)~label + div + div,
-.tabs__all input:not(:checked)~label + div + div + div {
+/* .tabs__all input:not(:checked)~label ~ div,
+.tabs__all input:not(:checked)~label ~ div ~ div,
+.tabs__all input:not(:checked)~label ~ div ~ div ~ div {
     opacity: 0;
-}
+} */
 
-.tabs__all #checkbox__one:checked ~ label + div {
+/* .tabs__all #checkbox__one:checked ~ label ~ div {
     opacity: 1;
     background-color: #fff;
-}
+} */
 
-.tabs__all #checkbox__two:checked ~ label + div + div {
+/* .tabs__all #checkbox__two:checked ~ label ~ div ~ div {
     opacity: 1;
     background-color: #fff;
-}
+} */
 
-.tabs__all #checkbox__three:checked ~ label + div + div + div {
+/* .tabs__all #checkbox__three:checked ~ label ~ div ~ div ~ div {
     opacity: 1;
     background-color: #fff;
-}
+} */
 
 /* -------------------WHY THIS IS AWESOME---------------------------------------------- */
 
@@ -440,7 +440,6 @@
 .awesome__block {
     margin-top: 71px;
     padding: 39px 0 0 0;
-    background-color: green;
 }
 
 .awesome__block img {
@@ -665,7 +664,7 @@
     border-right: 15px solid transparent;
     border-top: 20px solid #E2E2E2;
     left: 70px;
-    bottom: -20px;
+    bottom: -19px;
 }
 
 .reviews__item > div {
@@ -687,6 +686,96 @@
     font-size: 24px;
 }
 
+/* ------------------------------------------------------- */
 
+.tabs {
+    padding: 99px 0 50px 0;
+}
 
+.tabs__all {
+    font-size: 0;
+    width: 100%;
+}
+
+.tabs__all > input[type="radio"] {
+    display: none;
+}
+
+.tabs__all > div {
+    display: none;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+.tabs__all > div > div {
+    width: 694px;
+}
+
+.tabs__all > div img {
+    width: 474px;
+    height: 500px;
+}
+
+#radio__btn__one:checked~#tabs__one,
+#radio__btn__two:checked~#tabs__two,
+#radio__btn__three:checked~#tabs__three {
+    display: flex;
+}
+
+.tabs__all > label {
+    display: inline-block;
+    background-color: #f5f5f5;
+    padding: 2px 8px;
+    font-size: 16px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    border-radius: 7px 7px 0 0;
+    border-top: 1px solid #C6CBCD;
+    border-left: 1px solid #C6CBCD;
+    border-right: 1px solid #C6CBCD;
+    padding: 13px 94.5px 13px 94.2px;
+}
+
+.tabs__all > label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tabs__all > input[type="radio"]:checked + label {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #C6CBCD;
+}
+
+.tabs__all > input[type="radio"]:not(:checked) + label {
+    background-color: #fff;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #C6CBCD;
+}
+
+.tabs__block h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 47.5px 30px 0 100px;
+}
+
+.tabs__block p {
+    margin: 70px 30px 0 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+}
+
+.tabs__block button {
+    margin: 27px 330px 54px 100px;
+    padding: 20px 90px 20px 90px;
+    color: #FFFFFF;
+    background-color: #EC7979;
+    border: 0;
+}
 
