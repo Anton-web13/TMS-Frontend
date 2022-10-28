@@ -402,7 +402,7 @@
 }
 
 .description__block {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     max-width: 1170px;
 }
 
@@ -546,69 +546,6 @@
 
 /* --------------WHAT OUR CUSTOMERS ARE SAYING----------------------------------------------- */
 
-.comments__block {
-    position: relative;
-    margin-top: 83px;
-}
-
-.comments__block__title {
-    position: relative;
-    color: #86878B;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21.13px;
-    max-width: 370px;
-    padding: 38px 0px 37px 0px;
-    border-radius: 10px;
-    background-color: #E2E2E2;
-}
-
-.comments__block__title::after {
-    position: absolute;
-    content: "";
-    top: 180px;
-    left: 72px;
-	border-left: 18px solid transparent;
-	border-right: 18px solid transparent;
-	border-top: 28px solid #E2E2E2;
-}
-
-.comments__block__image {
-    display: flex;
-    max-width: 370px;
-    height: 136px;
-}
-
-.comments__block__image div {
-    margin-top: 46px;
-    max-width: 30px;
-    height: 20px;
-}
-
-.comments__block__image h4 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    justify-content: space-between;
-    width: 269px;
-    height: 54px;
-    margin-left: 70px;
-    margin-top: 46px;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-}
-
-.comments__block__image h5 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    width: 270px;
-    height: 21px;
-    margin-left: -270px;
-    margin-top: 115px;
-    font-size: 18px;
-}
 
 /* -----------------------------contact us-------------------------------------*/
 
@@ -695,3 +632,61 @@
     transform: scale(1.2);
     transition: all .3s ease;
 }
+
+.reviews {
+    padding: 50px 0 64px 0;
+}
+
+.reviews__wrapper {
+    display: flex;
+    margin-top: 83px;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.reviews__item {
+    flex-grow: 1;
+}
+
+.reviews__item > p {
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    padding: 37px 20px;
+    text-align: center;
+    color: #86878B;
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.reviews__item > p::after {
+    content: '';
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    left: 70px;
+    bottom: -20px;
+}
+
+.reviews__item > div {
+    display: flex;
+}
+
+.reviews__item__author img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.reviews__item__author h4 {
+    margin-bottom: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+
+
