@@ -237,14 +237,14 @@
 
 /* ---------------------------------------------------- */
 
-.section__axure {
+.axure {
     background: url(../img/axure/image.png) no-repeat center center / cover;
     box-shadow:0 0 0 728px rgba(0, 0, 0, 0.43) inset;
     color: #fff;
     padding-bottom: 50px;
 }
 
-.section__axure h2 {
+.axure h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -254,7 +254,7 @@
     padding: 120px 0 50px 0;
 }
 
-.section__axure p {
+.axure p {
     display: flex;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
@@ -264,7 +264,7 @@
     margin-top: 40px;
 }
 
-.section__axure button {
+.axure button {
     display: flex;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
@@ -699,7 +699,7 @@
     width: 3.5em;
     height: 7px;
     border-radius: 3px;
-    background-color: white;
+    background-color: red;
     transition: all 0.3s ease-in-out;
 }
 
