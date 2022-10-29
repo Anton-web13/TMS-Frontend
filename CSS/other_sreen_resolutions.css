@@ -550,6 +550,21 @@
             width: 100%;
         }
 
+        .axit__right form {
+            width: 100%;
+        }
+
+        .axit__right form h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .axit__right form h4 {
+            padding: 33px 22px 38px 22px;
+        }
+
         .axit__left img {
             display: none;
         }
