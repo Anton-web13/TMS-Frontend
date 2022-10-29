@@ -935,20 +935,23 @@
         }
 
         .axure h2 {
+            text-align: center;
             font-size: 24px;
             padding: 50px 0 50px 0;
+            margin: 0 16px 0 16px;
         }
     
         .axure p {
             display: flex;
             text-align: center;
             font-size: 14px;
-            margin: 16px 0 66px 0;
+            margin: 16px 16px 66px 16px;
         }
     
         .axure button {
+            /* width: 100%; */
             margin-top: 32px;
-            padding: 15px 100px 15px 100px;
+            padding: 15px 90px 15px 90px;
         }
 
         /* ------------------contact------------- */
@@ -980,17 +983,16 @@
         .contact .contact__form {
             max-width: 767px;
             display: block;
-            /* background-color: red; */
         }
 
         .contact__form button {
-            /* display: flex; */
-            /* justify-content: center; */
-            /* align-items: center; */
-            /* text-align: center; */
-            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            /* width: 274px; */
             padding: 10px 10px 10px 10px;
-            /* margin: 50px 0 50px 0px; */
         }
 
         .contact__wrapper > div {
