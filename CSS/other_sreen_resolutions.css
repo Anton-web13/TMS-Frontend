@@ -638,7 +638,7 @@
         /* ---------------tabs--------------------- */
 
         .tabs {
-            padding: 45px 0 50px 0;
+            padding: 45px 0 0px 0;
         }
 
         .tabs__all > label {
@@ -697,6 +697,51 @@
             margin: 0 auto;
             margin-top: 29px;
             margin-bottom: 30px;
+        }
+
+        /* --------------awesome--------------- */
+
+        .awesome .description__block {
+            padding-top: 20px;
+        }
+
+        .awesome .description__block p {
+            font-size: 13px;
+            padding: 0 15px 0 15px;
+            line-height: 15.26px;
+            margin-bottom: 70px;
+        }
+
+        .awesome .description__block .description__block__line {
+            width: 134px;
+        }
+
+        .awesome:nth-child(5) {
+            padding-bottom: 60px;
+        }
+
+        .items__blocks {
+            display: block;
+        }
+
+        .awesome__block img {
+            transform: scale(0.9);
+        }
+
+        .awesome__block {
+            margin-top: 32px;
+            padding: 0.72px 50px 0 50px;
+        }
+
+        .awesome__block h4 {
+            font-size: 18px;
+            margin-top: 40px;
+        }
+    
+        .awesome__block p {
+            font-size: 14px;
+            margin-top: 40px;
+            line-height: 16.44px;
         }
         
         
