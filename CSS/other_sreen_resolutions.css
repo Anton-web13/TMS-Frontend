@@ -744,7 +744,60 @@
             line-height: 16.44px;
         }
         
+        /* --------------pricing-------------- */
+
+        .pricing:nth-child(6) {
+            padding-bottom: 26px;
+        }
+
+        .items__blocks {
+            display: block;
+        }
         
+        .pricing__block {
+            margin-top: 79px;
+            width: 100%;
+            counter-reset: number 0;
+        }
+
+        .items__blocks {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .pricing .description__block h2 {
+            font-size: 24px;
+        }
+
+        .pricing .description__block .description__block__line {
+            width: 134px;
+        }
+
+        .pricing .description__block p {
+            font-size: 14px;
+            padding: 0 15px 0 15px;
+            line-height: 16.2644px;
+            margin-bottom: 24px;
+        }
+
+        .pricing__block {
+            margin-top: 24px;
+        }
+
+        .pricing__block__basic {
+            font-size: 18px;
+        }
+
+        .pricing__block__10 {
+            font-size: 24px;
+        }
+
+        .shadow__block {
+            box-shadow: 0 0px 0px rgba(0,0,0,0.25), 0 0px 0px rgba(0,0,0,0.22);
+        }
+
+
+
     }
 
 
