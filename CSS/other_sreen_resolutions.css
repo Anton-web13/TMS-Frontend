@@ -1,7 +1,10 @@
 @media screen and (max-width: 1200px) {
     .container {
         max-width: 990px;
-        /* background-color: blue; */
+    }
+
+    .reviews__tabs {
+        display: none;
     }
 
     .description__block h2 {
@@ -646,13 +649,6 @@
             font-size: 12px;
         }
 
-        /* .tabs__all {
-            display: block;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        } */
-
         .tabs__all > div > div {
             width: 100%;
             height: 100%;
@@ -776,7 +772,7 @@
         .pricing .description__block p {
             font-size: 14px;
             padding: 0 15px 0 15px;
-            line-height: 16.2644px;
+            line-height: 16.44px;
             margin-bottom: 24px;
         }
 
@@ -794,6 +790,136 @@
 
         .shadow__block {
             box-shadow: 0 0px 0px rgba(0,0,0,0.25), 0 0px 0px rgba(0,0,0,0.22);
+        }
+
+        /* -----------reviews------------------- */
+
+        .reviews .description__block h2 {
+            font-size: 24px;
+        }
+
+        .reviews .description__block .description__block__line {
+            width: 134px;
+        }
+
+        .reviews .description__block p {
+            font-size: 14px;
+            padding: 0 15px 0 15px;
+            line-height: 16.44px;
+            margin-bottom: 24px;
+        }
+
+        .reviews:nth-child(7) {
+            padding: 0 0 31.51px 0;
+        }
+
+        .reviews__tabs > input[type="radio"] {
+            display: none;
+        }
+
+        .reviews__wrapper {
+            display: none;
+        }
+
+        .reviews__tabs {
+            display: block;
+            justify-content: flex-start;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .reviews {
+            margin: 0 15px 0 15px;
+            border: 0;
+        }
+
+        .reviews__tabs {
+            width: 100%;
+        }
+
+        .reviews__tabs > div {
+            display: none;
+            font-size: 16px;
+        }
+
+        #radio__tabs__one:checked ~ #reviews__tabs__one,
+        #radio__tabs__two:checked ~ #reviews__tabs__two,
+        #radio__tabs__three:checked ~ #reviews__tabs__three {
+            display: block;
+        }
+
+        .reviews__tabs > label {
+            display: inline-block;
+            justify-content: center;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .reviews__tabs > #radio__tabs__one:checked ~ label[for=radio__tabs__one],
+        .reviews__tabs > #radio__tabs__two:checked ~ label[for=radio__tabs__two],
+        .reviews__tabs > #radio__tabs__three:checked ~ label[for=radio__tabs__three] {
+            background-color: #86878B;
+        }
+
+        .reviews__tabs label[for=radio__tabs__one],
+        .reviews__tabs label[for=radio__tabs__two],
+        .reviews__tabs label[for=radio__tabs__three] {
+            border: 1px solid #86878B;
+        }
+
+        #reviews__tabs__one > p,
+        #reviews__tabs__two > p,
+        #reviews__tabs__three > p  {
+            position: relative;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16.44px;
+            background-color: #E2E2E2;
+            border-radius: 10px;
+            padding: 50px 0px 50px 0;
+            text-align: center;
+            color: #86878B;
+            margin-bottom: 62px;
+        }
+
+        #reviews__tabs__one > p::after,
+        #reviews__tabs__two > p::after,
+        #reviews__tabs__three > p::after   {
+            position: absolute;
+            content: '';
+            position: absolute;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 20px solid #E2E2E2;
+            left: 70px;
+            bottom: -19px;
+        }
+
+        .reviews__tabs .reviews__item__author img {
+            display: flex;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+        
+        .reviews__tabs .reviews__item__author h4 {
+            display: flex;
+            margin: -40px 0 20px 95px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .reviews__tabs .reviews__item__author p {
+            display: flex;
+            margin: 0 0 32px 95px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
         }
 
 
