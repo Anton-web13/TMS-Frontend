@@ -539,7 +539,7 @@
         /* -----------------------axit-------------- */
 
         .axit {
-            padding-bottom: 50px;
+            padding: 0 16px 50px 16px;
         }
 
         .axit__left {
@@ -586,10 +586,7 @@
 
         .axit:nth-child(2) .axit__left button {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 15px 100px 15px 100px;
+            padding: 15px 90px 15px 90px;
             margin: 0 auto;
             margin-bottom: 56px;
         }
