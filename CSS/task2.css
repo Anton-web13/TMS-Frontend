@@ -672,7 +672,7 @@
 
 /* ---------------berger_menu---------- */
 
-.logo__hamburger {
+.header__hamburger {
     position: relative;
 }
 
@@ -696,11 +696,11 @@
     transition: all 0.3s ease-in-out;
 }
 
-#logo__hamburger__toggle {
+#header__hamburger__toggle {
     display: none;
 }
 
-.logo__hamburger__nav {
+.header__hamburger__nav {
     position: fixed;
     width: 250px;
     height: 100%;
@@ -746,22 +746,22 @@ nav a:hover:before {
     height: 100%;
 }
 
-#logo__hamburger__toggle:checked + .hamburger div:nth-child(1) {
+#header__hamburger__toggle:checked + .hamburger div:nth-child(1) {
     transform: rotate(-45deg);
     margin-top: 25px;
 }
 
-#logo__hamburger__toggle:checked + .hamburger div:nth-child(2) {
+#header__hamburger__toggle:checked + .hamburger div:nth-child(2) {
     transform: rotate(45deg);
     margin-top: -7px;
 }
 
-#logo__hamburger__toggle:checked + .hamburger div:nth-child(3) {
+#header__hamburger__toggle:checked + .hamburger div:nth-child(3) {
     opacity: 0;
     transform: rotate(45deg);
 }
 
-#logo__hamburger__toggle:checked + .hamburger + .logo__hamburger__nav {
+#header__hamburger__toggle:checked + .hamburger + .header__hamburger__nav {
     top: 0;
     transform: scale(1);
 }
