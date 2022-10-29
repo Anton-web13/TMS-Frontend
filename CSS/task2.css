@@ -4,6 +4,10 @@
 
 /* -----------------------------Axit------------------------------------------*/
 
+.axit__block {
+    display: flex;
+}
+
 .header__menu {
     width: 100%;
     display: flex;
@@ -34,7 +38,7 @@
 .axit__right {
     width: 468px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -157,6 +161,7 @@
     display: flex;
     max-width: 100%;
     background-color: #000000;
+    /* background-color: #fff; */
     padding: 22.46px 0 21.85px 115.28px;
 }
 
@@ -666,4 +671,114 @@
     background-color: #EC7979;
     border: 0;
 }
+
+
+/* ---------------berger_menu---------- */
+
+.logo__hamburger {
+    position: relative;
+}
+
+.header .hamburger {
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 40px;
+    width: 80px;
+    height: 70px;
+    padding: 10px 0px 0px 6px;
+}
+  
+.header .hamburger div {
+    position: relative;
+    margin: 9px 0px 0px 6px;
+    width: 3.5em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#logo__hamburger__toggle {
+    display: none;
+}
+
+.logo__hamburger__nav {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #090E6B;
+    top: -100%; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+
+nav {
+    text-align: left;
+    margin-left: 25%;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #6ecddd;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+}
+
+nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a:hover:before {
+    height: 100%;
+}
+
+#logo__hamburger__toggle:checked + .hamburger div:nth-child(1) {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+}
+
+#logo__hamburger__toggle:checked + .hamburger div:nth-child(2) {
+    transform: rotate(45deg);
+    margin-top: -7px;
+}
+
+#logo__hamburger__toggle:checked + .hamburger div:nth-child(3) {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+#logo__hamburger__toggle:checked + .hamburger + .logo__hamburger__nav {
+    top: 0;
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
