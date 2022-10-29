@@ -951,6 +951,54 @@
             padding: 15px 100px 15px 100px;
         }
 
+        /* ------------------contact------------- */
+
+        .contact {
+            margin: 0 16px 0 16px;
+        }
+
+        .contact .description__block {
+            padding-top: 0px;
+        }
+
+        .contact .description__block h2 {
+            font-size: 24px;
+            padding: 50px 0 50px 0;
+        }
+    
+        .contact .description__block p {
+            display: flex;
+            text-align: center;
+            font-size: 14px;
+            margin: 16px 0 64px 0;
+        }
+    
+        .contact .contact__form > div {
+            display: block;
+        }
+
+        .contact .contact__form {
+            max-width: 767px;
+            display: block;
+            /* background-color: red; */
+        }
+
+        .contact__form button {
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* text-align: center; */
+            width: 150px;
+            padding: 10px 10px 10px 10px;
+            /* margin: 50px 0 50px 0px; */
+        }
+
+        .contact__wrapper > div {
+            margin-bottom: 0px;
+        }
+
+
+
 
 
     }
