@@ -95,6 +95,7 @@
     &__line {
         width: 170px;
         height: 1px;
+        background-color: #FFFFFF;
         border: 2px solid #FFFFFF;
         margin-top: 44px;
     }
@@ -118,6 +119,7 @@
 
     .header__line {
         margin-bottom: 41px;
+        background-color: #F38281;
         border: 2px solid #F38281;
     }
 
@@ -256,6 +258,7 @@
     padding-bottom: 91px;
     .header__line {
         margin-bottom: 87.7px;
+        background-color: #F38281;
         border: 2px solid #F38281;
     }
 
@@ -300,12 +303,13 @@
 
     .header__line {
         margin-bottom: 87.7px;
+        background-color: #F38281;
         border: 2px solid #F38281;
     }
 
     .unique__tablet img:last-child {
         position: absolute;
-        right: 570px;
+        right: 375px;
         top: 545px;
         z-index: 2;
     }
@@ -314,6 +318,7 @@
 .servise {
     .header__line {
         margin-bottom: 87.7px;
+        background-color: #F38281;
         border: 2px solid #F38281;
     }
 }
