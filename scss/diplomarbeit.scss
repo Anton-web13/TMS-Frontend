@@ -114,7 +114,6 @@
 }
 
 .wedo {
-
     padding-bottom: 108px;
 
     .header__line {
@@ -202,9 +201,54 @@
         }
         
     }
-
-
-
 }
 
+.numbers {
+    background-color: #95E1D3;
+
+    .col-lg-12 div:not(:last-child) {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 234px;
+        height: 252px;
+        background-color: #95E1D3;
+        display: flex;
+        border-left: 1px solid #FFFFFF;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 75px;
+        color: #FFFFFF;
+        
+        span {
+            font-size: 64px;
+            font-weight: 700;
+        }
+    }
+
+    .col-lg-12 div:last-child {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 234px;
+        height: 252px;
+        background-color: #95E1D3;
+        display: flex;
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 75px;
+        color: #FFFFFF;
+
+        span {
+            font-size: 64px;
+            font-weight: 700;
+        }
+    }
+}
 
