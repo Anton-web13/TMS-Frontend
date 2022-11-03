@@ -293,4 +293,31 @@
     }
 }
 
+.unique {
+    position: relative;
+    background: url(../img/section_unique/Berge.png) no-repeat center center / cover;
+    padding-bottom: 57px;
+
+    .header__line {
+        margin-bottom: 87.7px;
+        border: 2px solid #F38281;
+    }
+
+    .unique__tablet img:last-child {
+        position: absolute;
+        right: 570px;
+        top: 545px;
+        z-index: 2;
+    }
+}
+
+.servise {
+    .header__line {
+        margin-bottom: 87.7px;
+        border: 2px solid #F38281;
+    }
+}
+
+
+
 
