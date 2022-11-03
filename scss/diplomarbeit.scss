@@ -122,7 +122,7 @@
         border: 2px solid #F38281;
     }
 
-    .row:nth-of-type(4) div{
+    .row:nth-of-type(4) div {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -131,9 +131,85 @@
         margin-bottom: 58px;
     }
 
-    .row:nth-of-type(5) div{
-        gap: 30px;
+    .wedo__image__one {
+        display: block;
+        right: 1200px;
+        z-index: 0;
+        div {
+            position: absolute;
+            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
+            width: 370px;
+            height: 338px;
+            display: none;
+            padding-top: 121px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            right: 16px;
+            top: -16px;
+            z-index: 2;
+        }
     }
+
+    .wedo__image__two {
+        display: block;
+        right: 830px;
+        z-index: 0;
+        div {
+            position: absolute;
+            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
+            width: 370px;
+            height: 338px;
+            display: none;
+            padding-top: 121px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            right: 16px;
+            top: -16px;
+            z-index: 55555;
+        }
+    }
+
+    .wedo__image__three {
+        display: block;
+        right: 460px;
+        z-index: 0;
+        div {
+            position: absolute;
+            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
+            width: 370px;
+            height: 338px;
+            display: none;
+            padding-top: 121px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            right: 16px;
+            top: -16px;
+            z-index: 55555;
+        }
+    }
+
+    .row:nth-of-type(5) div {
+        gap: 30px;
+
+        position: relative;
+        img:nth-of-type(1):hover ~ .wedo__image__one > div {
+            display: block;
+        }
+
+        img:nth-of-type(2):hover ~ .wedo__image__two > div {
+            display: block;
+        }
+
+        img:nth-of-type(3):hover ~ .wedo__image__three > div {
+            display: block;
+        }
+        
+    }
+
+
 
 }
 
