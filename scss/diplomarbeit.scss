@@ -3,14 +3,53 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1170px;
+}
+
+.row > * {
+    padding: 0;
+}
+
+.title__one {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    padding-top: 67px;
+}
+
+.title__two {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    padding-top: 42px;
+}
+
 .header {
     background: url(../img/header/Group\ 6.png) no-repeat center center / cover;
 
-    .col-lg-10 {
-        // background-color: red;
-    }
+    // &__logo {
+    //     padding-left: 0px;
+    // }
 
-    .header__menu {
+    // .col-lg-10 {
+    //     padding: 0;
+    // }
+
+    // .container {
+    //     background-color: gold;
+    // }
+
+    // .col-lg-10 {
+    //     background-color: red;
+    // }
+
+    &__menu {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
@@ -34,7 +73,7 @@
         }
     }
 
-    .header__creative {
+    &__creative {
         font-family: 'Kaushan Script';
         font-style: normal;
         font-weight: 400;
@@ -43,7 +82,7 @@
         padding-top: 100px;
     }
 
-    .header__welcome {
+    &__welcome {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -53,15 +92,14 @@
         text-transform: uppercase;
     }
 
-    .header__line {
+    &__line {
         width: 170px;
         height: 1px;
-        background-color: #FFFFFF;
         border: 2px solid #FFFFFF;
         margin-top: 44px;
     }
 
-    .header__button {
+    &__button {
         width: 370px;
         height: 80px;
         font-family: 'Raleway';
@@ -73,6 +111,30 @@
         border: 4px solid #FFFFFF;
         margin: 74.42px 0 201px 0;
     }
+}
+
+.wedo {
+
+    padding-bottom: 108px;
+
+    .header__line {
+        margin-bottom: 41px;
+        border: 2px solid #F38281;
+    }
+
+    .row:nth-of-type(4) div{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 58px;
+    }
+
+    .row:nth-of-type(5) div{
+        gap: 30px;
+    }
+
 }
 
 
