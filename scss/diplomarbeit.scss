@@ -252,3 +252,45 @@
     }
 }
 
+.amazing {
+    padding-bottom: 91px;
+    .header__line {
+        margin-bottom: 87.7px;
+        border: 2px solid #F38281;
+    }
+
+    .col-lg-4 {
+        display: flex;
+        border: 1px solid #fff;
+
+        div:first-child {
+            margin-right: 30px;
+        }
+
+        div:last-child {
+            h2 {
+                padding: 15px 0 20px 0;
+                text-transform: uppercase;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            p {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .amazing__two {
+        margin-top: 150.21px;
+    }
+}
+
+
