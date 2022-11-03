@@ -134,7 +134,6 @@
     .wedo__image__one {
         display: block;
         right: 1200px;
-        z-index: 0;
         div {
             position: absolute;
             background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
@@ -147,14 +146,12 @@
             color: #FFFFFF;
             right: 16px;
             top: -16px;
-            z-index: 2;
         }
     }
 
     .wedo__image__two {
         display: block;
         right: 830px;
-        z-index: 0;
         div {
             position: absolute;
             background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
@@ -167,14 +164,12 @@
             color: #FFFFFF;
             right: 16px;
             top: -16px;
-            z-index: 55555;
         }
     }
 
     .wedo__image__three {
         display: block;
         right: 460px;
-        z-index: 0;
         div {
             position: absolute;
             background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
@@ -187,7 +182,6 @@
             color: #FFFFFF;
             right: 16px;
             top: -16px;
-            z-index: 55555;
         }
     }
 
