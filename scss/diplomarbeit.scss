@@ -1,35 +1,45 @@
-body {
-    background-color: black;
-    color: white;
+* {
+    /* margin: 0; */
+    box-sizing: border-box;
 }
 
-section {
-    display: flex;
+.header {
+    background: url(../img/header/Group\ 6.png);
 
-    div {
-        width: 100%;
-        height: 500px;
-
-        ul {
-            margin: 15px 25px 2px 0;
-
-            li {
-                border-radius: 50%;
-            }
-        }
-    }
-}
-
-.block {
-    display: flex;
-
-    &__item {
-        border-radius: 50%;
-
-        &__tittle {
-            background-color: red;
+    .header__menu {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        margin-left: auto;
+        display: flex;
+        column-gap: 62px;
+    
+        a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
         }
     }
 
+    .header__creative {
+        font-family: 'Kaushan Script';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 93px;
+    }
+
+    .header__welcome {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 144px;
+        line-height: 176px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
 }
+
 
