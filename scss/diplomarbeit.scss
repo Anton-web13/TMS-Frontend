@@ -296,7 +296,7 @@
     }
 }
 
-.unique {
+.devices {
     position: relative;
     background: url(../img/section_unique/Berge.png) no-repeat center center / cover;
     padding-bottom: 57px;
@@ -307,7 +307,7 @@
         border: 2px solid #F38281;
     }
 
-    .unique__tablet img:last-child {
+    .devices__tablet img:last-child {
         position: absolute;
         right: 375px;
         top: 545px;
@@ -543,6 +543,10 @@
         }
     }
 
+}
+
+.slidertwo {
+    background-color: #F8F8F8;
 }
 
 
