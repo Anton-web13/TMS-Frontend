@@ -693,5 +693,18 @@
 
 }
 
+.latest {
+    background: url(../img/section_latest/Group\ 14.png) no-repeat center center / cover;
+
+    .header__line {
+        margin-bottom: 42px;
+        background-color: #F38281;
+        border: 2px solid #F38281;
+    }
+
+    .title__two {
+        padding-top: 28px;
+    }
+}
 
 
