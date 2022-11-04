@@ -351,7 +351,7 @@
 
 .meet {
     padding-bottom: 84px;
-    
+
     .header__line {
         margin-bottom: 41px;
         background-color: #F38281;
@@ -483,6 +483,20 @@
         line-height: 21px;
         text-transform: uppercase;
         margin-top: 20px;
+    }
+}
+
+.six_cons {
+    background-color: #F8F8F8;
+
+    .col-lg-12 {
+        padding: 64px 0 66px 0;
+        gap: 30px;
+    
+        img {
+            width: 57px;
+            height: 60px;
+        }
     }
 }
 
