@@ -1,0 +1,130 @@
+@media screen and (max-width: 991.98px) {
+
+    // md
+
+    .header {
+
+        &__logo {
+            transform: scale(0.8);
+        }
+
+        &__menu {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            column-gap: 0px;
+        }
+
+        &__creative {
+            font-size: 48px;
+            line-height: 69.95px;
+            padding-top: 72.31px;
+        }
+
+        &__welcome {
+            font-size: 96px;
+            line-height: 117.02px;
+        }
+
+        &__line {
+            width: 115.28px;
+            margin-top: 34px;
+        }
+
+        &__button {
+            width: 317.14px;
+            height: 52.61px;
+            font-size: 18px;
+            margin: 50.47px 0 136.31px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+
+    // sm
+
+    .header {
+
+        &__logo {
+            transform: scale(0.6);
+        }
+
+        &__menu {
+            font-size: 10px;
+            
+            a {
+                width: 65px;
+                padding-top: 2px;
+            }
+        }
+
+        &__creative {
+            font-size: 38px;
+            line-height: 49.95px;
+            padding-top: 42.31px;
+        }
+
+        &__welcome {
+            font-size: 76px;
+            line-height: 100.02px;
+        }
+
+        &__line {
+            width: 100.28px;
+            margin-top: 24px;
+        }
+
+        &__button {
+            width: 280.14px;
+            height: 42.61px;
+            font-size: 14px;
+            margin: 40.47px 0 116.31px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+
+    // col
+
+    .header {
+
+        &__logo {
+            transform: scale(0.5);
+        }
+
+        &__menu {
+            font-size: 10px;
+            
+            a {
+                width: 65px;
+                padding-top: 2px;
+            }
+        }
+
+        &__creative {
+            font-size: 28px;
+            line-height: 39.95px;
+            padding-top: 32.31px;
+        }
+
+        &__welcome {
+            font-size: 56px;
+            line-height: 70.02px;
+        }
+
+        &__line {
+            width: 70.28px;
+            margin-top: 14px;
+        }
+
+        &__button {
+            width: 200.14px;
+            height: 32.61px;
+            font-size: 12px;
+            margin: 30.47px 0 100.31px 0;
+        }
+    }
+}
