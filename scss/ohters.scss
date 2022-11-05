@@ -117,11 +117,20 @@
             max-width: 100%;
         }
 
+        .hamburger {
+            display: block;
+        }
+
+        .col-lg-11 {
+            display: none !important;
+        }
+
         &__logo {
             transform: scale(0.5);
         }
 
         &__menu {
+            
             font-size: 10px;
             
             a {
@@ -131,25 +140,25 @@
         }
 
         &__creative {
-            font-size: 28px;
-            line-height: 39.95px;
+            font-size: 36px;
+            line-height: 52.24px;
             padding-top: 32.31px;
         }
 
         &__welcome {
-            font-size: 56px;
-            line-height: 70.02px;
+            font-size: 48px;
+            line-height: 58.51px;
         }
 
         &__line {
-            width: 70.28px;
+            width: 134px;
             margin-top: 14px;
         }
 
         &__button {
-            width: 200.14px;
-            height: 32.61px;
-            font-size: 12px;
+            width: 284.23px;
+            height: 52.61px;
+            font-size: 18px;
             margin: 30.47px 0 100.31px 0;
         }
     }
