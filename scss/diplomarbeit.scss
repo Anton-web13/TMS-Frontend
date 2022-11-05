@@ -32,9 +32,9 @@
 
 .header {
 
-    .container {
-        background-color: red;
-    }
+    // .container {
+    //     background-color: red;
+    // }
 
     background: url(../img/header/Group\ 6.png) no-repeat center center / cover;
 
@@ -219,94 +219,79 @@
 }
 
 .wedo {
+
     padding-bottom: 108px;
 
+    & > div {
+        padding: 5px;
+    }
+
     .header__line {
-        margin-bottom: 41px;
+        margin-bottom: 40px;
         background-color: #F38281;
         border: 2px solid #F38281;
     }
 
-    .row:nth-of-type(4) div {
+    .container > div .row:nth-of-type(4) div > p {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
-        margin-bottom: 58px;
+        margin-bottom: 84px;
     }
 
-    .wedo__image__one {
-        display: block;
-        right: 1200px;
-        div {
-            position: absolute;
-            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
-            width: 370px;
-            height: 338px;
-            display: none;
-            padding-top: 121px;
-            line-height: 50px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            right: 16px;
-            top: -16px;
+    &__one {
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
 
-    .wedo__image__two {
-        display: block;
-        right: 830px;
-        div {
-            position: absolute;
-            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
-            width: 370px;
-            height: 338px;
-            display: none;
-            padding-top: 121px;
-            line-height: 50px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            right: 16px;
-            top: -16px;
-        }
-    }
-
-    .wedo__image__three {
-        display: block;
-        right: 460px;
-        div {
-            position: absolute;
-            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
-            width: 370px;
-            height: 338px;
-            display: none;
-            padding-top: 121px;
-            line-height: 50px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            right: 16px;
-            top: -16px;
-        }
-    }
-
-    .row:nth-of-type(5) div {
-        gap: 30px;
-
+    .col-lg-4:nth-of-type(1),
+    .col-lg-4:nth-of-type(2),
+    .col-lg-4:nth-of-type(3) {
         position: relative;
-        img:nth-of-type(1):hover ~ .wedo__image__one > div {
+
+        .wedo__image__one {
             display: block;
+            right: 1200px;
+            
+            div {
+                display: none;
+                width: 100%;
+                width: calc(100% - 22px);
+                height: 100%;
+                background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
+                position: absolute;
+                padding-top: 0px;
+                line-height: 50px;
+                right: 27px;
+                top: -16px;
+                
+                img {
+                    width: 40px;
+                    height: 40px;
+                    color: #FFFFFF;
+                }
+
+                p {
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+
         }
 
-        img:nth-of-type(2):hover ~ .wedo__image__two > div {
-            display: block;
+        .wedo__one > img:hover ~ .wedo__image__one > div  {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
-
-        img:nth-of-type(3):hover ~ .wedo__image__three > div {
-            display: block;
-        }
-        
     }
+
 }
 
 .numbers {
@@ -558,16 +543,16 @@
         }
     }
 
-    .row:nth-of-type(3) div {
-        gap: 30px;
-        position: relative;
+    // .row:nth-of-type(3) div {
+    //     gap: 30px;
+    //     position: relative;
 
-        img:nth-of-type(1):hover ~ .wedo__image__one > div,
-        img:nth-of-type(2):hover ~ .wedo__image__two > div,
-        img:nth-of-type(3):hover ~ .wedo__image__three > div {
-            display: block;
-        }     
-    }
+    //     img:nth-of-type(1):hover ~ .wedo__image__one > div,
+    //     img:nth-of-type(2):hover ~ .wedo__image__two > div,
+    //     img:nth-of-type(3):hover ~ .wedo__image__three > div {
+    //         display: block;
+    //     }     
+    // }
 
     .row:nth-of-type(4) div p {
         font-family: 'Raleway';
@@ -1005,5 +990,11 @@
         font-size: 13px;
     }
 }
+
+
+
+
+
+
 
 
