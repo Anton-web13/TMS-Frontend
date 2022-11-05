@@ -103,6 +103,12 @@
             }
         }
     }
+
+    .amazing {
+        .col-md-6 {
+            padding: 15px;
+        }
+    }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -244,7 +250,42 @@
             }
         }
     }
-}
+
+    .amazing {
+
+        padding-bottom: 60px;
+
+        & > div {
+            padding: 0 16px 0 16px;
+        }
+
+        .title__one {
+            font-size: 28px;
+            line-height: 35px;
+            padding-top: 50px;
+        }
+
+        .title__two {
+            font-size: 28px;
+            line-height: 28px;
+            padding-top: 42px;
+        }
+
+        .amazing__one {
+
+            div ~ div:last-child {
+                h2 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+} // red
 
 @media screen and (max-width: 575.98px) {
 
@@ -408,4 +449,50 @@
         }
 
     }
-}
+
+    .amazing {
+
+        padding-bottom: 58px;
+
+        & > div {
+            padding: 0 16px 0 16px;
+        }
+
+        .title__one {
+            font-size: 24px;
+            line-height: 35px;
+            padding-top: 50px;
+        }
+
+        .title__two {
+            font-size: 24px;
+            line-height: 28px;
+            padding-top: 42px;
+        }
+
+        .header__line {
+            width: 144px;
+            margin: 40px 0 40px 0;
+        }
+
+        .amazing__one {
+
+            div > div {
+                img {
+                    transform: scale(0.9);
+                }
+            }
+
+            div ~ div:last-child {
+                h2 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+} // blue
