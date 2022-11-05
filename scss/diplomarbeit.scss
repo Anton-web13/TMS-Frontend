@@ -223,7 +223,7 @@
     padding-bottom: 108px;
 
     & > div {
-        padding: 5px;
+        padding: 0 5px 0 5px;
     }
 
     .header__line {
@@ -276,6 +276,11 @@
                 }
 
                 p {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 44px;
                     text-transform: uppercase;
                     color: #FFFFFF;
                 }
@@ -345,6 +350,7 @@
 
 .amazing {
     padding-bottom: 91px;
+
     .header__line {
         margin-bottom: 87.7px;
         background-color: #F38281;
