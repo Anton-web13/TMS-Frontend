@@ -454,7 +454,7 @@
     padding-bottom: 58px;
 
     & > div {
-        padding: 0 5px 0 5px;
+        padding: 0 6px 0 11px;
     }
 
     .header__line {
@@ -557,15 +557,16 @@
 }
 
 .six_cons {
+
+    & > div {
+        padding: 0 16px 0 16px;
+    }
+
     background-color: #F8F8F8;
 
-    .col-lg-12 {
-        padding: 64px 0 66px 0;
-        gap: 30px;
-    
-        img {
-            width: 57px;
-            height: 60px;
+    .row {
+        .col-lg-2 {
+            background-color: rgb(97, 83, 83);
         }
     }
 }
