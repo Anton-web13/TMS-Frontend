@@ -566,7 +566,10 @@
 
     .row {
         .col-lg-2 {
-            background-color: rgb(97, 83, 83);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 0 50px 0;
         }
     }
 }

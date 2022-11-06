@@ -127,17 +127,15 @@
             display: block;
         }
 
+        .six_cons__one__row {
 
-        // .row {
-        //     .col-md-2 {
-        //         display: flex;
-        //         // flex-direction: column;
-
-        //         img {
-        //             transform: scale(0.5);
-        //         }
-        //     }
-        // }
+            .col-md-2 {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 50px 0 50px 0;
+            }
+        }
     }
 
 } // md gold
@@ -414,20 +412,19 @@
             display: block;
         }
         
-        // .six_cons__all__row {
-        //     display: flex;
-        // }
+        .six_cons__all__row {
 
-        // .row {
-        //     .col--6 {
-        //         display: flex;
-        //         flex-direction: column;
+            img {
+                transform: scale(1.2);
+            }
 
-        //         img {
-        //             transform: scale(0.5);
-        //         }
-        //     }
-        // }
+            .col-sm-6, .col-sm-12 {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 52px 0 52px 0;
+            }
+        }
     }
 
 } // sm red
@@ -758,26 +755,13 @@
         }
 
         .six_cons__all__row {
-            display: block;
+            .col-6, .col-12 {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 52px 0 52px 0;
+            }
         }
-
-        // .row {
-        //     .col-6 {
-        //         display: flex;
-        //         flex-direction: row;
-
-        //         img {
-        //             transform: scale(0.5);
-        //         }
-        //     }
-
-        //     .col-12 {
-
-        //         img {
-        //             transform: scale(0.5);
-        //         }
-        //     }
-        // }
     }
 
 } // blue col
