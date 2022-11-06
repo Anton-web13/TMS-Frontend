@@ -450,139 +450,109 @@
 }
 
 .meet {
-    padding-bottom: 84px;
+
+    padding-bottom: 58px;
+
+    & > div {
+        padding: 0 5px 0 5px;
+    }
 
     .header__line {
-        margin-bottom: 41px;
+        margin-bottom: 30px;
         background-color: #F38281;
         border: 2px solid #F38281;
     }
 
-    .container .row:nth-of-type(2) div > p {
+    .container > div .row:nth-of-type(4) div > p {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
-        margin-bottom: 84px;
+        margin-bottom: 100px;
     }
 
-    .wedo__image__one {
+    .container > div:last-child > div {
+        
+        .meet__name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    
+            p:first-child {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+    
+            p:last-child {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #2D3033;
+                margin: 0;
+            }
+        }
+    }
+
+    &__one {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .col-lg-4:nth-of-type(1),
+    .col-lg-4:nth-of-type(2),
+    .col-lg-4:nth-of-type(3) {
         position: relative;
-        display: block;
-        right: 1200px;
-        div {
-            position: absolute;
-            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
-            width: 370px;
-            height: 424px;
-            display: none;
-            padding-top: 207px;
-            line-height: 50px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            right: 16px;
-            top: -16px;
 
-            img {
-                width: 42px;
-                height: 42px;
-                background-color: #F9EFCF;
+        .meet__image__one {
+            display: block;
+            right: 1200px;
+            
+            div {
+                display: none;
+                width: calc(100% - 22px);
+                height: calc(100% - 80px);
+                background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
+                position: absolute;
+                padding-top: 0px;
+                line-height: 50px;
+                right: 21px;
+                top: -10px;
+                
+                img {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #F9EFCF;
+                    border: 1px solid #F38281;
 
-                &:active {
-                    background-color: #F38281;
-                    filter: invert(1) sepia(0%) saturate(7545%) hue-rotate(536deg) brightness(99%) contrast(103%);
+                    &:active {
+                        background-color: #F38281;
+                        filter: invert(1) sepia(0%) saturate(7545%) hue-rotate(536deg) brightness(99%) contrast(103%);
+                    }
                 }
             }
         }
-    }
 
-    .wedo__image__two {
-        display: block;
-        right: 830px;
-        div {
-            position: absolute;
-            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
-            width: 370px;
-            height: 424px;
-            display: none;
-            padding-top: 207px;
-            line-height: 50px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            right: 16px;
-            top: -16px;
-
-            img {
-                width: 42px;
-                height: 42px;
-                background-color: #F9EFCF;
-
-                &:active {
-                    background-color: #F38281;
-
-                }
-            }
+        .meet__one > img:hover ~ .meet__image__one > div  {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
-    }
-
-    .wedo__image__three {
-        display: block;
-        right: 460px;
-        div {
-            position: absolute;
-            background: url(../img/section_wedo/hover.png) no-repeat center center / cover;
-            width: 370px;
-            height: 424px;
-            display: none;
-            padding-top: 207px;
-            line-height: 50px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            right: 16px;
-            top: -16px;
-
-            img {
-                width: 42px;
-                height: 42px;
-                background-color: #F9EFCF;
-
-                &:active {
-                    background-color: #F38281;
-
-                }
-            }
-        }
-    }
-
-    // .row:nth-of-type(3) div {
-    //     gap: 30px;
-    //     position: relative;
-
-    //     img:nth-of-type(1):hover ~ .wedo__image__one > div,
-    //     img:nth-of-type(2):hover ~ .wedo__image__two > div,
-    //     img:nth-of-type(3):hover ~ .wedo__image__three > div {
-    //         display: block;
-    //     }     
-    // }
-
-    .row:nth-of-type(4) div p {
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        margin-top: 40px;
-    }
-
-    .row:nth-of-type(5) div p {
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        text-transform: uppercase;
-        margin-top: 20px;
     }
 }
 
