@@ -384,9 +384,9 @@
 }
 
 .devices {
-    position: relative;
-    background: url(../img/section_unique/Berge.png) no-repeat center center / cover;
+
     padding-bottom: 57px;
+    background: url(../img/section_unique/Berge.png) no-repeat center center / cover;
 
     .header__line {
         margin-bottom: 87.7px;
@@ -394,13 +394,26 @@
         border: 2px solid #F38281;
     }
 
-    .devices__tablet img:last-child {
+    .devices__tablet div:first-child {
+        position: relative;
+        border: 15px solid black;
+        border-radius: 20px;
+        width: 526px;
+        height: 455px;
+        background: url(../img/section_unique/Group\ 6.png) no-repeat center center / cover;
+    }
+
+    .devices__tablet div:last-child {
         position: absolute;
-        right: 375px;
-        top: 545px;
-        z-index: 2;
+        width: 179px;
+        height: 381px;
+        margin: -270px 0 0 390px;
+        background: url(../img/section_unique/Phone.png) no-repeat center center / cover;
     }
 }
+
+
+
 
 .servise {
     .container {
