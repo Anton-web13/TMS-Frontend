@@ -699,7 +699,9 @@
 
         .col-lg-4 {
             & > img {
-                margin: 80px 0 38px 0;
+                display: flex;
+                margin: 0 auto;
+                padding: 80px 0 38px 0;
                 transform: scale(0.8);
             }
     
@@ -1396,52 +1398,37 @@
         .col-lg-4 {
 
             & > img {
-                margin: 80px 0 38px 0;
+                display: flex;
+                margin: 0 auto;
+                padding: 52px 0 30px 0;
             }
     
             & > p {
-                font-family: 'Raleway';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 21px;
-                color: #C6CBCD;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 14px;
+                line-height: 16px;
             }
     
             & > p ~ p {
-                font-size: 18px;
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-top: 40px;
-                color: #2D3033;
-    
-                & > span {
-                    font-family: 'Raleway';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 36px;
-                }
-    
-                & > span ~ span {
-                    font-size: 16px;
-                    font-style: italic;
-                    font-weight: 100;
-                }
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-top: 33px;
             }
     
             & > div ~ div {
-                font-family: 'Raleway';
-                font-style: italic;
-                font-weight: 400;
-                font-size: 13px;
+                font-size: 18px;
                 line-height: 15px;
-                color: #C6CBCD;
-                margin-bottom: 49px;
+                margin-bottom: 35px;
             }
-    
-            & > div ~ div ~ div {
+
+            & > div > div {
                 display: flex;
-                border: 1px solid #C6CBCD;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 3%;
             }
 
             .footer__input {
@@ -1451,6 +1438,11 @@
                     width: 100%;
                     margin: 0 0 25px 0;
                     border: 1px solid #C6CBCD;
+
+                    &::placeholder {
+                        text-align: left;
+                        padding-left: 20px;
+                    }
                 }
         
                 button {
