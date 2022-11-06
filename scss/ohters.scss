@@ -673,18 +673,7 @@
                         font-weight: 700;
                     }
                 }
-            }
-    
-            // .stories__messages div:nth-of-type(1) {
-    
-            //     div {
-            //         width: 28px;
-            //         height: 19px;
-            //         background: url(../img/section_stories/Group.png) no-repeat center center / cover;
-            //         border: 0;
-            //         margin-bottom: 30px;
-            //     }
-            // }    
+            }   
         }
     }
 
@@ -1232,6 +1221,24 @@
                     margin-bottom: 30px;
                 }
             }    
+        }
+    }
+
+    .latest {
+        .title__one {
+            padding-top: 46px;
+        }
+
+        .title__two {
+            font-size: 24px;
+            line-height: 28px;
+            padding-top: 37px;
+            color: #F38281;
+        }
+
+        .header__line {
+            width: 134px;
+            margin: 48px 0 36px 0;
         }
     }
 
