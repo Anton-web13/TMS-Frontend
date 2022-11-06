@@ -138,6 +138,10 @@
         }
     }
 
+    .happy {
+        padding-bottom: 0px;
+    }
+
 } // md gold
 
 @media screen and (max-width: 767.98px) {
@@ -477,6 +481,72 @@
                 grid-row-start: 4;
                 grid-column-start: 2;
             }
+        }
+    }
+
+    .happy {
+        padding-bottom: 30px;
+        .title__one {
+            font-size: 24px;
+            line-height: 35px;
+            padding-top: 46px;
+        }
+
+        .title__two {
+            font-size: 24px;
+            line-height: 28px;
+            padding-top: 36px;
+        }
+
+        .header__line {
+            width: 134px;
+            margin-bottom: 20px;
+        }
+
+        .amazing__one {
+            .col-12 {
+                display: block;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .col-lg-6 {
+
+                padding: 29px 20px 0px 20px;
+                div:nth-child(1) {
+                    margin: 0;
+                    margin-bottom: 23px;
+                }
+
+                div:last-child {
+                    h2 {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+        
+                    p:nth-of-type(1) {
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-bottom: 21px;
+                    }
+        
+                    & > div {
+                        .header__line {
+                            width: 134px;
+                            margin-bottom: 30px;
+                        }
+                    }
+        
+                    p:nth-of-type(2) {
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+            } 
         }
     }
 
@@ -865,6 +935,71 @@
                 grid-row-start: 4;
                 grid-column-start: 2;
             }
+        }
+    }
+
+    .happy {
+        padding-bottom: 30px;
+        .title__one {
+            font-size: 24px;
+            line-height: 35px;
+            padding-top: 46px;
+        }
+
+        .title__two {
+            font-size: 24px;
+            line-height: 28px;
+            padding-top: 36px;
+        }
+
+        .header__line {
+            margin-bottom: 20px;
+        }
+
+        .amazing__one {
+            .col-12 {
+                display: block;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .col-lg-6 {
+
+                padding: 29px 20px 0px 20px;
+                div:nth-child(1) {
+                    margin: 0;
+                    margin-bottom: 23px;
+                }
+
+                div:last-child {
+                    h2 {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+        
+                    p:nth-of-type(1) {
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-bottom: 21px;
+                    }
+        
+                    & > div {
+                        .header__line {
+                            width: 134px;
+                            margin-bottom: 30px;
+                        }
+                    }
+        
+                    p:nth-of-type(2) {
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+            } 
         }
     }
 

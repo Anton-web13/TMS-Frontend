@@ -639,7 +639,7 @@
     }
 
     .col-lg-6 {
-        padding: 0 20px 0 20px;
+        padding: 40px 20px 40px 20px;
         display: flex;
 
         div:first-child {
@@ -667,9 +667,10 @@
                 padding-bottom: 0px;
             }
 
-            .header__line {
-                width: 70px;
-                margin: 51px 0 64px 0;
+            & > div {
+                .header__line {
+                    width: 70px;
+                }
             }
 
             p:nth-of-type(2) {
