@@ -837,14 +837,27 @@
             }
         }
 
-        & > div ~ div {
-            font-family: 'Raleway';
-            font-style: italic;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 15px;
-            color: #C6CBCD;
-            margin-bottom: 30px;
+        & > div + div {
+
+            & > div {
+                font-family: 'Raleway';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: #C6CBCD;
+                margin-bottom: 36px;
+            }
+
+            & > div + div {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                text-align: center;
+                gap: 10px;
+                transform: scale(1);
+                margin-top: -8px;
+            }
         }
 
         & > div ~ div ~ div {
