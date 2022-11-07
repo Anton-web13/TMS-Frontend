@@ -7,10 +7,6 @@
     max-width: 1170px;
 }
 
-// .row > * {
-//     padding: 0;
-// }
-
 .title__one {
     font-family: 'Kaushan Script';
     font-style: normal;
@@ -31,7 +27,6 @@
 }
 
 .header {
-
     background: url(../img/header/Group\ 6.png) no-repeat center center / cover;
 
     &__logo {
@@ -215,7 +210,6 @@
 }
 
 .wedo {
-
     padding-bottom: 108px;
 
     & > div {
@@ -238,6 +232,7 @@
     }
 
     &__one {
+
         img {
             width: 100%;
             height: 100%;
@@ -281,7 +276,6 @@
                     color: #FFFFFF;
                 }
             }
-
         }
 
         .wedo__one > img:hover ~ .wedo__image__one > div  {
@@ -292,7 +286,6 @@
             text-align: center;
         }
     }
-
 }
 
 .numbers {
@@ -362,6 +355,7 @@
         }
 
         div:last-child {
+
             h2 {
                 padding: 15px 0 20px 0;
                 text-transform: uppercase;
@@ -384,7 +378,6 @@
 }
 
 .devices {
-
     padding-bottom: 57px;
     background: url(../img/section_unique/Berge.png) no-repeat center center / cover;
 
@@ -412,14 +405,7 @@
     }
 }
 
-
-
-
 .servise {
-    .container {
-        // background-color: blue;
-    }
-
     padding-bottom: 114px;
 
     .header__line {
@@ -506,6 +492,7 @@
     }
 
     &__one {
+
         img {
             width: 100%;
             height: 100%;
@@ -557,14 +544,14 @@
 }
 
 .six_cons {
+    background-color: #F8F8F8;
 
     & > div {
         padding: 0 16px 0 16px;
     }
 
-    background-color: #F8F8F8;
-
     .row {
+        
         .col-lg-2 {
             justify-content: center;
             align-items: center;
@@ -611,7 +598,6 @@
             background-size: cover;
         }
     }
-
 }
 
 .slidertwo {
@@ -646,6 +632,7 @@
         }
 
         div:last-child {
+            
             h2 {
                 padding: 0px 0 0px 0;
                 text-transform: uppercase;
@@ -667,6 +654,7 @@
             }
 
             & > div {
+
                 .header__line {
                     width: 70px;
                 }
@@ -688,7 +676,6 @@
 }
 
 .stories {
-
     padding-bottom: 90px;
 
     .header__line {
@@ -701,6 +688,7 @@
         position: relative;
 
         .wedo__one {
+
             img {
                 width: 100%;
                 height: 100%;
@@ -726,7 +714,6 @@
             }
 
             .stories__jan {
-
                 position: absolute;
 
                 p {
@@ -812,13 +799,10 @@
     }
 
     .col-lg-4 {
-
         display: block;
         justify-content: space-between;
-
         padding-bottom: 0px;
 
-        // background-color: red;
         & > img {
             margin: 80px 0 38px 0;
         }
@@ -904,9 +888,7 @@
     }
 
     .col-lg-5 {
-        // background-color: blue;
-
-
+        
         & > h2 {
             font-family: 'Raleway';
             font-style: normal;
@@ -918,6 +900,7 @@
 
         div {
             margin-bottom: -5px;
+
             img {
                 width: 170px;
                 height: 105px;
@@ -925,6 +908,7 @@
         }
 
         div {
+
             h2 {
                 font-family: 'Raleway';
                 font-style: normal;
