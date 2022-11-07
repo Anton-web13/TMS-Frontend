@@ -304,7 +304,67 @@
     }
 
     .happy {
-        padding-bottom: 0px;
+        padding-bottom: 40px;
+
+        .title__one {
+            font-size: 24px;
+            line-height: 35px;
+            padding-top: 46px;
+        }
+
+        .title__two {
+            font-size: 24px;
+            line-height: 28px;
+            padding-top: 36px;
+        }
+
+        .header__line {
+            width: 148px;
+            margin-bottom: 20px;
+        }
+
+        .col-lg-6  {
+
+            padding: 40px 10px 0 10px;
+
+            div:nth-child(1) {
+
+                margin-right: 12px;
+
+                img {
+                    transform: scale(0.9);
+                }
+            }
+
+            div:last-child {
+                h2 {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+    
+                p:nth-of-type(1) {
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 21px;
+                }
+    
+                & > div {
+                    .header__line {
+                        margin-bottom: 30px;
+                    }
+                }
+    
+                p:nth-of-type(2) {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+
+
+
+
+
     }
 
     .stories {
@@ -1440,17 +1500,13 @@
             padding: 0 16px 0 16px;
         }
 
-        .container {
-            background-color: blue;
-        }
-
         .header__line {
             width: 134px;
             margin: 40px 0 0px 0;
         }
 
         .container > div .row:nth-of-type(4) div > p {
-            font-size: 18px;
+            font-size: 14px;
             line-height: 18px;
             margin: 20px 0 40px 0;
         }
@@ -1640,7 +1696,7 @@
                         font-family: 'Raleway';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 18px;
+                        font-size: 14px;
                         line-height: 21px;
                     }
                 }
