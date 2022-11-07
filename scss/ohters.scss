@@ -57,11 +57,18 @@
                 & > div + div {
                     display: flex;
                     justify-content: flex-end;
-                    align-items: flex-end;
+                    align-items: center;
                     text-align: center;
                     gap: 10px;
                     transform: scale(1);
-                    margin-top: 0px;
+                    margin-top: 3px;
+
+                    img {
+                        
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
                 }
             }
     
@@ -510,6 +517,13 @@
                     gap: 10px;
                     transform: scale(0.8);
                     margin-top: 0px;
+
+                    img {
+                        
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
                 }
             }
 
@@ -1102,40 +1116,53 @@
                 text-align: center;
                 margin-top: 33px;
             }
-    
-            & > div ~ div {
-                font-size: 18px;
-                line-height: 15px;
-                margin-bottom: 35px;
-            }
 
-            & > div > div {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                gap: 3%;
-            }
-
-            .footer__icons {
+            & > div + div {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 text-align: center;
+                margin-bottom: 35px;
+
+                & > div {
+                    display: flex;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #C6CBCD;
+                    margin: 3px 0 0px 0px;
+                }
+    
+                & > div + div {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 20px;
+                    transform: scale(0.9);
+                    margin-top: 0px;
+
+                    img {
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
             }
 
-            .footer__input {
-                display: block;
+            & > div + div + div {
+                display: flex;
+                flex-direction: column;
                 border: 0;
+                margin-top: 14px;
+
 
                 input {
                     width: 100%;
                     margin: 0 0 25px 0;
                     border: 1px solid #C6CBCD;
-
+        
                     &::placeholder {
-                        text-align: left;
-                        padding-left: 20px;
-                        color: #C6CBCD;
+                        font-size: 18px;
                     }
                 }
         
@@ -1806,40 +1833,55 @@
                 text-align: center;
                 margin-top: 33px;
             }
-    
-            & > div ~ div {
-                font-size: 18px;
-                line-height: 15px;
-                margin-bottom: 35px;
-            }
-
-            & > div > div {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                gap: 3%;
-            }
-
-            .footer__icons {
+            
+            & > div + div {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 text-align: center;
+                margin-bottom: 35px;
+
+                & > div {
+                    display: flex;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #C6CBCD;
+                    margin: 3px 0 0px 0px;
+                }
+    
+                & > div + div {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 10px;
+                    transform: scale(0.9);
+                    margin-top: 0px;
+                    margin-left: 20px;
+
+                    img {
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
             }
 
-            .footer__input {
-                display: block;
+            & > div + div + div {
+                display: flex;
+                flex-direction: column;
                 border: 0;
+                margin-top: 14px;
+
 
                 input {
                     width: 100%;
                     margin: 0 0 25px 0;
                     border: 1px solid #C6CBCD;
-
+        
                     &::placeholder {
-                        text-align: left;
+                        font-size: 18px;
                         padding-left: 20px;
-                        color: #C6CBCD;
                     }
                 }
         
