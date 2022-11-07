@@ -15,6 +15,7 @@
         padding-bottom: 5px;
     
         .col-lg-4 {
+            
             & > img {
                 transform: scale(0.7);
                 margin: 55px 0 38px -20px;
@@ -51,6 +52,7 @@
                 text-align: center;
 
                 & > div ~ div {
+
                     img {
                         transform: scale(0.7);
                     }
@@ -86,7 +88,6 @@
         }
     
         .col-lg-5 {
-
             padding-bottom: 10px;
     
             & > h2 {
@@ -97,6 +98,7 @@
     
             div {
                 margin-bottom: -5px;
+
                 img {
                     width: 115px;
                     height: 71px;
@@ -105,6 +107,7 @@
             }
     
             div {
+
                 h2 {
                     margin-left: -15px;
                     font-size: 14px;
@@ -232,8 +235,10 @@
         .col-lg-4:nth-of-type(3) {
 
             .wedo__image__one {
+
                 div {
-                                        img {
+
+                    img {
                         margin-top: 10%;
                         width: 20px;
                         height: 20px;
@@ -253,11 +258,13 @@
     }
 
     .numbers {
+
         .col-lg-12 {
 
             div:not(:last-child) {
                 font-size: 20px;
                 line-height: 65px;
+
                 span {
                     font-size: 50px;
                 }
@@ -266,6 +273,7 @@
             div:last-child {
                 font-size: 20px;
                 line-height: 65px;
+
                 span {
                     font-size: 50px;
                 }
@@ -274,12 +282,14 @@
     }
 
     .amazing {
+
         .col-md-6 {
             padding: 15px;
         }
     }
 
     .devices {
+
         .header__line {
             width: 134px;
             margin-bottom: 46px;
@@ -324,11 +334,9 @@
         }
 
         .col-lg-6  {
-
             padding: 40px 10px 0 10px;
 
             div:nth-child(1) {
-
                 margin-right: 12px;
 
                 img {
@@ -337,6 +345,7 @@
             }
 
             div:last-child {
+
                 h2 {
                     font-size: 18px;
                     line-height: 21px;
@@ -360,11 +369,6 @@
                 }
             }
         }
-
-
-
-
-
     }
 
     .stories {
@@ -390,6 +394,7 @@
             position: relative;
     
             .wedo__one {
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -407,8 +412,7 @@
                     line-height: 21px;
                 }
     
-                .stories__jan {
-    
+                .stories__jan {   
                     position: absolute;
     
                     p {
@@ -448,6 +452,7 @@
     }
 
     .latest {
+
         .title__two {
             font-family: 'Raleway';
             font-style: normal;
@@ -462,7 +467,6 @@
     }
 
     .footer {
-
         padding-bottom: 5px;
     
         .header__line {
@@ -472,7 +476,6 @@
         }
     
         .col-lg-4 {
-
             padding-left: 0;
 
             & > img {
@@ -540,7 +543,6 @@
         }
     
         .col-lg-5 {
-
             padding-bottom: 10px;
     
             & > h2 {
@@ -550,6 +552,7 @@
     
             div {
                 margin-bottom: -5px;
+
                 img {
                     width: 115px;
                     height: 71px;
@@ -558,6 +561,7 @@
             }
     
             div {
+
                 h2 {
                     margin-left: 0px;
                     font-size: 12px;
@@ -639,10 +643,6 @@
         max-width: 540px;
     }
 
-    .container {
-        // max-width: 575.98px;
-    }
-
     .header {
 
         .container {
@@ -686,6 +686,7 @@
         }
 
         .col-lg-11 {
+            
             img {
                 margin-right: 10px;
             }
@@ -693,7 +694,6 @@
     }
 
     .wedo {
-
         padding-bottom: 60px;
 
         .header__line {
@@ -709,7 +709,6 @@
         .col-lg-4:nth-of-type(1),
         .col-lg-4:nth-of-type(2),
         .col-lg-4:nth-of-type(3) {
-
             margin-bottom: 16px;
             position: relative;
 
@@ -764,6 +763,7 @@
             div:not(:last-child) {
                 font-size: 21px;
                 line-height: 35px;
+                
                 span {
                     font-size: 48px;
                 }
@@ -772,6 +772,7 @@
             div:last-child {
                 font-size: 21px;
                 line-height: 35px;
+
                 span {
                     font-size: 48px;
                 }
@@ -780,7 +781,6 @@
     }
 
     .amazing {
-
         padding-bottom: 60px;
 
         & > div {
@@ -802,6 +802,7 @@
         .amazing__one {
 
             div ~ div:last-child {
+
                 h2 {
                     font-size: 20px;
                 }
@@ -814,8 +815,7 @@
         }
     }
 
-    .devices {
-   
+    .devices {  
         padding-bottom: 38px;
 
         .header__line {
@@ -836,7 +836,6 @@
     }
 
     .meet {
-
         padding-bottom: 50px;
 
         & > div {
@@ -868,7 +867,6 @@
         .col-lg-4:nth-of-type(1),
         .col-lg-4:nth-of-type(2),
         .col-lg-4:nth-of-type(3) {
-
             margin-bottom: 16px;
             position: relative;
 
@@ -925,7 +923,6 @@
     }
 
     .work {
-
         padding-bottom: 0px;
 
         .title__one {
@@ -951,7 +948,6 @@
         }
 
         .work__items {
-
             display: grid;
             flex-direction: column;
             grid-template-rows: 1fr 1fr 1fr 1fr 300px;
@@ -979,8 +975,8 @@
     }
 
     .happy {
-
         padding-bottom: 30px;
+
         .title__one {
             font-size: 24px;
             line-height: 35px;
@@ -999,6 +995,7 @@
         }
 
         .amazing__one {
+
             .col-12 {
                 display: block;
                 justify-content: center;
@@ -1007,14 +1004,15 @@
             }
 
             .col-lg-6 {
-
                 padding: 29px 20px 0px 20px;
+
                 div:nth-child(1) {
                     margin: 0;
                     margin-bottom: 23px;
                 }
 
                 div:last-child {
+
                     h2 {
                         font-size: 18px;
                         line-height: 21px;
@@ -1027,6 +1025,7 @@
                     }
         
                     & > div {
+
                         .header__line {
                             width: 134px;
                             margin-bottom: 30px;
@@ -1046,12 +1045,14 @@
     }
 
     .stories {
-        
         padding-bottom: 50px;
 
         .col-lg-4 {
+
             .wedo__one {
+
                 .stories__jan {
+
                     p {
                         margin: 0 0 140px 59px;
                         padding-top: 15px;
@@ -1079,6 +1080,7 @@
     }
 
     .latest {
+        
         .title__one {
             padding-top: 46px;
         }
@@ -1097,11 +1099,11 @@
     }
 
     .footer {
-
         padding-bottom: 0px;
 
         .col-lg-4 {
             padding: 0 16px 0 16px;
+
             & > img {
                 transform: scale(0.8);
                 display: flex;
@@ -1147,6 +1149,7 @@
             .footer__input {
                 display: block;
                 border: 0;
+
                 input {
                     width: 100%;
                     margin: 0 0 25px 0;
@@ -1171,6 +1174,7 @@
 
         .col-lg-5 {
             padding: 0 15px 0 15px;
+
             & > h2 {
                 display: flex;
                 justify-content: center;
@@ -1181,6 +1185,7 @@
             div {
                 display: flex;
                 margin-bottom: -5px;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -1189,6 +1194,7 @@
     
             div {
                 display: block;
+
                 h2 {
                     font-size: 14px;
                     line-height: 16px;
@@ -1204,6 +1210,7 @@
 
         .col-lg-3 {
             padding: 0 15px 0 15px;
+
             h2 {
                 display: flex;
                 justify-content: center;
@@ -1248,8 +1255,6 @@
         }
     
     }
-    
-
 } // sm red < 767.98px
 
 
@@ -1267,7 +1272,6 @@
 
 @media screen and (max-width: 575.98px) {
 
-    // col
     .container {
         max-width: 100%;
     }
@@ -1287,7 +1291,7 @@
         }
 
         &__menu {
-            
+
             font-size: 10px;
             
             a {
@@ -1351,7 +1355,6 @@
         .col-lg-4:nth-of-type(1),
         .col-lg-4:nth-of-type(2),
         .col-lg-4:nth-of-type(3) {
-
             margin-bottom: 16px;
             position: relative;
 
@@ -1397,6 +1400,7 @@
     }
 
     .numbers {
+
         .col-lg-12 {
             display: flex;
             flex-wrap: wrap;
@@ -1420,7 +1424,6 @@
     }
 
     .amazing {
-
         padding-bottom: 58px;
 
         & > div {
@@ -1447,12 +1450,14 @@
         .amazing__one {
 
             div > div {
+
                 img {
                     transform: scale(0.9);
                 }
             }
 
             div ~ div:last-child {
+
                 h2 {
                     font-size: 18px;
                 }
@@ -1498,7 +1503,6 @@
     }
 
     .meet {
-
         padding-bottom: 45px;
 
         & > div {
@@ -1517,9 +1521,9 @@
         }
 
         .container > div:last-child > div {
-        
+
             .meet__name {
-            
+
                 p:last-child {
                     margin-bottom: 20px;
                 }
@@ -1540,7 +1544,6 @@
         .col-lg-4:nth-of-type(1),
         .col-lg-4:nth-of-type(2),
         .col-lg-4:nth-of-type(3) {
-
             margin-bottom: 16px;
             position: relative;
 
@@ -1582,6 +1585,7 @@
         }
 
         .six_cons__all__row {
+
             .col-6, .col-12 {
                 justify-content: center;
                 align-items: center;
@@ -1617,7 +1621,6 @@
         }
 
         .work__items {
-
             display: grid;
             flex-direction: column;
             grid-template-rows: 1fr 1fr 1fr 1fr 220px;
@@ -1646,6 +1649,7 @@
 
     .happy {
         padding-bottom: 30px;
+
         .title__one {
             font-size: 24px;
             line-height: 35px;
@@ -1663,6 +1667,7 @@
         }
 
         .amazing__one {
+
             .col-12 {
                 display: block;
                 justify-content: center;
@@ -1671,14 +1676,15 @@
             }
 
             .col-lg-6 {
-
                 padding: 29px 20px 0px 20px;
+
                 div:nth-child(1) {
                     margin: 0;
                     margin-bottom: 23px;
                 }
 
                 div:last-child {
+
                     h2 {
                         font-size: 18px;
                         line-height: 21px;
@@ -1691,6 +1697,7 @@
                     }
         
                     & > div {
+
                         .header__line {
                             width: 134px;
                             margin-bottom: 30px;
@@ -1732,6 +1739,7 @@
             position: relative;
     
             .wedo__one {
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -1749,8 +1757,7 @@
                     line-height: 16px;
                 }
     
-                .stories__jan {
-    
+                .stories__jan {  
                     position: absolute;
     
                     p {
@@ -1791,6 +1798,7 @@
     }
 
     .latest {
+
         .title__one {
             padding-top: 46px;
         }
@@ -1809,11 +1817,11 @@
     }
 
     .footer {
-
         padding-bottom: 0px;
 
         .col-lg-4 {
             padding: 0 16px 0 16px;
+
             & > img {
                 transform: scale(0.6);
                 display: flex;
@@ -1859,6 +1867,7 @@
             .footer__input {
                 display: block;
                 border: 0;
+
                 input {
                     width: 100%;
                     margin: 0 0 25px 0;
@@ -1883,6 +1892,7 @@
 
         .col-lg-5 {
             padding: 0 15px 0 15px;
+
             & > h2 {
                 display: flex;
                 justify-content: center;
@@ -1893,6 +1903,7 @@
             div {
                 display: flex;
                 margin-bottom: -5px;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -1901,6 +1912,7 @@
     
             div {
                 display: block;
+
                 h2 {
                     font-size: 14px;
                     line-height: 16px;
@@ -1916,6 +1928,7 @@
 
         .col-lg-3 {
             padding: 0 15px 0 15px;
+
             h2 {
                 display: flex;
                 justify-content: center;
@@ -1960,5 +1973,4 @@
         }
     
     }
-
 } // blue col < 575.98px
