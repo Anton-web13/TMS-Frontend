@@ -403,8 +403,8 @@
         
                 p {
                     margin: 25px 0 30px 0;
-                    font-size: 14px;
-                    line-height: 16px;
+                    font-size: 18px;
+                    line-height: 21px;
                 }
     
                 .stories__jan {
@@ -1099,6 +1099,7 @@
         .col-lg-4 {
             padding: 0 16px 0 16px;
             & > img {
+                transform: scale(0.8);
                 display: flex;
                 margin: 0 auto;
                 padding: 52px 0 30px 0;
@@ -1108,8 +1109,8 @@
                 display: flex;
                 justify-content: center;
                 text-align: center;
-                font-size: 14px;
-                line-height: 16px;
+                font-size: 18px;
+                line-height: 21px;
             }
     
             & > p ~ p {
@@ -1810,6 +1811,7 @@
         .col-lg-4 {
             padding: 0 16px 0 16px;
             & > img {
+                transform: scale(0.6);
                 display: flex;
                 margin: 0 auto;
                 padding: 52px 0 30px 0;
