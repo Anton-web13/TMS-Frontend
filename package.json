@@ -110,11 +110,12 @@
     "yaml": "^1.10.2"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
     "parcel": "^2.8.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx run two__block.html --open"
+    "watch": "npx parcel two__block.html --open"
   },
   "repository": {
     "type": "git",
