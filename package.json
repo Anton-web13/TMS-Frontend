@@ -111,7 +111,11 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
-    "parcel": "^2.8.0"
+    "buffer": "^5.7.1",
+    "events": "^3.3.0",
+    "parcel": "^2.8.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
