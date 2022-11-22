@@ -214,8 +214,39 @@ const stringValue = function(value) {
 
 stringValue('helflo');
 
+// 7)
+const checkLetterCase = function(value) {
+    if(value.toUpperCase() === value) {
+        console.log("Оууу май, большая буква!")
+    } else {
+        console.log("Нет уж, маленькие буквы - скучно")
+    }
+}
 
+checkLetterCase('F');
 
+// 8)
+const concatenateOfWords = function(firstWord, secondtWord) {
+    console.log(`${firstWord} ${secondtWord}`);
+}
+
+concatenateOfWords('Hello', 'World');
+
+console.clear()
+
+// 9)
+const checkStringLength = function(string, number) {
+    console.log(string.length)
+    if(string.length > number) {
+        console.log('String is too long!');
+    } else if (string.length < number) {
+        console.log('String is too little!');
+    } else {
+        console.log(string);
+    }
+}
+
+checkStringLength('Hello my friend', 16);
 
 
 
