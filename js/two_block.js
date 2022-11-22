@@ -171,5 +171,56 @@ const min = function(a ,b) {
     console.log(minValue);
 }
 
-min(3, 0)
+min(3, -1)
+
+// 4 )
+const isEven = function(value) {
+    if(value % 2 === 0) {
+        value = 'true';
+    } else {
+        value = 'false';
+    }
+
+    console.log(value);
+}
+
+isEven(98);
+
+// 5)
+const deleteChars = function() {
+    const stringValue = 'Hello';
+    console.log(stringValue.slice(1, -1));
+}
+
+deleteChars();
+
+console.clear()
+
+// 6)
+const stringValue = function(value) {
+    const resultOneLetter = value[0].toUpperCase();
+    const resultAllLetter = value.slice(1).toLowerCase();
+    const resultAllLetterWhitoutLastLetter = value.slice(0, -1).toLowerCase();
+    let lastLetter = value.slice(value.length -1);
+
+    if(value.length % 2 === 0) {
+        lastLetter = lastLetter.toUpperCase();
+        console.log(`${resultOneLetter}${resultAllLetterWhitoutLastLetter}${lastLetter}`);
+    } else {
+        console.log(`${resultOneLetter}${resultAllLetter}`);
+    }
+
+}
+
+stringValue('helflo');
+
+
+
+
+
+
+
+
+
+
 
