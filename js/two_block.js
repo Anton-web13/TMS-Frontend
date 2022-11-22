@@ -175,16 +175,11 @@ min(3, -1)
 
 // 4 )
 const isEven = function(value) {
-    if(value % 2 === 0) {
-        value = 'true';
-    } else {
-        value = 'false';
-    }
-
-    console.log(value);
+    return value % 2 === 0
 }
 
-isEven(98);
+const resultOfIsEven = isEven(98);
+console.log(resultOfIsEven);
 
 // 5)
 const deleteChars = function() {
@@ -198,54 +193,80 @@ console.clear()
 
 // 6)
 const stringValue = function(value) {
+    // const resultOneLetter = value[0].toUpperCase();
+    // const resultAllLetter = value.slice(1).toLowerCase();
+    // const resultAllLetterWhitoutLastLetter = value.slice(1, -1).toLowerCase();
+    // let lastLetter = value.slice(value.length -1);
+
+    // if(value.length % 2 === 0) {
+    //     lastLetter = lastLetter.toUpperCase();
+    //     console.log(`${resultOneLetter}${resultAllLetterWhitoutLastLetter}${lastLetter}`);
+    // } else {
+    //     console.log(`${resultOneLetter}${resultAllLetter}`);
+    // }
+
     const resultOneLetter = value[0].toUpperCase();
-    const resultAllLetter = value.slice(1).toLowerCase();
-    const resultAllLetterWhitoutLastLetter = value.slice(1, -1).toLowerCase();
-    let lastLetter = value.slice(value.length -1);
 
     if(value.length % 2 === 0) {
-        lastLetter = lastLetter.toUpperCase();
-        console.log(`${resultOneLetter}${resultAllLetterWhitoutLastLetter}${lastLetter}`);
-    } else {
-        console.log(`${resultOneLetter}${resultAllLetter}`);
+        const resultAllLetterWhitoutLastLetter = value.slice(1, -1).toLowerCase();
+
+        return `${resultOneLetter}${resultAllLetterWhitoutLastLetter}${value[value.length -1].toUpperCase()}`
     }
+
+    return `${resultOneLetter}${value.slice(1).toLowerCase()}`
 
 }
 
-stringValue('helflo');
+const sdfgdtg = stringValue('helflo');
+console.log(sdfgdtg);
 
 // 7)
 const checkLetterCase = function(value) {
-    if(value.toUpperCase() === value) {
-        console.log("Оууу май, большая буква!")
-    } else {
-        console.log("Нет уж, маленькие буквы - скучно")
+    // if(value.toUpperCase() === value) {
+    //     console.log("Оууу май, большая буква!")
+    // } else {
+    //     console.log("Нет уж, маленькие буквы - скучно")
+    // }
+
+    // const teimmedValue = value
+
+    if(typeof value !== 'string' || value.trim().length > 1 || value.length === 0) {
+        return;
     }
+
+    return value === value.toUpperCase() ? 'Big letter' : 'Small letter'
 }
 
-checkLetterCase('F');
+const sdtydrttr = checkLetterCase('5');
+
+console.log(sdtydrttr);
 
 // 8)
 const concatenateOfWords = function(firstWord, secondtWord) {
-    console.log(`${firstWord} ${secondtWord}`);
+    // console.log(`${firstWord} ${secondtWord}`);
+    return `${firstWord} ${secondtWord}`
 }
 
-concatenateOfWords('Hello', 'World');
+const srglksjbdrgls = concatenateOfWords('Hello', 'World');
+console.log(srglksjbdrgls);
 
 
 // 9)
 const checkStringLength = function(string, number) {
-    console.log(string.length)
-    if(string.length > number) {
-        console.log('String is too long!');
-    } else if (string.length < number) {
-        console.log('String is too little!');
-    } else {
-        console.log(string);
-    }
+    // console.log(string.length)
+    // if(string.length > number) {
+    //     console.log('String is too long!');
+    // } else if (string.length < number) {
+    //     console.log('String is too little!');
+    // } else {
+    //     console.log(string);
+    // }
+
+    return string.length > number ? 'String is too long!' : 'String is too little!'
 }
 
-checkStringLength('Hello my friend', 16);
+const weraewrwrg = checkStringLength('Hello my friend', 16);
+console.log(weraewrwrg);
 
 
 
