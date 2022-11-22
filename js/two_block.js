@@ -131,18 +131,45 @@
 // HELLO
 
 
-const nameWord = 'hEllo';
 
-const someFunction = function() {
-    const firstLetter = nameWord.toLowerCase();
-    // const upperLetter = value.toUpperCase();
-    // const thirdLetter = value.replace();
 
-    return firstLetter;
+//  1)
+const helloOleg = function(value) {
+
+    if(value === 'Mark') {
+        console.log(`Hi, ${value}`)
+    } else {
+        console.log(`Hello, ${value}`)
+    }
 }
 
-console.log(someFunction());
+helloOleg('Pol');
 
 
+//  2)
+const hypotenuse = function(n, m) {
 
+    const result = (n*n) + (m*m);
+    console.log(Math.sqrt(result));
+}
+
+hypotenuse(4, 4);
+
+
+// 3)
+const min = function(a ,b) {
+    let minValue = 0;
+    let maxValue = 0;
+    if(a < b) {
+        minValue = a;
+        maxValue = b;
+    } else {
+        minValue = b;
+        maxValue = a;
+    }
+
+    console.log(minValue);
+}
+
+min(3, 0)
 
