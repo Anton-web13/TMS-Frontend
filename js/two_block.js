@@ -1,272 +1,177 @@
-// // const a = 15;
-// // const b = 19;
+// const { chartreuse } = require("color-name");
 
-// console.log(a, b);
+// const cyclesFunction = function() {
+//     const string = 'Hello World';
 
-// const sfasrf = Symbol(123);
+//     let result = '';
 
-// console.log(typeof a);
+//     for (let i = 0; i < string.length; i++) {
+//         const char = string[i];
 
-// // function sayHello () {
-// //     if (a > b) {
-// //         console.log('Hello World')
-// //     }
-// // }
+//         if(char === char.toUpperCase()) {
+//             result += char.toLowerCase;
+//         } else {
+//             result += char.toUpperCase;
+//         }
+//     }
 
-// // sayHello();
+//     // for (let i = string.length; i >= 0; i--) {
+//     //     const char = string[i];
 
-// const firstNumber = 11;
-// const secondNumber = 59;
-
-// function calcilateSum(firstNumber, secondNumber) {
-//     return firstNumber + secondNumber
-// }
-
-// // calcilateSum(firstNumber, secondNumber);
-// // calcilateSum(1, 2);
-
-// const sumOfOneAndTwo = calcilateSum(1, 2);
-
-// console.log(sumOfOneAndTwo);
-
-// console.clear();
-
-// function sumValue(a, b) {
-//     // if (a > b) {
-//     //     console.log('A is the winner')
-//     // } else {
-//     //     console.log('B is the winner')
+//     //     if(char === char.toUpperCase()) {
+//     //         result += char.toLowerCase;
+//     //     } else {
+//     //         result += char.toUpperCase;
+//     //     }
 //     // }
 
-//     if (a < b) {
-//         console.log('A is the winner');
-//         return;
+//     // for (const char of string) {
+//     //     console.log(char)
+//     // }
+
+//     // if(char.toLowerCase() === 'w') {
+//     //     break;
+//     // }
+//     // // result += char;
+//     return result;
+// }
+
+// console.log(cyclesFunction());
+
+
+
+
+
+
+
+
+// for of
+
+
+// const cyclesFunction = function() {
+//     const string = 'Hello World';
+
+//     for (let char in string) {
+
+//         char = string[char]
+
+//         console.log(char)
+
 //     }
-    
-//     console.log('B is the winner')
 // }
+// console.log(cyclesFunction());
 
-// sumValue(1, 5);
 
-// console.clear();
 
-// function someFunction (a, b) {
-//     if (typeof a === 'number' && typeof b === 'number') {
-//         return a + b;
+
+// while
+
+// const cyclesFunction = function() {
+//     const string = 'Hello World';
+//     let i = 0;
+
+//     while (i < string.length) {
+//         console.log(string[i]);
+//         i++;
 //     }
-//     return 'One'
 // }
-// console.log(someFunction(1, 'string'));
+// // console.log(cyclesFunction());
+// cyclesFunction();
 
-// console.log('sdfgsdg');
 
-// const someString = "Hello";
-// // let someString = "Hello";
 
-// const firstLetter = someString[0];
-// const lastLetter = someString[someString.length -1];
-// console.log(firstLetter, lastLetter);
 
-// const someStringe = function() {
 
-//     const newValu = someString.toUpperCase()
-//     return newValu;
+// do while
+
+// const cyclesFunction = function() {
+//     const string = 'Hello World';
+//     let i = 0;
+
+//     do {
+//         const char = string[i];
+
+//         console.log(char);
+//         i++;
+        
+//     } while (i < string.length)
 // }
-
-// console.log(someStringe());
-
+// cyclesFunction();
 
 
 
+// array
 
-// const someStringe = function() {
-
-//     someString = someString.toUpperCase()
-
-//     console.log(someString);
-// }
-
-// someStringe();
-
-// console.log(someString);
-
-
-// const hello = '    helo     oooolo            ';
-
-// const someString = function() {
-//     // console.log(hello);
-//     // return hello.trim();
-//     // return hello.trim();
-
-//     // const newWord = hello.replace('o', 'Y');
-//     const newWord = hello.replaceAll(' ', '').replaceAll('o', 'A');
-//     return newWord;
-
-// }
-
-// console.log(someString())
-
-
-
-// const globalVariable = 'Hello World';
-
-// const someFumctions = function() {
-//     const firstWorld = globalVariable.slice(0, 4);
-//     const firstWorld2 = globalVariable.substring(0, 8);
-//     const firstWorld3 = globalVariable.indexOf('l');
-//     const firstWorld4 = globalVariable.indexOf('l', 4);
-
-//     const firstWorld5 = globalVariable.slice(-globalVariable.length, -2);
-//     const firstWorld6 = globalVariable.slice(-5, 11);
-//     const firstWorld7 = globalVariable.slice(-5, globalVariable.length);
-//     const firstWorld8 = globalVariable.charAt(150);
-
-//     console.log(firstWorld, firstWorld2, firstWorld3, firstWorld4, firstWorld5, firstWorld6, firstWorld7, firstWorld8);
-// }
-
-// someFumctions()
-
-// hello
-// hElLo
-// HELLO
+// const numbers = [1,2,3,4,5];
+// numbers[0] = 'a';
+// console.log(numbers);
+// const arrayOfArrays = [[1,2], [6,2], [9,5], ['Hello']];
 
 
 
 
-//  1)
-const helloOleg = function(value) {
+//  push, unshift, pop, schift, sort
 
-    if(value === 'Mark') {
-        console.log(`Hi, ${value}`)
-    } else {
-        console.log(`Hello, ${value}`)
-    }
-}
+// const users = [];
 
-helloOleg('Pol');
+// users.push('2sfsr');
+// users.push('Hello');
+// users.push(1);
+// console.log(users);
+// users.pop();
+// users.unshift(123);
 
-
-//  2)
-const hypotenuse = function(n, m) {
-
-    const result = (n*n) + (m*m);
-    console.log(Math.sqrt(result));
-}
-
-hypotenuse(4, 4);
+// console.log(users);
 
 
-// 3)
-const min = function(a ,b) {
-    let minValue = 0;
-    let maxValue = 0;
-    if(a < b) {
-        minValue = a;
-        maxValue = b;
-    } else {
-        minValue = b;
-        maxValue = a;
-    }
+// slice не мутирующий метод
+// const result = users.slice(0 ,1);
+// console.log(result);
 
-    console.log(minValue);
-}
+// splice мутирующий метод
+// const result = users.splice(2, 1, 4,5,7,6,9);
+// console.log(result);
+// console.log(users);
 
-min(3, -1)
 
-// 4 )
-const isEven = function(value) {
-    return value % 2 === 0
-}
 
-const resultOfIsEven = isEven(98);
-console.log(resultOfIsEven);
 
-// 5)
-const deleteChars = function() {
-    const stringValue = 'Hello';
-    console.log(stringValue.slice(1, -1));
-}
 
-deleteChars();
 
-console.clear()
+// split
 
-// 6)
-const stringValue = function(value) {
-    // const resultOneLetter = value[0].toUpperCase();
-    // const resultAllLetter = value.slice(1).toLowerCase();
-    // const resultAllLetterWhitoutLastLetter = value.slice(1, -1).toLowerCase();
-    // let lastLetter = value.slice(value.length -1);
+const getCharArray = function(string) {
+    // const result = [];
 
-    // if(value.length % 2 === 0) {
-    //     lastLetter = lastLetter.toUpperCase();
-    //     console.log(`${resultOneLetter}${resultAllLetterWhitoutLastLetter}${lastLetter}`);
-    // } else {
-    //     console.log(`${resultOneLetter}${resultAllLetter}`);
+    // for (const char of string) {
+    //     result.push(char);
     // }
 
-    const resultOneLetter = value[0].toUpperCase();
+    // return result
 
-    if(value.length % 2 === 0) {
-        const resultAllLetterWhitoutLastLetter = value.slice(1, -1).toLowerCase();
-
-        return `${resultOneLetter}${resultAllLetterWhitoutLastLetter}${value[value.length -1].toUpperCase()}`
-    }
-
-    return `${resultOneLetter}${value.slice(1).toLowerCase()}`
-
+    return string.split('/')
 }
 
-const sdfgdtg = stringValue('helflo');
-console.log(sdfgdtg);
+// console.log(getCharArray('Hello I am'))
+console.log(getCharArray('10/12/2022'))
 
-// 7)
-const checkLetterCase = function(value) {
-    // if(value.toUpperCase() === value) {
-    //     console.log("Оууу май, большая буква!")
-    // } else {
-    //     console.log("Нет уж, маленькие буквы - скучно")
-    // }
 
-    // const teimmedValue = value
 
-    if(typeof value !== 'string' || value.trim().length > 1 || value.length === 0) {
-        return;
-    }
 
-    return value === value.toUpperCase() ? 'Big letter' : 'Small letter'
+// join 
+
+const dates = ['10', '12', '2022']
+const joinDates = function() {
+
+    return dates.join('/');
 }
 
-const sdtydrttr = checkLetterCase('5');
-
-console.log(sdtydrttr);
-
-// 8)
-const concatenateOfWords = function(firstWord, secondtWord) {
-    // console.log(`${firstWord} ${secondtWord}`);
-    return `${firstWord} ${secondtWord}`
-}
-
-const srglksjbdrgls = concatenateOfWords('Hello', 'World');
-console.log(srglksjbdrgls);
+console.log(joinDates())
 
 
-// 9)
-const checkStringLength = function(string, number) {
-    // console.log(string.length)
-    // if(string.length > number) {
-    //     console.log('String is too long!');
-    // } else if (string.length < number) {
-    //     console.log('String is too little!');
-    // } else {
-    //     console.log(string);
-    // }
 
-    return string.length > number ? 'String is too long!' : 'String is too little!'
-}
 
-const weraewrwrg = checkStringLength('Hello my friend', 16);
-console.log(weraewrwrg);
+
 
 
 
