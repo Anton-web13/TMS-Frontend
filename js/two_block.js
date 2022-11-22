@@ -200,7 +200,7 @@ console.clear()
 const stringValue = function(value) {
     const resultOneLetter = value[0].toUpperCase();
     const resultAllLetter = value.slice(1).toLowerCase();
-    const resultAllLetterWhitoutLastLetter = value.slice(0, -1).toLowerCase();
+    const resultAllLetterWhitoutLastLetter = value.slice(1, -1).toLowerCase();
     let lastLetter = value.slice(value.length -1);
 
     if(value.length % 2 === 0) {
@@ -232,7 +232,6 @@ const concatenateOfWords = function(firstWord, secondtWord) {
 
 concatenateOfWords('Hello', 'World');
 
-console.clear()
 
 // 9)
 const checkStringLength = function(string, number) {
