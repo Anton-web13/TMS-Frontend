@@ -1,180 +1,276 @@
-// const { chartreuse } = require("color-name");
+// const sum = function(a,b) {
+//     return a+b;
+// }
+//
+// console.log(sum(8,4));
+// // const arrowSum = (a, b) => {
+// //     return a+b;
+// // }
+//
+// console.log(arguments)
 
-// const cyclesFunction = function() {
-//     const string = 'Hello World';
+// const someFunction = (fn) => {
+//   console.log(fn());
+//
+// }
+//
+// someFunction( () => {
+//     console.log('Hello, Ich bin hier');
+//     return a+b;
+// })
+//
+// const sum = (a,b) => a + b;
+// someFunction(() => sum(1,2))
 
-//     let result = '';
 
-//     for (let i = 0; i < string.length; i++) {
-//         const char = string[i];
+// const mumber = 5;
+// const string = mumber.toString();
+// const string2 = String(mumber);
+// const string3 = `${mumber}`;
 
-//         if(char === char.toUpperCase()) {
-//             result += char.toLowerCase;
-//         } else {
-//             result += char.toUpperCase;
-//         }
+
+
+// const string = '55';
+// const number1 = Number(string);
+// const number2 = string;
+// console.log(number2);
+
+
+
+// map, filter, reduce, forEach (новый массив, немутирующий)
+// find, findIndex
+
+// map
+// const doubleNumbers = (numbers) => {
+//
+//     if (!Array.isArray(numbers)) {
+//         return;
 //     }
-
-//     // for (let i = string.length; i >= 0; i--) {
-//     //     const char = string[i];
-
-//     //     if(char === char.toUpperCase()) {
-//     //         result += char.toLowerCase;
-//     //     } else {
-//     //         result += char.toUpperCase;
-//     //     }
-//     // }
-
-//     // for (const char of string) {
-//     //     console.log(char)
-//     // }
-
-//     // if(char.toLowerCase() === 'w') {
-//     //     break;
-//     // }
-//     // // result += char;
-//     return result;
-// }
-
-// console.log(cyclesFunction());
-
-
-
-
-
-
-
-
-// for of
-
-
-// const cyclesFunction = function() {
-//     const string = 'Hello World';
-
-//     for (let char in string) {
-
-//         char = string[char]
-
-//         console.log(char)
-
-//     }
-// }
-// console.log(cyclesFunction());
-
-
-
-
-// while
-
-// const cyclesFunction = function() {
-//     const string = 'Hello World';
-//     let i = 0;
-
-//     while (i < string.length) {
-//         console.log(string[i]);
-//         i++;
-//     }
-// }
-// // console.log(cyclesFunction());
-// cyclesFunction();
-
-
-
-
-
-// do while
-
-// const cyclesFunction = function() {
-//     const string = 'Hello World';
-//     let i = 0;
-
-//     do {
-//         const char = string[i];
-
-//         console.log(char);
-//         i++;
-        
-//     } while (i < string.length)
-// }
-// cyclesFunction();
-
-
-
-// array
-
-// const numbers = [1,2,3,4,5];
-// numbers[0] = 'a';
-// console.log(numbers);
-// const arrayOfArrays = [[1,2], [6,2], [9,5], ['Hello']];
-
-
-
-
-//  push, unshift, pop, schift, sort
-
-// const users = [];
-
-// users.push('2sfsr');
-// users.push('Hello');
-// users.push(1);
-// console.log(users);
-// users.pop();
-// users.unshift(123);
-
-// console.log(users);
-
-
-// slice не мутирующий метод
-// const result = users.slice(0 ,1);
-// console.log(result);
-
-// splice мутирующий метод
-// const result = users.splice(2, 1, 4,5,7,6,9);
-// console.log(result);
-// console.log(users);
-
-
-
-
-
-
-// split
-
-const getCharArray = function(string) {
-    // const result = [];
-
-    // for (const char of string) {
-    //     result.push(char);
+    // if (Array.isArray(numbers)) {
+    //     const result = numbers.map((currentElement) => currentElement.toString());
+    //     return result;
     // }
 
-    // return result
+    // return numbers.map((number) => number.toString());
 
-    return string.split('/')
-}
+    // const result = numbers.map((currentElement, index, currentArray) => {
+    //     // console.log('Fisrt argument', currentElement)
+    //     // console.log('Second argument', index)
+    //     // console.log('Third argument', currentArray)
+    //     return currentElement.toString();
+    // })
 
-// console.log(getCharArray('Hello I am'))
-console.log(getCharArray('10/12/2022'))
+// }
 
-
-
-
-// join 
-
-const dates = ['10', '12', '2022']
-const joinDates = function() {
-
-    return dates.join('/');
-}
-
-console.log(joinDates())
+// const array = [1,2,3];
+// console.log(doubleNumbers([1,2,3]));
+// console.log(array);
+// doubleNumbers([1,2,3])
 
 
+// const doubleNumbers2 = (numbers) => {
+//     const result = [];
+//
+//     for (let i = 0; i < numbers.length; i++) {
+//         result.push(numbers[i])
+//     }
+//     return result
+// }
+// console.log(doubleNumbers2([1,2,3]));
+
+
+
+// const matrix = [[1,2], [1,5], [4,5,6]];
+// console.log(matrix[2][1]);
+
+// console.clear();
+
+
+
+//
+// // filter
+// const nums = [1,2,3,4,5,8]
+// const filterNums = (numbers) => {
+//     if (!Array.isArray(numbers)) {
+//         return;
+//     }
+//
+//     // const result = numbers.filter((number) => {
+//     //     return number === 3;
+//     // })
+//
+//     return numbers.filter((number) => {
+//         return number === 3;
+//     })
+// }
+//
+// console.log(filterNums(nums));
+//
+// const filterNumsWithFor = (numbers) => {
+//     const result = [];
+//
+//     for (const number of numbers) {
+//         if (number > 3) {
+//             result.push(number)
+//         }
+//     }
+//
+//     return result;
+// }
+//
+// console.log(filterNumsWithFor(nums))
+//
+//
+//
+//
+// //forEach
+// const nums = [1,2,3,4,5,8];
+// const filterNums = (numbers) => {
+//     if (!Array.isArray(numbers)) {
+//         return;
+//     }
+//
+//     // const result = numbers.filter((number) => {
+//     //     return number === 3;
+//     // })
+//
+//     return numbers.filter((number) => {
+//         return number === 3;
+//     })
+// }
+//
+// console.log(filterNums(nums));
+//
+//
+// const filterNumsForEach = (numbers) => {
+//     const result = [];
+//     numbers.forEach((number) => {
+//         if (number > 3) {
+//             result.push(number)
+//         }
+//     })
+//
+//     return result;
+// }
+//
+// console.log(filterNumsForEach([1,25,8,2,8,6,54,8,3,4,8]))
+
+
+
+
+// find
+
+// const muberstwo = ['Alex', 'Max', 'Vika', 'Petr']
+//
+// const findNum = (users, userToSearch) => {
+//     const foundUser = users.find((user) => {
+//         return user.toLowerCase() === userToSearch.toLowerCase()
+//     });
+//
+//     if (foundUser) {
+//         return foundUser;
+//     }
+//
+//     return 'user not found!'
+// }
+//
+// console.log(findNum(muberstwo, 'Alex'))
+
+
+
+// findIndex
+
+// const muberstwo2 = ['Alex', 'Max', 'Vika', 'Petr']
+//
+// const findNumfindIndex = (users, userToSearch) => {
+//     const foundUserIndex = users.findIndex((user) => {
+//         return user.toLowerCase() === userToSearch.toLowerCase()
+//     });
+//
+//     if (foundUserIndex !== -1) {
+//         return foundUserIndex;
+//     }
+//
+//     return 'user not found!'
+// }
+//
+// console.log(findNumfindIndex(muberstwo2, 'Alex'))
 
 
 
 
 
+// const userList = ["Alex", "alex", "Max", "Vika", "Petr", "Alexandra"];
 
+// my task my task my task my task my task my task my task my task
+
+// const filterUserList = (users) => {
+//     const allNames = [];
+//
+//     if (!Array.isArray(users)) {
+//         return;
+//     }
+//
+//     users.filter((user) => {
+//         const numberToUpperCase = user.toUpperCase();
+//         if (numberToUpperCase[0] !== 'M' && user[0] !== 'P') {
+//             allNames.push(user)
+//         }
+//     })
+//
+//     return allNames;
+// }
+//
+// console.log(filterUserList(userList));
+
+
+// const filterUserList = (users) => {
+//     const FIRST_LETTER = 'm';
+//     const SECOND_LETTER = 'p';
+//
+//     if (!Array.isArray(users)) {
+//         return;
+//     }
+//
+//     return users.filter((user) => {
+//         const firstLetter = user[0].toLowerCase();
+//
+//         return (
+//             firstLetter !== FIRST_LETTER && firstLetter !== SECOND_LETTER
+//         );
+//     });
+//
+// };
+//
+// console.log(filterUserList(userList));
+
+
+const userList = ["Alex", "alex", "Max", "Vika", "Petr", "Alexandra"];
+
+// ['a','p']
+// includes
+
+const filterUserList = (users, letterUsers) => {
+    if (!Array.isArray(users)) {
+        return;
+    }
+
+    return users.filter((user) => {
+        const firstUser = user[0].toLowerCase();
+
+        for (const letter of letterUsers) {
+            if (firstUser.includes(letter)) {
+                return;
+            }
+        }
+
+        return user;
+
+    });
+
+};
+
+console.log(filterUserList(userList, ['a','p']));
 
 
 
