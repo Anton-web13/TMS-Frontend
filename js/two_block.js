@@ -1,256 +1,111 @@
-// const sum = function(a,b) {
-//     return a+b;
-// }
-//
-// console.log(sum(8,4));
-// // const arrowSum = (a, b) => {
-// //     return a+b;
-// // }
-//
-// console.log(arguments)
+// debugger
 
-// const someFunction = (fn) => {
-//   console.log(fn());
-//
-// }
-//
-// someFunction( () => {
-//     console.log('Hello, Ich bin hier');
-//     return a+b;
-// })
-//
-// const sum = (a,b) => a + b;
-// someFunction(() => sum(1,2))
+// 1)
+// this don't works
+const filterUsers = (users, blackListLetters) => {
+    if (!Array.isArray(users) || !Array.isArray(blackListLetters)) return;
 
+    const lowerCasedBlackListLetters = blackListLetters.map((letter) => {
+        letter.toLowerCase();
+    });
 
-// const mumber = 5;
-// const string = mumber.toString();
-// const string2 = String(mumber);
-// const string3 = `${mumber}`;
+    return users.filter(userName => {
+        const firstLetter = userName[0].toLowerCase();
 
+        return !lowerCasedBlackListLetters.includes(firstLetter)
+    });
+}
 
+console.log(filterUsers(["Alex", "Max", "Lena"], ['m','a']));
 
-// const string = '55';
-// const number1 = Number(string);
-// const number2 = string;
-// console.log(number2);
+/////////////////////////////////
 
+// this don't works
+const filterUsers2 = (users, blackListLetters) => {
+    if (!Array.isArray(users) || !Array.isArray(blackListLetters)) return;
 
+    const lowerCasedBlackListLetters = blackListLetters.map((letter) => {
+        letter.toLowerCase();
+    });
 
-// map, filter, reduce, forEach (новый массив, немутирующий)
-// find, findIndex
+    return users.filter(userName => {
+        const firstLetter = userName[0].toLowerCase();
+        const isLetterBlackListed =
+            lowerCasedBlackListLetters.findIndex(
+                (letter) => letter === firstLetter
+            ) !== -1
+        return !isLetterBlackListed;
+    });
+}
 
-// map
-// const doubleNumbers = (numbers) => {
-//
-//     if (!Array.isArray(numbers)) {
-//         return;
-//     }
-    // if (Array.isArray(numbers)) {
-    //     const result = numbers.map((currentElement) => currentElement.toString());
-    //     return result;
-    // }
+console.log(filterUsers2(["Alex", "Max", "Lena"], ["m"]));
 
-    // return numbers.map((number) => number.toString());
+// this works
+const filterUssser3 = (users, blackListLetters) => {
+    if (!Array.isArray(users) || !Array.isArray(blackListLetters)) return;
 
-    // const result = numbers.map((currentElement, index, currentArray) => {
-    //     // console.log('Fisrt argument', currentElement)
-    //     // console.log('Second argument', index)
-    //     // console.log('Third argument', currentArray)
-    //     return currentElement.toString();
-    // })
+    const result = [];
+    const lowerCasedBlackListesdLetters = [];
 
-// }
+    for(let i =0; i < blackListLetters.length; i++) {
+        const letter = blackListLetters[i].toLowerCase();
 
-// const array = [1,2,3];
-// console.log(doubleNumbers([1,2,3]));
-// console.log(array);
-// doubleNumbers([1,2,3])
+        lowerCasedBlackListesdLetters.push(letter);
+    }
 
+    for(let i =0; i < users.length; i++) {
+        const user = users[i];
+        const firstNameLetter = user[0].toLowerCase();
 
-// const doubleNumbers2 = (numbers) => {
-//     const result = [];
-//
-//     for (let i = 0; i < numbers.length; i++) {
-//         result.push(numbers[i])
-//     }
-//     return result
-// }
-// console.log(doubleNumbers2([1,2,3]));
+        if (!lowerCasedBlackListesdLetters.includes(firstNameLetter)) {
+            result.push(user);
+        }
+    }
+
+    return result;
+}
+
+console.log(filterUssser3(["Alex", "alex", "Max", "Via", "Petr", "Alexandra"], ['a','p']));
 
 
+// 2)
+const filterUserListFilter3333 = (letters) => {
+    if (!Array.isArray(letters))  return;
 
-// const matrix = [[1,2], [1,5], [4,5,6]];
-// console.log(matrix[2][1]);
+    return letters.map((letter) =>
+        letter === letter.toUpperCase()
+            ? letter.toLowerCase()
+            : letter.toUpperCase()
+    );
+};
 
-// console.clear();
+console.log(filterUserListFilter3333(['a', 'B', 'C', 'L', 'g', 'g', 'EEE']));
 
-
-
-//
-// // filter
-// const nums = [1,2,3,4,5,8]
-// const filterNums = (numbers) => {
-//     if (!Array.isArray(numbers)) {
-//         return;
-//     }
-//
-//     // const result = numbers.filter((number) => {
-//     //     return number === 3;
-//     // })
-//
-//     return numbers.filter((number) => {
-//         return number === 3;
+// 3)
+// it's not work
+// const info = (numbers) => {
+//     return numbers.map((number, index) => {
+//         `Value: ${number}, Index: ${index}, Squared: ${number*number}`;
 //     })
-// }
-//
-// console.log(filterNums(nums));
-//
-// const filterNumsWithFor = (numbers) => {
-//     const result = [];
-//
-//     for (const number of numbers) {
-//         if (number > 3) {
-//             result.push(number)
-//         }
-//     }
-//
-//     return result;
-// }
-//
-// console.log(filterNumsWithFor(nums))
-//
-//
-//
-//
-// //forEach
-// const nums = [1,2,3,4,5,8];
-// const filterNums = (numbers) => {
-//     if (!Array.isArray(numbers)) {
-//         return;
-//     }
-//
-//     // const result = numbers.filter((number) => {
-//     //     return number === 3;
-//     // })
-//
-//     return numbers.filter((number) => {
-//         return number === 3;
-//     })
-// }
-//
-// console.log(filterNums(nums));
-//
-//
-// const filterNumsForEach = (numbers) => {
-//     const result = [];
-//     numbers.forEach((number) => {
-//         if (number > 3) {
-//             result.push(number)
-//         }
-//     })
-//
-//     return result;
-// }
-//
-// console.log(filterNumsForEach([1,25,8,2,8,6,54,8,3,4,8]))
-
-
-
-
-// find
-
-// const muberstwo = ['Alex', 'Max', 'Vika', 'Petr']
-//
-// const findNum = (users, userToSearch) => {
-//     const foundUser = users.find((user) => {
-//         return user.toLowerCase() === userToSearch.toLowerCase()
-//     });
-//
-//     if (foundUser) {
-//         return foundUser;
-//     }
-//
-//     return 'user not found!'
-// }
-//
-// console.log(findNum(muberstwo, 'Alex'))
-
-
-
-// findIndex
-
-// const muberstwo2 = ['Alex', 'Max', 'Vika', 'Petr']
-//
-// const findNumfindIndex = (users, userToSearch) => {
-//     const foundUserIndex = users.findIndex((user) => {
-//         return user.toLowerCase() === userToSearch.toLowerCase()
-//     });
-//
-//     if (foundUserIndex !== -1) {
-//         return foundUserIndex;
-//     }
-//
-//     return 'user not found!'
-// }
-//
-// console.log(findNumfindIndex(muberstwo2, 'Alex'))
-
-
-
-
-
-// const userList = ["Alex", "alex", "Max", "Vika", "Petr", "Alexandra"];
-
-// my task my task my task my task my task my task my task my task
-
-// const filterUserList = (users) => {
-//     const allNames = [];
-//
-//     if (!Array.isArray(users)) {
-//         return;
-//     }
-//
-//     users.filter((user) => {
-//         const numberToUpperCase = user.toUpperCase();
-//         if (numberToUpperCase[0] !== 'M' && user[0] !== 'P') {
-//             allNames.push(user)
-//         }
-//     })
-//
-//     return allNames;
-// }
-//
-// console.log(filterUserList(userList));
-
-
-// const filterUserList = (users) => {
-//     const FIRST_LETTER = 'm';
-//     const SECOND_LETTER = 'p';
-//
-//     if (!Array.isArray(users)) {
-//         return;
-//     }
-//
-//     return users.filter((user) => {
-//         const firstLetter = user[0].toLowerCase();
-//
-//         return (
-//             firstLetter !== FIRST_LETTER && firstLetter !== SECOND_LETTER
-//         );
-//     });
-//
 // };
 //
-// console.log(filterUserList(userList));
+// console.log(info(3))
 
 
-const userList = ["Alex", "alex", "Max", "Vika", "Petr", "Alexandra"];
+// 4)
+const info2 = (data) => {
 
-// ['a','p']
-// includes
+    return data.filter((item) => {
+        const isString = typeof item === 'string';
+        return isString && item.length % 2 === 0;
+    })
+};
 
-const filterUserList = (users, letterUsers) => {
+console.log(info2(["Hiyy", 25, 3, 46, 5, "JSjg", 2, "C+h+ii"]))
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// filter
+const filterUserListFilter = (users, letterUsers) => {
     if (!Array.isArray(users)) {
         return;
     }
@@ -269,10 +124,255 @@ const filterUserList = (users, letterUsers) => {
     });
 
 };
-
-console.log(filterUserList(userList, ['a','p']));
-
+console.log(filterUserListFilter(["Alex", "alex", "Max", "Via", "Petr", "Alexandra"], ['a','p']));
 
 
+
+
+
+
+
+
+
+// 2)
+// for
+const allLetterFor = (letterArray) => {
+    if (!Array.isArray(letterArray)) {
+        return;
+    }
+
+    const newLetterArray = [];
+
+    for (let i = 0; i < letterArray.length; i++) {
+        const ONE_ELEMENT_OF_ARRAY = letterArray[i].toUpperCase();
+        const letterEachStep = letterArray[i]
+        if (letterEachStep === ONE_ELEMENT_OF_ARRAY) {
+            newLetterArray.push(letterEachStep.toLowerCase());
+        } else {
+            newLetterArray.push(letterEachStep.toUpperCase());
+        }
+    }
+
+    return newLetterArray;
+}
+console.log(allLetterFor(['a', 'B', 'C', 'L', 'g']));
+
+
+// while
+const allLetterWhile = (letterArray) => {
+    if (!Array.isArray(letterArray)) {
+        return;
+    }
+
+    const newLetterArray = [];
+    let i = 0;
+    while (i < letterArray.length) {
+        const ONE_ELEMENT_OF_ARRAY = letterArray[i].toUpperCase();
+        if (letterArray[i] === ONE_ELEMENT_OF_ARRAY) {
+            newLetterArray.push(letterArray[i].toLowerCase());
+        } else {
+            newLetterArray.push(letterArray[i].toUpperCase());
+        }
+        i++
+    }
+
+    return newLetterArray;
+}
+console.log(allLetterWhile(['a', 'B', 'C', 'L', 'g', 'g', 'EEE']));
+
+
+// for of
+const allLetterForOf = (letterArray) => {
+    if (!Array.isArray(letterArray)) {
+        return;
+    }
+
+    const newLetterArray = [];
+    for (const letter of letterArray) {
+        const ONE_ELEMENT_OF_ARRAY = letter.toUpperCase();
+        if (letter === ONE_ELEMENT_OF_ARRAY) {
+            newLetterArray.push(letter.toLowerCase());
+        } else {
+            newLetterArray.push(letter.toUpperCase());
+        }
+    }
+
+    return newLetterArray;
+}
+console.log(allLetterForOf(['a', 'B', 'C', 'L', 'GGGGg', 'g', 'EEE']));
+
+
+// map
+const allLetterMap = (letterArray) => {
+    if (!Array.isArray(letterArray)) {
+        return;
+    }
+
+    const letterEachStep = letterArray.map((val) => {
+        const ONE_ELEMENT_OF_ARRAY = val.toUpperCase();
+        if (val === ONE_ELEMENT_OF_ARRAY) {
+            return (val.toLowerCase());
+        }
+
+        return (val.toUpperCase());
+    })
+
+    return letterEachStep;
+}
+console.log(allLetterMap(['a', 'B', 'C', 'LJHHHL', 'GGGGg', 'g', 'EEE']));
+
+
+
+
+
+
+
+// 3)
+const numbersArrayFunction = (value) => {
+    if (!Array.isArray(value)) {
+        return;
+    }
+
+    const stringNumbersArray = [];
+    for (let i = 0; i < value.length; i++) {
+        const eachValue = value[i];
+        stringNumbersArray.push(`Value: ${eachValue}, Index: ${value.indexOf(eachValue)}, Squared: ${Math.pow(eachValue, 2)}`);
+    }
+
+    return stringNumbersArray;
+}
+console.log(numbersArrayFunction([3,4,6]));
+
+// while
+const numbersArrayFunctionWhile = (value) => {
+    if (!Array.isArray(value)) {
+        return;
+    }
+
+    let i = 0;
+    const stringNumbersArray = [];
+    while (i < value.length) {
+        const eachValue = value[i];
+        stringNumbersArray.push(`Value: ${eachValue}, Index: ${value.indexOf(eachValue)}, Squared: ${Math.pow(eachValue, 2)}`);
+        i++;
+    }
+
+    return stringNumbersArray;
+}
+console.log(numbersArrayFunctionWhile([3,4,6]));
+
+
+// for of
+const numbersArrayFunctionForOf = (value) => {
+    if (!Array.isArray(value)) {
+        return;
+    }
+
+    const stringNumbersArray = [];
+    for (const val of value) {
+        stringNumbersArray.push(`Value: ${val}, Index: ${value.indexOf(val)}, Squared: ${Math.pow(val, 2)}`);
+    }
+
+    return stringNumbersArray;
+}
+console.log(numbersArrayFunctionForOf([3,4,6]));
+
+
+// map
+const numbersArrayFunctionMap = (value) => {
+    if (!Array.isArray(value)) {
+        return;
+    }
+
+    const numberEachStep = value.map((val) => `Value: ${val}, index: ${value.indexOf(val)}, Squared: ${Math.pow(val, 2)}`)
+
+    return numberEachStep;
+}
+console.log(numbersArrayFunctionMap([3,8,6]));
+
+
+
+
+
+
+
+// 4)
+// for
+const allValues = (value) => {
+    if (!Array.isArray(value)) {
+        return;
+    }
+
+    // const number = 55;
+    // const len = Math.ceil(Math.log10(number + 1));
+    // console.log(len); // 2
+    // console.log(number.length); // undefined
+    //     if (value[i].length % 2 === 0) evenValues.push(value[i]);
+    //     if (string % 2 === 0) evenValues.push(string);
+
+    const evenValues = [];
+    for (let i = 0; i < value.length; i++) {
+        const string = value[i];
+        if (typeof string === 'string' && string.length % 2 === 0) evenValues.push(string);
+    }
+
+    return evenValues;
+}
+
+console.log(allValues(["Hiyy", 25, 3, 46, 5, "JSjg", 2, "C+h+ii"]));
+
+
+// while
+const allValuesWhile = (value) => {
+    if (!Array.isArray(value)) {
+        return;
+    }
+
+    let i = 0;
+    const evenValues = [];
+    while (i < value.length) {
+        const string = value[i];
+        if (typeof string === 'string' && string.length % 2 === 0) evenValues.push(string);
+        i++;
+    }
+
+    return evenValues;
+}
+
+console.log(allValuesWhile(["Hiyy", 25, 3, 46, 5, "JSjg", 2, "C+h+ii"]));
+
+
+// for of
+const allValuesForOf = (value) => {
+    if (!Array.isArray(value)) {
+        return;
+    }
+
+    const evenValues = [];
+    for (const val of value) {
+        if (typeof val === 'string' && val.length % 2 === 0) evenValues.push(val);
+    }
+
+    return evenValues;
+}
+
+console.log(allValuesForOf(["Hiyy", 25, 3, 46, 5, "JSjg", 2, "C+h+ii"]));
+
+
+// filter
+const allValuesFilter = (value) => {
+    if (!Array.isArray(value)) {
+        return;
+    }
+
+    return value.filter((val) => {
+        // return val.length % 2 === 0;
+        if (typeof val === 'string' && val.length % 2 === 0) {
+            return val;
+        }
+    })
+}
+
+console.log(allValuesFilter(["Hiyy", 25, 3, 46, 5, "JSjg", 2, "C+h+ii"]));
 
 
