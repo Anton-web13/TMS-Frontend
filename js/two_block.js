@@ -1,151 +1,88 @@
-// const myPromise = new Promise((resolve, reject) => {
-//     resolve(5);
-// });
-//
-// // console.log(myPromise);
-// // console.log(myPromise * 2);
-//
-//
-// myPromise.then((data) => {
+// const createFakeRequest = (response, delay, isFailed = false) => {
 //     return new Promise((resolve, reject) => {
-//         console.log(data);
-//         reject(data * 2);
-//     })
-//     // console.log(data)
-// }).then((result) => {
-//     console.log(result);
-// }).catch((error) => {
-//     console.log(`Error happened with ${error}`)
-// });
-//
-//
-// const delay = (ms) => {
-//     return new Promise( resolve => {
 //         setTimeout(() => {
-//             resolve();
-//         }, ms)
+//             if (isFailed) {
+//                 reject(new Error("sdfgxdfgdgf"))
+//             }
+//
+//             resolve(response)
+//         }, delay)
 //     })
-// };
-//
-// delay(2000);
+// }
 //
 //
+// // const getPokemon = (id) => {
+// //     return fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((response) => {
+// //         response.json();
+// //     });
+// // }
 //
-// // const promisefvedFive = new Promise( resolve => {
-// //
-// // })
+// const loadDate = async () => {
+//     // const pokemons = await createFakeRequest({name: "Pikashu", ability: "Power Shot"}, 5000); // 1m
+//     // const weather = await createFakeRequest({weather: "Sunny", temperatur: "20 deg"}, 5000); // 1m
+//     // const userProfileData = await createFakeRequest({id: "Pikashu", name: "Alex", age: 25}, 5000); // 1m
 //
-// const createSuccessPromise = (value) => {
-//     return new Promise( resolve => {
-//         resolve(value)
-//     })
-// };
+//     // console.log({
+//     //     pokemons,
+//     //     weather,
+//     //     userProfileData,
+//     // })
 //
-// const foo = createSuccessPromise(1);
-//
-// foo
-//     .then(one => createSuccessPromise(one + 10))
-//     .then(result => {
-//         console.log(result)
-//     });
-
-
-
-
-
-
-
-// const URL = "https://pokeapi.co/api/v2/pokemonhhhh"
-//
-// const response = fetch(URL)
-//     .then(response => {
-//         console.log(response)
-//         if (!response.ok) {
-//             throw new Error(response.status);
-//         }
-//         response.json()
-//     })
-//     .then(data => {
-//     console.log(data)
-// }).catch(error => {
-//         console.log(error.message)
-//         alert("A good error");
-// })
-
-
-
-// console.clear();
-
-
-// const someFn = () => {
-//     console.log(1);
-//     console.log(2);
-//
-//     throw new Error("Ooops") ;
-// };
-//
-// someFn();
-
-
-
-// const someFn = () => {
 //     try {
-//         console.log(1)
-//         console.log(2)
+//         // const [pokemon, weather, userProfileData] = await Promise.allSettled([
+//         //     createFakeRequest({name: "Pikashu", ability: "Power Shot"}, 1000),
+//         //     createFakeRequest({weather: "Sunny", temperatur: "20 deg"}, 3000),
+//         //     createFakeRequest({id: "Pikashu", name: "Alex", age: 25}, 2000)
+//         // ])
 //
-//         throw new Error("Ooops");
-//     } catch (e) {
-//         console.log(e)
+//         // const result = await Promise.race([
+//         //     createFakeRequest({name: "Pikashu", ability: "Power Shot"}, 1000),
+//         //     createFakeRequest({weather: "Sunny", temperatur: "20 deg"}, 3000),
+//         //     createFakeRequest({id: "Pikashu", name: "Alex", age: 25}, 2000)
+//         // ])
+//
+//         const result = await Promise.any([
+//             createFakeRequest({name: "Pikashu", ability: "Power Shot"}, 4000),
+//             createFakeRequest({weather: "Sunny", temperatur: "20 deg"}, 3000),
+//             createFakeRequest({id: "Bulba", name: "Alex", age: 25}, 2000)
+//         ])
+//
+//         // console.log({pokemon, weather, userProfileData});
+//         console.log(result);
+//     } catch(error) {
+//         console.log(error.message)
 //     }
 // };
 //
-// someFn();
+// console.log(loadDate());
 
 
 
 
 
-// OK_OK
-const URL = "https://pokeapi.co/api/v2/pokemon";
+const solutions = async () => {
 
-const getPokemons = async () => {
-  try {
-    const response = await fetch(URL).then((response) => response.json());
+    try {
+        const pokemonsShortInfos = await fetch("https://pokeapi.co/api/v2/pokemon").then((response) => {
+            response.json();
+        })
 
-    const details = await fetch(response.results[0].url).then((response) =>
-        response.json()
-    );
-    console.log(details);
-  } catch (error) {
-    console.log(error)
-  }
-};
+        console.log(pokemonsShortInfos)
 
-getPokemons();
-// OK_OK /
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+
+console.log(solutions())
 
 
 
-// const getPokemons =  () => {
-//     fetch(URL)
-//         .then(response => response.json())
-//         .then((data) => {
-//         data.count;
-//     });
-//
-// };
-//
-// getPokemons();
 
-const poromise = new Promise((resolve) => {
-  console.log( "Poromise")
 
-  resolve()
-})
 
-setTimeout(() => {
-  console.log("Promise")
-}, 0);
+
+
 
 
 
