@@ -1,89 +1,24 @@
-// const container = document.querySelector('.container');
+// localeStorage
 
-// const words = ['Alex', 'Max', 'Maria', 'Tom'];
+// localStorage.setItem('myValue', 100);
+// localStorage.setItem('user', JSON.stringify({name: 'Alex', age: 25}));
+
+// console.log(JSON.parse(localStorage.user))
+// console.log(localStorage.getItem("user"))
+// console.log(JSON.parse(localStorage.getItem("user")))
+// console.log(localStorage.myValue)
 //
-// words.forEach(name => {
-//     const divElement = document.createElement('div');
-//     const pTag = document.createElement('p');
+// localStorage.removeItem("myValue")
+// console.log(localStorage)
 //
-//     divElement.textContent = name;
-//     pTag.textContent = "pTag";
-//     divElement.classList.add('item');
-//
-//     // container.append(divElement, pTag);
-//     container.appendChild(divElement);
-//
-// })
-//
-// // const divElement = document.createElement('div');
-// // divElement.textContent = 'Hello'
-// // divElement.classList.add('item');
-//
-// // container.appendChild(divElement);
-//
-//
-//
-// console.log(container)
+// localStorage.setItem('myValuerrrr', 100);
+// localStorage.clear()
+
+// sessionStorage
+
+// sessionStorage.setItem("kity", 1254)
 
 
-
-const btn = document.querySelector('button');
-
-// btn.setAttribute('disabled', 'disabled');
-
-// setTimeout(() => {
-//     btn.removeAttribute('disabled')
-// }, 3000);
-
-
-const counter = () => {
-    let value = 0;
-
-    return () => {
-        return (value += 1);
-    }
-}
-
-const myCounter = counter();
-
-btn.addEventListener('click', (event) => {
-    event.target.style.backgroundColor = myCounter() % 2 === 0 ? 'red' : "blue";
-})
-
-
-// const btn1 = document.querySelector('#1');
-// const btn2 = document.querySelector('#2');
-// const btn3 = document.querySelector('#3');
-//
-// btn1.addEventListener('click', () => {})
-// btn2.addEventListener('click', () => {})
-// btn3.addEventListener('click', () => {})
-
-
-const containerNew = document.querySelector('.container');
-const divContainer  = document.querySelector('#ident');
-const buttonInsideDiv  = document.querySelector('#btn');
-
-// containerNew.addEventListener('click', (event) => {
-//     console.log(event.target)
-// });
-
-
-containerNew.addEventListener('click', () => {
-    console.log("Container")
-})
-
-divContainer.addEventListener('click', () => {
-    console.log("divContainer")
-})
-
-
-buttonInsideDiv.addEventListener('click', () => {
-    console.log("buttonInsideDiv")
-})
-
-
-
-
+document.cookie = 'sgrfsdfg'
 
 
